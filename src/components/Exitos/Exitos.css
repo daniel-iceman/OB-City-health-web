@@ -1,0 +1,196 @@
+.container-pacientes{
+    height: 700px;
+}
+.header-pacientes{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(166deg, rgba(240,218,67,1) 15%, rgba(199,182,19,1) 28%, rgba(111,95,0,1) 90%);
+    margin-top: -120px;    
+}
+    .header-pacientes h1 {
+        font-size: 45px;
+        color: white;
+        margin-top: 110px;
+        animation: desvanece 2s forwards;
+    }
+    .header-pacientes p {
+        font-size: 20px;
+        color: white;
+        margin-top: -20px;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        letter-spacing: 1px;
+        animation: desvanece 2s forwards;
+    }
+
+    .pacientes-bloque-1{
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+        /* background: yellow; */
+    }
+
+        .paciente {
+            width: 300px;
+            height: 480px;
+            display: flex;
+            flex-direction: column;    
+            justify-content: flex-start;
+            align-items: center;    
+            font-family: 'Montserrat';
+            font-size: 18px;
+            letter-spacing: 2px;
+            box-shadow: 2px 2px 8px rgb(47, 47, 47);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            background: linear-gradient(166deg, rgba(240,218,67,1) 43%, rgba(199,182,19,1) 70%, rgba(111,95,0,1) 86%);
+        }   
+            .paciente h3 {
+                font-size: 25px;
+                color: white;
+                font-weight: 600;
+                text-align: center;
+                margin-top: 13px;
+                padding-left: 10px;
+                padding-right: 10px; 
+            }
+            .paciente p {
+                font-family: 'Nunito';
+                font-size: 14px;
+                color: white;
+                font-weight: 300;
+                text-align: center;
+                margin-top: -24px;
+                padding-left: 10px;
+                padding-right: 10px; 
+                /* background: yellow;       */
+            }
+            .paciente button {
+                width: 100%;
+                height: 85%;
+                display: block;      
+                border-style: none;
+                padding: 0px;
+                border-radius: 10px 10px 0px 0px;
+                background: white;
+            }
+            .paciente li {
+                width: 100%;
+                height: 408px;
+                list-style: none;
+                background-position: center;
+                border-radius: 10px 10px 0px 0px;    
+                /* background: purple; */
+            }
+                .pac_1 li{
+                    background-image: url('../Images/ivonne1.png');
+                    background-size: cover;
+                }
+                .pac_2 li{
+                    background-image: url('../Images/JoseJuan.PNG');
+                    background-size: cover;
+                } 
+                .pac_3 li{
+                    background-image: url('../Images/marialuisa.jpg');
+                    background-size: cover;
+                } 
+                .pac_4 li{
+                    background-image: url('../Images/carlos.jpg');
+                    background-size: cover;
+                } 
+                
+    
+
+@keyframes desvanece {
+    from{
+        opacity: 0;
+    }
+    to{
+        
+        opacity: 1;
+        
+    }
+}
+
+/* **************************** MEDIA QUERIES *************************** */
+
+/* **** Configuracion Laptop 1366px **** */
+@media screen and (max-width: 1366px){
+    .container-pacientes{
+        height: 800px;
+    }
+    .header-pacientes{
+        height: 40%;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px){
+    .container-pacientes{
+        height: 1200px;
+    }
+    .header-pacientes{
+        height: 25%;
+    }
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px){
+    .container-pacientes{
+        height: 2350px;
+    }
+    .header-pacientes{
+        height: 16%;
+    }
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px){
+    .container-pacientes{
+        height: 2300px;
+    }
+    .header-pacientes{
+        height: 15%;
+    }
+        .header-pacientes p {            
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px){
+    .container-pacientes{
+        height: 2300px;
+    }
+    .header-pacientes{
+        height: 14%;
+    }
+        .header-pacientes h1 {            
+            font-size: 38px;
+        }
+}
+
+/* **** Configuracion iPhone 5/SE 320px **** */
+@media screen and (max-width: 375px){
+    .container-pacientes{
+        height: 2300px;
+    }
+    .header-pacientes{
+        height: 14%;
+    }
+        .header-pacientes h1 {            
+            font-size: 35px;
+        }
+        .header-pacientes P {            
+            font-size: 18px;
+        }
+}

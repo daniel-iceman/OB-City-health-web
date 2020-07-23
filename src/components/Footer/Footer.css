@@ -1,0 +1,586 @@
+.container-footer{
+    width: 100%;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    bottom: 0px; 
+}
+ .footer-image{
+    width: 100%;
+    height: 680px; /*AQUI REGULO TAMAÑO DE IMAGEN*/   
+    background-image: url('../Images/stethoscope3.jpg');
+    background-size:cover;
+    position: absolute;
+    z-index: 99;
+}
+.footer-overlay {
+    width: 100%;
+    height: inherit;
+    background: linear-gradient(
+    180deg,
+        rgb(0, 20, 39,1) 40%,
+        rgb(0, 20, 39,0.8) 70%,
+        rgb(0, 20, 39,0.6)) 100%;
+    position: relative;
+    z-index: 100;
+}
+.footer-informacion{
+    width: 100%;
+    position: relative;
+    z-index: 101;
+}
+
+/* Aqui meto los links del encabezado del footer */    
+
+.footer-encabezado {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(255, 23, 2, 0.5); */
+}   
+    .social-media{
+        width: 40%;
+    }
+    .social-media ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }    
+    .social-media a {
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    
+    /* Aqui meto diferentes columnas de links e información */
+    
+.footer-body{        
+    height: 510px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; 
+    align-items: center;
+    /* background: rgba(23, 255, 2, 0.5); */
+}
+    .footer-body h1{        
+        color: #31b7bc;
+    }
+    .footer-columna1 {
+        width: 25%; /*min-width: ;*/
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* background: rgba(247, 2, 255, 0.5) ; */
+    }
+        .columna-1F {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .footer-logo-obcity {
+            width: 50%;
+            height: 70px; /*AQUI REGULO TAMAÑO DE IMAGEN*/   
+            background-image: url('../Images/OBCwhite.PNG');
+            background-size:cover;   
+            margin-bottom: 30px;         
+        }
+        .columna-1F h1{            
+            font-size: 28px;
+            letter-spacing: 3px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .columna-1F h2{
+            font-size: 20px;
+            color: white;
+            font-weight: 100;
+            letter-spacing: 3px;
+            text-align: justify;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .terminos-privacidad{
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 100px;
+            margin-right: 150px;
+        }
+            .terminos-privacidad ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            .terminos-privacidad li{
+                color: grey;
+                list-style: none;
+                margin-left: 50px;
+            }
+            .terminos-privacidad a{
+                text-decoration: none;
+            }
+
+    .footer-columna2 {        
+        width: 35%;
+        height: 80%;
+        /* background: rgba(2, 255, 221, 0.5) ; */
+    }
+        .footer-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .footer-menu h1 {
+                font-size: 28px;
+                letter-spacing: 3px;
+                margin-left: -20px;
+            }
+            .footer-menu nav{
+                display: flex;
+                justify-content: center;
+            }
+            .footer-menu ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px;
+            }
+            .footer-menu li{
+                font-size: 18px;
+                color: white;
+                letter-spacing: 4px;
+                line-height: 40px;
+                list-style: none;
+            }
+            .footer-menu li:hover{
+                color: #31b7bc;
+            }
+            .footer-menu a{
+                text-decoration: none;
+            }
+
+
+    .footer-columna3 {
+        width: 30%;
+        height: 50%;
+        /* background: rgba(203, 217, 255, 0.5) ; */
+    }
+        .footer-contacto{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .footer-contacto h1{
+            font-size: 28px;
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+        }
+        .footer-contacto button{
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: 600;
+            background: #fb7a00;
+            letter-spacing: 3px;
+            list-style: none;
+            border-style: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .footer-contacto button a{
+            color: white;
+            text-decoration: none;
+        }
+        .footer-contacto button:hover{
+            background: #fd5d00;
+        }
+
+
+.footer-pie {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(255, 251, 2, 0.5); */
+}
+    .footer-piepagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+    }
+    .footer-piepagina h3{
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-bottom: -10px;
+    }
+    .footer-piepagina h4{
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+    .footer-piepagina span{
+        color: orange;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+/* ********************* MEDIA QUERIES ********************** */
+
+/* **** Configuracion Lap Top 1366px **** */
+@media screen and (max-width: 1366px){
+    .social-media{
+        width: 40%;
+    }
+
+    .footer-columna1  {
+        flex-basis: 33.33%;
+    }
+        .footer-logo-obcity {
+            width: 45%;
+            height: 60px;
+            margin-bottom: 30px;
+        }
+        .columna-1F h1{            
+            font-size: 23px;
+        }
+        .columna-1F h2{
+            font-size: 18px;
+            color: white;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+        .terminos-privacidad{
+            width: 100%;
+        }
+
+    .footer-menu h1 {
+        font-size: 25px;
+    }
+    .footer-menu li{
+        font-size: 16px;
+    }
+
+    .footer-contacto h1{
+        font-size: 25px;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px){
+    .social-media{
+        width: 60%;
+    }
+    .footer-columna1  {
+        flex-basis: 28.90%;
+    }
+        .footer-logo-obcity {
+            width: 65%;
+            height: 60px;
+            margin-bottom: 30px;
+        }
+        .columna-1F h2{
+            font-size: 16px;
+        }
+    .footer-columna2  {
+        flex-basis: 25.33%;
+    }
+
+}
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    
+    .footer-image{
+        width: 100%;
+        height: 450px; /*AQUI REGULO TAMAÑO DE IMAGEN*/         
+    }
+    .footer-overlay {
+        width: 100%;
+        height: inherit;  
+        background: linear-gradient(
+        180deg,
+        rgb(0, 20, 39,1) 40%,
+        rgb(0, 20, 39,0.8) 70%,
+        rgb(0, 20, 39,0.6)) 100%;              
+    }
+
+    .footer-body{        
+        height: 350px;
+    }
+    .footer-encabezado {
+        height: 50px;
+        display: flex;
+    }
+    .social-media a {
+        font-size: 25px;
+    }
+    .footer-columna1  {
+        height: 90%;
+        flex-basis: 35.0%;
+    }
+        .footer-logo-obcity {
+            width: 65%;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        .columna-1F h1{  
+            margin-top: -20px;          
+            font-size: 23px;
+            margin: 0px 31px 10px 31px;
+        }
+        .columna-1F h2{
+            font-size: 14px;
+            margin: 0px 31px 0px 31px;
+        }
+        .terminos-privacidad{
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+    
+    .footer-menu h1 {
+        font-size: 24px;
+    }
+    .footer-menu li{
+        font-size: 14px;        
+        line-height: 30px;
+    }
+    .footer-contacto h1{
+        font-size: 23px;
+    }
+
+    .footer-pie {
+        height: 50px;
+    }
+        .footer-piepagina{
+            font-size: 12px;
+        }
+}
+
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    
+    .footer-overlay {
+        width: 100%;
+        height: 560px; 
+    }    
+    .social-media {
+        width: 90%;
+    }
+    .social-media a {
+        font-size: 35px;
+    }
+    .footer-columna1  {    
+        height: 70%;    
+        flex-basis: 55%;
+        margin-top: 30px;
+    }
+        .footer-logo-obcity {
+            width: 65%;
+            height: 60px;
+            margin-bottom: 40px;
+        }
+        .columna-1F h1{            
+            font-size: 20px;
+        }
+        .columna-1F h2{
+            font-size: 14px;
+        }
+        .terminos-privacidad{
+            margin-top: 0px;
+        }
+
+
+    .footer-columna2 {
+        height: 70%;    
+        flex-basis: 38.33%;
+    }   
+        .footer-menu h1{
+            font-size: 21px;
+            margin-bottom: 0px;
+            margin-top: 50px;
+        }
+        .footer-menu li{
+            font-size: 14px;
+            color: white;
+            letter-spacing: 4px;
+            line-height: 32px;
+        }
+
+    .footer-columna3 {
+        height: 25%;
+        flex-basis: 80%;
+        border-top: 1px solid white;
+        margin-top: 50px;
+    }
+        .footer-contacto h1{
+            font-size: 21px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        
+    .footer-pie {
+        margin-top: 100px;
+    }
+        .footer-piepagina{
+            font-size: 12px;
+        }
+}  
+
+
+/* **** Configuracion iPhon PLUS  414px **** */
+@media screen and (max-width: 414px){
+    
+    .footer-overlay {
+        width: 100%;
+        height: 820px; 
+    }  
+    .social-media {
+        width: 90%;
+        margin-right: 25px;
+    }
+    .social-media a {
+        font-size: 35px;
+    }
+    
+    .footer-columna1  {    
+        height: auto;    
+        flex-basis: 90%;
+        margin-top: 30px;
+    }
+        .footer-logo-obcity {
+            width: 50%; /*45*/
+            height: 55px; /*60*/
+            margin-bottom: 55px;
+        }
+        .columna-1F h1{       
+            margin: 0px 20px 20px 20px;     
+            font-size: 20px;    
+        }
+        .columna-1F h2{
+            margin: 0px 20px 10px 20px;
+            font-size: 15px;
+        }
+        .terminos-privacidad{
+            margin-right: 150px;
+        }
+            .terminos-privacidad li{
+                margin-left: 20px;
+            }
+    .footer-columna2  {    
+        height: 280px;    
+        flex-basis: 90%;
+        margin-top: -20px;
+    }
+    .footer-columna3  {    
+        height: auto;
+        flex-basis: 90%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .footer-piepagina {
+        height: auto;
+        flex-basis: 100%;
+        margin-top: 500px;
+    }
+    .footer-piepagina h3{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .footer-piepagina h3 span{     
+        font-size: 17px;   
+        margin-left: 5px;
+        margin-right: 5px;
+    } 
+
+}
+
+    
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px){
+    /* .container-footer{
+        height: 500px;
+    } */
+    .footer-logo-obcity {
+        width: 35%; /*45*/
+        height: 40px; /*60*/
+        margin-bottom: 20px;
+    }
+    .columna-1F h1{            
+        margin-top: 0px;
+    }
+    .terminos-privacidad{
+        margin-right: 85px;
+    }
+        .terminos-privacidad li{
+            margin-left: 25px;
+        }
+    .footer-columna2  { 
+        margin-top: -30px;
+    }
+    .footer-piepagina h3{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .footer-piepagina h3 span{     
+        font-size: 16px;   
+        margin-left: 5px;
+        margin-right: 5px;
+    } 
+        
+}
+
+/* **** Configuracion 5 SE 320px **** */
+@media screen and (max-width: 320px){
+    .footer-overlay {
+        width: 100%;
+        height: 770px; 
+    }  
+    .footer-logo-obcity {
+        width: 35%;
+        height: 30px;
+        margin-bottom: 40px;
+    }
+    .columna-1F h1{       
+        margin: -25px 31px 20px 31px;     
+        font-size: 20px;    
+    }
+    .columna-1F h2{
+        margin: 0px 20px 10px 20px;
+        font-size: 13px;
+    }    
+
+    .footer-columna2  { 
+        margin-top: -50px;
+    }
+    
+    .terminos-privacidad{
+        font-size: 12px;
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+        .terminos-privacidad li{           
+            margin-left: -30px;
+        }
+        .terminos-privacidad a{
+            text-decoration: none;
+        }
+    .footer-piepagina{
+        margin-top: 430px;
+    }
+    .footer-piepagina h3{
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+    
+}

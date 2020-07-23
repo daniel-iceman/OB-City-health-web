@@ -1,0 +1,218 @@
+.container-price{
+    height: 1200px
+}
+.banner-price{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(159deg, rgba(2,46,102,1) 15%, rgba(4,105,186,1) 54%, rgba(93,5,27,1) 85%);
+    margin-top: -120px;
+}
+    .banner-price h1{
+        font-family: 'Montserrat';
+        font-size: 60px;
+        color: white;
+    }    
+
+.cont-info-price {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background: yellow; */
+}
+    .info-price{
+        width: 90%;    
+        /* background: red; */
+    }
+        .cont-imagen-price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .imagen-price{
+                width: 30%;
+                height: 310px;
+                background-image: url('../Images/PriseLogo.JPG');
+                background-size: cover;
+            }
+
+        .resumen-price {
+            /* background: greenyellow; */
+        }
+            .resumen-price p {
+                font-size: 20px;
+                letter-spacing: 0.5px;
+                text-align: justify;
+            }
+
+    .botones-price {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background: rgb(114, 10, 67); */
+    }
+    .botones-price button{
+        width: 350px;
+        height: 60px;
+        display:inline-block;                  
+        font-family: 'Montserrat';
+        font-size: 21px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-decoration:none;	                   
+        color:rgb(31, 64, 104);
+        background-color:transparent;
+        border:1px solid rgb(31, 64, 104);
+        border-radius: 50px; 
+        margin:5px;  
+        margin-top: 20px;                          
+        background-size: 200% 100%;	
+        background-image: linear-gradient(to right, transparent 50%, rgba(31, 64, 104, 1) 50%);
+        transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+
+    }
+        .botones-price li {
+            text-align: center;
+            color:rgb(31, 64, 104);
+            margin: 0px;
+            padding: 15px 25px 15px 25px;
+        }
+        .botones-price button:hover{
+            color:rgba(255, 255, 255, 1);
+            background-color:rgba(31, 64, 104, 1);
+            background-position: -100% 100%;
+        }
+        .botones-price li:hover{
+            color:rgba(255, 255, 255, 1);
+        }
+
+
+
+
+/* °°°°°°°°°°°°°°°°°°°°° PDF VIEW °°°°°°°°°°°°°°°°°°°° */
+.pdf-view {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.pdf-controls {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* **** Configuracion Laptop 1366px **** */
+@media screen and (max-width: 1366px) {
+    .banner-price h1{
+        margin-bottom: 20px;
+    }
+    .imagen-price{
+        width: 35%;
+        height: 310px;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    .imagen-price{
+        width:50%;
+        height: 320px;
+    }
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    .container-price{
+        height: 1300px
+    }
+    .banner-price{
+        width: 100%;
+        height: 20%;
+    }
+        .banner-price h1{
+            margin-bottom: 30px;
+        }
+    .imagen-price{
+        width:50%;
+        height: 230px;
+    }
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .container-price{
+        height: 1600px
+    }
+    .banner-price{
+        width: 100%;
+        height: 17%;
+    }
+        .banner-price h1{
+            margin-bottom: 40px;
+        }
+    
+    .imagen-price{
+        width:70%;
+        height: 190px;
+    }
+}
+
+/* **** Configuracion iPhone PLUS 414px **** */
+@media screen and (max-width: 414px) {
+    .container-price{
+        height: 1900px
+    }
+    
+}
+
+/* **** Configuracion iPhone X y 7/8/9 375px **** */
+@media screen and (max-width: 480px) {
+    .container-price{
+        height: 2000px
+    }
+    .banner-price{
+        height: 14%;
+    }
+        .banner-price h1{
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+    
+    .imagen-price{
+        width:90%;
+        height: 190px;
+    }
+    .botones-price button{
+        font-size: 19px;
+    }
+}
+
+/* **** Configuracion iPhone 5/SE 375px **** */
+@media screen and (max-width: 375px) {
+    .container-price{
+        height: 2200px
+    }
+    .banner-price{
+        height: 13%;
+    }
+        .banner-price h1{
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+    
+    .imagen-price{
+        width:90%;
+        height: 190px;
+    }
+
+    .botones-price button{
+        width: 300px;
+        font-size: 19px;
+    }
+}

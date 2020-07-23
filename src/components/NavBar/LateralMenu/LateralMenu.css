@@ -1,0 +1,296 @@
+
+/* ***** Edición del menú lateral que se despliega, tamaño y posición ***** */
+.sidebar {
+    position: fixed;
+    width: 350px;   /*350*/
+    height: 100%;
+    top: 75px;
+    left: -360px;   /*360*/
+    background: #1e2b38;
+    box-shadow: 0.5px 0.5px 20px rgb(196, 196, 196);
+    /* background: red;     */
+    transition: all 0.5s ease;
+    z-index: 999;      
+  }
+
+  /*  Titulo del sidebar  */
+  .sidebar header {
+    font-family: 'Nunito', sans-serif;  
+    font-size: 25px;
+    background: #1e2b38;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 5px;
+    user-select: none;    
+    border-bottom: 1px solid gray
+  }
+
+  /* Propiedades de texto del menu lateral */
+  .sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-family: 'Nunito', sans-serif; 
+    line-height: 65px;
+    font-size: 22px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.4s; 
+  }
+  /* Aquí posicionamos la separación de las opciones del menú  */
+  .sidebar ul{
+    height: 400px;
+    display: flex;
+    flex-direction: column; 
+    background: #30475e;
+    /* background: purple; */
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 0px;
+   }
+  
+   /* Color de letras y fondo de opciones del menú */
+  .sidebar li{
+    width: 320px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #30475e;
+    color: gainsboro;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-left: -30px; 
+  }
+  .sidebar a{ 
+    margin-left: -35px;
+    padding-top: 6px;    
+    background: #30475e;
+    text-decoration: none;
+  }
+  .FontAwesome {
+    margin-right: 30px;
+    padding-left: 20px;
+  }
+  
+  .sidebar ul li:hover a {
+    padding-left: 50px;
+  } 
+
+  /* Posición del texto de opciones de menu */
+  .sidebar ul a i {
+    margin-right: 16px; 
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  label #btn,
+  label #cancel {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  label #btn {
+    left: 40px; /*40*/
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px; /*6px 16px*/
+    transition: all 0.5s;
+  }
+  /* *** Propiedades del icono de X *** */
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 78px;
+    font-size: 40px;
+    padding: 4px 12px;
+    transition: all 0.5s ease;
+  }
+  
+  
+  
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+  
+  #check:checked ~ label #btn {
+    left: 250px; 
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* **** Posición de la X para cerrar menú **** */
+  #check:checked ~ label #cancel {
+    left: 290px; 
+    top: 78px;
+  }
+
+  /* *** Tamaño y posición de icono de barras (hamburguesa) */
+  .fa-bars {
+    font-size: 40px;
+  }
+
+  i#btn.fa-bars{
+    margin-top: -15px;
+  }
+
+  .active-lateralmenulink li{
+    /* color: #010f33;   */
+    color: white;   
+    font-weight: 300;
+    /* background: whitesmoke; */
+
+    background: #385170;
+    /* border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke; */
+  }
+
+  /* **************************** MEDIA QUERIES *************************** */
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px){
+  i#btn.fa-bars{
+    margin-top: 15px;
+    margin-left: 60px;
+  }
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+  .fa-bars {
+    font-size: 43px;
+  }
+  i#btn.fa-bars{
+    margin-top: -15px;
+    margin-left: -10px;
+  }
+  .sidebar {
+    width: 320px;   
+    top: 74px;
+    left: -560px;    
+  }
+  .sidebar header { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 70px;
+  }
+  #check:checked ~ label #cancel {
+    left: 270px; 
+    top: 79px;
+  }
+  label #cancel {
+    top: 79px;
+    font-size: 35px;  
+  }
+  .sidebar ul{
+    height: 400px;
+    margin-top:30px;
+  }
+  .sidebar li{
+    width: 268px;
+    height: 55px;
+    margin-top: 13px;
+  }  
+  .sidebar ul a {
+    font-size: 20px;
+    line-height: 80px;
+    padding-left: 50px;
+  }
+}
+
+/* **** Configuracion iPhone PLUS 414px **** */
+@media screen and (max-width: 414px){
+  .fa-bars {
+    font-size: 40px;
+  }
+  i#btn.fa-bars{
+    margin-top: -15px;
+    margin-left: -20px;
+  }
+  .sidebar {
+    width: 260px;      
+  }
+  .sidebar header {     
+    font-size: 21px;
+  }
+  #check:checked ~ label #cancel {
+    left: 215px; 
+    top: 81px;
+  }
+  label #cancel {
+    top: 81px;
+    font-size: 30px;
+  }
+  .sidebar ul{
+    height: 370px;
+    margin-top: 5px;
+  }
+  .sidebar li{
+    width: 210px;
+    height: 50px;
+  }  
+  .sidebar ul a {
+    font-size: 18px;
+  }
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px) {
+  .fa-bars {
+    font-size: 38px;
+  }
+}
+
+/* **** Configuracion iPhone X y 6/7/8 320px **** */
+@media screen and (max-width: 320px){
+  .sidebar {
+    width: 240px;   
+    top: 70px;
+    left: -560px;    
+  }
+  .sidebar header { 
+    height: 60px;    
+    /* font-size: 23px; */
+  }
+  #check:checked ~ label #cancel {
+    left: 195px; 
+    top: 76px;
+  }
+  label #cancel {
+    top: 76px;
+    font-size: 30px;
+  }
+  .sidebar ul{
+    height: 350px;
+  }
+  .sidebar li{
+    width: 190px;
+    height: 50px;
+  }  
+  .sidebar ul a {
+    /* font-size: 20px; */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+li {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}    
+
+.container-barraMenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;    
+}
+
+.posicion-barraMenu {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(247, 247, 247);  
+    border-bottom: 3px solid rgb(231, 231, 231);
+}
+/* ******** Boton para abrir menú lateral ***** */
+.container-boton-menu-lateral {
+    display: none;
+}
+
+/* ******* Configuración para barra de menú superior ****** */
+.barraMenu{
+    width: 80%;    
+    display: flex; 
+}
+
+.barraMenu_logo img {
+    width: 180px; 
+    padding-top: 8px;
+}
+
+.separacionMenu{
+    width: 30%;
+}
+
+.icono-home{
+    color: rgb(0, 39, 77);
+    margin: -10px 0px -20px 0px;
+    padding: 10px 30px 15px 30px;
+}
+
+.navegacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+.menu>ul {    
+    display: flex;
+}
+.menu p {
+    font-family: 'Nunito', sans-serif;
+    color:rgb(0, 39, 77) ;
+    margin: -10px 0px -20px 0px;
+    padding: 10px 10px 20px 10px;
+}
+.menu p:hover {
+    color: white;
+    transition: all .3s;
+    background:rgb(0, 39, 77)
+}
+.menu>a{
+    text-decoration: none;
+}
+
+.opciones-menubar{
+    color:rgb(0, 39, 77) ;
+    margin: -10px 0px -17px 0px;
+    padding: 10px 10px 17px 10px;
+}
+.opciones-menubar:hover{
+    color: white;
+    transition: all .3s;
+    background:rgb(0, 39, 77)
+}
+
+.active-menulink{
+    background:rgb(0, 39, 77);
+    color: whitesmoke;
+}
+
+
+/* ********************* MEDIA QUERIES ********************** */
+
+/* **** Configuracion Lap top 1366px **** */
+@media screen and (max-width: 1366px) {
+    .container-barraMenu{
+        margin-top: 30px;    
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    
+    .barraMenu{
+        width: 90%; 
+        height: 70px;  
+        display: flex;
+        justify-content: center;
+    }
+    .container-boton-menu-lateral {
+        width: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .barraMenu_logo img {
+        width: 180px;
+        margin-top: -3px; 
+    }
+    .navegacion {
+        display: none;
+    }
+    .separacionMenu {
+        display: none;
+    }    
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .container-barraMenu{
+        margin-top: 0px;    
+    }
+    .posicion-barraMenu {
+        width: 100%;
+    }
+    .barraMenu{
+        width: 100%;
+    }
+    .barraMenu_logo img {
+        width: 160px;
+        margin-top: 0px; 
+    }
+    
+}

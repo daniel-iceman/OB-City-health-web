@@ -1,0 +1,364 @@
+.container-homeLinks {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    /* background: yellow; */
+}
+.bloque-1{
+    width: 30%;
+    height: 95%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    /* background: orange; */
+}       
+
+.bloque-2{
+    width: 25%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -60px;
+    margin-right: -60px;    
+    /* background: rgb(255, 0, 255); */
+}    
+    
+.bloque-3{
+    width: 30%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background: red; */
+}
+
+.linkHome-1, .linkHome-2{        
+background-size:cover;
+    width: 80%;
+    height: 45%;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}   
+
+.linkHome-3{
+    background-size:cover;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;      
+}
+.linkHome-4, .linkHome-5, .linkHome-6{
+    background-size:cover;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;   
+}
+
+.linkHome-1{
+    background-image: url('../Images/Cintura.JPG');
+}
+.linkHome-2{
+    background-image: url('../Images/PacientesExito.PNG');    
+}
+.linkHome-3{
+    background-image: url('../Images/CoronaV1.JPG')
+}
+.linkHome-4{
+    background-image: url('../Images/ArticulosMedicos.jpeg');
+}
+.linkHome-5{
+    background-image: url('../Images/Recipe.jpeg');
+}
+.linkHome-6{
+    background-image: url('../Images/FoodMind.jpeg');
+}    
+    
+.linkHome-1 li, 
+.linkHome-2 li, 
+.linkHome-3 li, 
+.linkHome-4 li, 
+.linkHome-5 li, 
+.linkHome-6 li{
+    width: 330px;
+    height: 40px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    list-style: none;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    background: rgba(0, 63, 122, 0.7);
+    transition: all 0.3s;
+}
+
+.linkHome-1 a, 
+.linkHome-2 a, 
+.linkHome-3 a, 
+.linkHome-4 a, 
+.linkHome-5 a, 
+.linkHome-6 a{
+    text-decoration: none;
+}
+
+.linkHome-1 li:hover, 
+.linkHome-2 li:hover,
+.linkHome-3 li:hover,
+.linkHome-4 li:hover, 
+.linkHome-5 li:hover,
+.linkHome-6 li:hover{    
+    width: 395px;
+    background: rgba(0, 63, 122, 0.9);
+}
+
+/* Visibilidad del boton para moviles */
+.linkHome-1 button, 
+.linkHome-2 button, 
+.linkHome-3 button,
+.linkHome-4 button, 
+.linkHome-5 button, 
+.linkHome-6 button{
+    visibility: hidden;
+}
+
+
+
+/* *************  MEDIA QUERIES ************ */
+
+/* **** Configuracion laptop 1366px **** */
+@media screen and (max-width: 1366px) {    
+    .linkHome-1 li, 
+    .linkHome-2 li, 
+    .linkHome-3 li, 
+    .linkHome-4 li, 
+    .linkHome-5 li, 
+    .linkHome-6 li{
+        width: 240px;
+        font-size: 17px;
+    }
+    .linkHome-1 li:hover, 
+    .linkHome-2 li:hover,
+    .linkHome-3 li:hover,
+    .linkHome-4 li:hover, 
+    .linkHome-5 li:hover,
+    .linkHome-6 li:hover{    
+        width: 270px;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px){
+    .linkHome-1, .linkHome-2{        
+        width: 100%;
+        height: 45%;        
+    }
+    
+    .linkHome-3{
+        background-image: url('../Images/CoronaV1half.jpg')
+    }
+    .linkHome-4, .linkHome-5, .linkHome-6{
+        width: 100%;
+        height: 30%;
+    }
+    
+    .linkHome-1 li, 
+    .linkHome-2 li, 
+    .linkHome-3 li, 
+    .linkHome-4 li, 
+    .linkHome-5 li, 
+    .linkHome-6 li{
+        width: 230px;
+        font-size: 16px;
+    }
+    
+}
+
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px)  {    
+    .bloque-1{
+        margin-left: -60px;
+        height: 95%;
+        flex-basis: 45%;
+    }
+    .bloque-2{
+        height: 95%;    
+        flex-basis: 45%;        
+    }
+    .bloque-3{
+        height: 95%;            
+        flex-basis: 100%;      
+        align-items: center;  
+    }
+        .linkHome-4, .linkHome-5, .linkHome-6{
+            width: 93%;
+            height: 30%;
+        }    
+            .linkHome-1 li, 
+            .linkHome-2 li, 
+            .linkHome-3 li, 
+            .linkHome-4 li, 
+            .linkHome-5 li, 
+            .linkHome-6 li{
+                width: 280px;
+                font-size: 18px;
+            }
+        
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px){
+    .bloque-1{
+        width: 100%;
+        height: 250%;
+        margin-left: 0px;
+        flex-basis: 100%;
+        margin-bottom: -36px;
+    }
+    .bloque-2{
+        width: 100%;
+        height: 140%;    
+        flex-basis: 100%;   
+        margin-bottom: -7px;     
+    }
+    .bloque-3{   
+        height: 370%;     
+        flex-basis: 100%;      
+        align-items: center; 
+    }
+
+    
+    .linkHome-2 {
+        background-image: url('../Images/PacientesExito2.JPG');
+    }
+    .linkHome-4 {
+        background-image: url('../Images/ArticulosMovil.jpg');
+    }
+    .linkHome-5 {
+        background-image: url('../Images/RecetasMovil.jpg');
+    }
+    .linkHome-6 {
+        background-image: url('../Images/PsiqueMovil.jpg');
+    }
+
+    .linkHome-1, 
+    .linkHome-2, 
+    .linkHome-3, 
+    .linkHome-4, 
+    .linkHome-5, 
+    .linkHome-6{
+        width: 100%;
+        height: 100%;
+        /* background-image: url('../Images/NuestrosSistemas.jpeg'); */
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+        .linkHome-1 li, 
+        .linkHome-2 li, 
+        .linkHome-3 li, 
+        .linkHome-4 li, 
+        .linkHome-5 li,
+        .linkHome-6 li {
+            width: 390px;   
+            justify-content:center;
+            background: none;
+            font-size: 30px;
+            text-shadow: 1px 1px 8px black;
+            padding-top: 0px;
+            border-radius: 30px 30px 0px 0px;
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+            .linkHome-1 button, 
+            .linkHome-2 button, 
+            .linkHome-3 button,
+            .linkHome-4 button, 
+            .linkHome-5 button, 
+            .linkHome-6 button{
+                margin-top: 60px;                
+            }        
+        
+            /* Visibilidad del boton para moviles */
+            .linkHome-1 button, 
+            .linkHome-2 button, 
+            .linkHome-3 button,
+            .linkHome-4 button, 
+            .linkHome-5 button, 
+            .linkHome-6 button{
+                visibility: visible;
+                width: 200px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background:rgb(121, 113, 77,0.5);
+                border-style: none;
+                border: 2px solid white;
+                border-radius: 30px;
+                margin-bottom: 60px;
+            }
+                .btn-vermas li {
+                    visibility: visible;
+                    width: 150px;
+                    height: 50px;
+                    font-size: 23px;
+                    color: white;
+                    text-shadow: 2px 2px 5px rgb(36, 35, 35);
+                    background:rgb(255, 255, 255, 0);
+                }
+            
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px){   
+    .linkHome-1 li, 
+    .linkHome-2 li, 
+    .linkHome-3 li, 
+    .linkHome-4 li, 
+    .linkHome-5 li,
+    .linkHome-6 li {
+        font-size: 28px;
+    }
+    .btn-vermas li {
+        font-size: 22px;
+    }
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px){    
+        
+}
+
+/* **** Configuracion iPhone 5 /SE 320px **** */
+@media screen and (max-width: 320px){    
+    .linkHome-1{
+        width: 110%;
+        height: 90%;
+    }
+    .linkHome-1 li, 
+    .linkHome-2 li, 
+    .linkHome-3 li, 
+    .linkHome-4 li, 
+    .linkHome-5 li,
+    .linkHome-6 li {
+        width: 320px;
+    }
+}

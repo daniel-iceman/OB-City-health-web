@@ -1,0 +1,97 @@
+.container-chatbutton {
+    width: 10%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    font-size: 20px;
+    position: sticky;
+    bottom: 0;
+    padding: 50px;
+    /* background: red; */
+}
+
+.chatbutton {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    /* background: sienna; */
+}
+    .chatbutton li {
+        width: 120px;
+        height: 80px;
+        list-style: none;
+        margin-top: -40px;
+    }
+    .fontAwesomeChat{      
+        width: fit-content;
+        height: fit-content;  
+        font-size: 100px;
+        color: white;
+        background: rgb(7, 156, 144);
+        padding: 30px;
+        border-radius: 100px;  
+        margin-left: -40px;    
+    }
+        
+        
+
+
+    /* **** Configuracion LapTop 1366px **** */
+@media screen and (max-width: 1366px) {
+    .fontAwesomeChat{
+        font-size: 80px;
+        padding: 30px;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    .fontAwesomeChat{
+        font-size: 60px;        
+        padding: 30px; 
+        margin-left: -10px;    
+    }
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    .fontAwesomeChat{
+        margin-left: 0px;
+        padding: 25px;
+    }
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .fontAwesomeChat{        
+        height: 60px;
+        font-size: 45px;
+        margin-left: 40px;
+        margin-top: 60px;
+        padding: 25px;
+    }
+}
+
+/* **** Configuracion iPhone 6/7/8 414px **** */
+@media screen and (max-width: 414px) {
+    .fontAwesomeChat{
+        font-size: 40px;
+    }
+    
+}
+
+/* **** Configuracion iPhone 5/SE 320px **** */
+@media screen and (max-width: 320px) {
+    .container-chatbutton {
+        height: 135px;
+        align-self: center;
+    }
+    .fontAwesomeChat{
+        font-size: 35px;
+        margin-left: 50px;
+        padding: 10px;
+    }
+}

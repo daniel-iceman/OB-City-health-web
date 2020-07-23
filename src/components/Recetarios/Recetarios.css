@@ -1,0 +1,180 @@
+.container-recetarios{
+    height: 1500px;
+}
+.header-recetarios {
+    width: 100%;
+    height: 21%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(41deg, rgba(3,53,131,1) 0%, rgba(138,104,8,1) 0%, rgba(186,42,42,1) 33%, rgba(161,42,58,1) 55%, rgba(11,40,133,1) 75%);
+    margin-top: -120px;    
+}
+    .header-recetarios h1 {
+        font-size: 45px;
+        color: white;
+        margin-top: 110px;
+        animation: desvanece 2s forwards;
+    }
+    .header-recetarios p {
+        font-size: 20px;
+        color: white;
+        margin-top: -20px;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        letter-spacing: 1px;
+        animation: desvanece 2s forwards;
+    }
+
+.recetarios-bloque-1{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    /* background: yellow; */
+}
+
+.platillo {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-start;
+    align-items: center;    
+    font-family: 'Montserrat';
+    font-size: 18px;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 8px rgb(47, 47, 47);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    /* background: red; */
+}   
+    .platillo p {
+        font-weight: 600;
+        text-align: center;
+        margin-top: 12px;
+        padding-left: 10px;
+        padding-right: 10px;       
+    }
+    .platillo button {
+        width: 100%;
+        height: 80%;
+        display: block;      
+        border-style: none;
+        padding: 0px;
+        border-radius: 10px 10px 0px 0px;
+        /* background: cornflowerblue; */
+    }
+    .platillo li {
+        width: 100%;
+        height: 280px;
+        list-style: none;
+        background-position: center;
+        border-radius: 10px 10px 0px 0px;    
+        /* background: purple; */
+    }
+        .plat_1 li{
+            background-image: url('../Images/EnchiladasLechuga_btn.jpeg');
+            background-size: cover;
+        }
+        .plat_2 li{
+            background-image: url('../Images/TortillaVegetales.JPEG');
+            background-size: cover;
+        } 
+        .plat_3 li{
+            background-image: url('../Images/QuicheEspinaca.JPEG');
+            background-size: cover;
+        } 
+        .plat_4 li{
+            background-image: url('../Images/RollitosJamon.JPEG');
+            background-size: cover;
+        } 
+        .plat_5 li{
+            background-image: url('../Images/PanNube.jpg');
+            background-size: cover;
+        } 
+    
+
+@keyframes desvanece {
+    from{
+        opacity: 0;
+    }
+    to{
+        
+        opacity: 1;
+        
+    }
+}
+
+
+
+/* **************************** MEDIA QUERIES *************************** */
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px){
+    .header-recetarios h1 {
+        font-size: 42px;
+        margin-top: 120px;
+    }
+    .header-recetarios p {
+        font-size: 19px;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: -30px;
+    }
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .container-recetarios{
+        height: 2500px;
+    }
+    .header-recetarios {
+        height: 15%;
+    }
+        .header-recetarios h1 {
+            font-size: 44px;
+            margin-top: 120px;
+        }
+        .header-recetarios p {
+            font-size: 20px;
+            line-height: 22px;
+            padding-left: 30px;
+            padding-right: 30px;        
+        }
+    .platillo {
+        width: 90%;
+    }
+}
+
+/* **** Configuracion iPhone PLUS 414px **** */
+@media screen and (max-width: 414px) {
+    .header-recetarios {
+        height: 17%;
+    }        
+}
+
+/* **** Configuracion iPhone X y 7/8/9 375px **** */
+@media screen and (max-width: 375px) {
+    .header-recetarios {
+        height: 18%;
+    }  
+        .header-recetarios h1 {
+            font-size: 44px;
+            margin-top: 140px;
+        }
+}
+
+/* **** Configuracion iPhone 5/SE 320px **** */
+@media screen and (max-width: 320px) {
+    .header-recetarios {
+        height: 19%;
+    } 
+        .header-recetarios p {
+            margin-top: -20px;
+        }
+}

@@ -1,0 +1,393 @@
+.container-psique {
+    height: 3100px;
+}
+
+.bannerTitle-psique {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -142px;
+    background: linear-gradient(159deg, rgba(6,30,125,1) 15%, rgba(2,98,71,1) 54%, rgba(81,152,3,1) 90%);
+    
+}
+    .bannerTitle-psique h1 {
+        font-size: 60px;
+        color: whitesmoke;
+    }
+
+.cont-informacion-psique {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+}
+    .informacion-psique {
+        width: 90%;
+        font-size: 20px;
+        text-align: justify;
+        /* background: yellow; */
+    }
+        .informacion-psique p {
+            font-size: 20px;
+        }
+
+        .titulo-psique-pagina h1{
+            font-family: 'Montserrat';
+            font-size: 50px;
+        }
+        .titulo-psique-pagina p{
+            width: 50%;
+            font-size: 14px;    
+            color: gray;
+            margin-top: -20px;        
+        }
+
+
+.bloque1-psique {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+    .cont-imagen-psique-1 {
+        flex-basis: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .imagen-psique-1{
+            width: 60%;
+            height: 280px;
+            background-image: url('../Images/Ara1.jpg');
+            background-size: cover;
+        }
+        .frase-psique-1 {
+            flex-basis: 60%;
+            font-size: 27px;
+            color: rgb(180, 161, 120);
+        }
+    
+    .subtitulo-psique{
+        font-family: 'Montserrat';
+        font-size: 25px;
+        color: rgb(60, 101, 155);
+        margin-top: 50px;
+    }
+
+    .bloque2-psique {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+    }
+        .cont-imagen-psique-2 {
+            flex-basis: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .imagen-psique-2{
+                width: 60%;
+                height: 280px;
+                background-image: url('../Images/Ara2.jpg');
+                background-size: cover;
+            }
+            .frase-psique-2 {
+                flex-basis: 60%;
+                font-size: 27px;
+                color: rgb(180, 161, 120);    
+            }
+
+.texto-psique {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: pink; */
+}
+    .cuadro-contenedor {
+        width: 90%;
+        background: rgb(180, 161, 120);
+        color: white;
+        border-radius: 30px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    .span-blue {
+        color: rgb(116, 16, 16);
+        font-weight: 600;
+    }
+    .cuadro-contenedor h5 {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        font-style: italic;
+        color: rgb(116, 16, 16);
+    }
+
+.contacto-psique {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* background: purple; */
+}
+    .links-psique{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background: rgb(241, 235, 197);
+    }
+        .links-psique li {
+            list-style: none;
+            text-decoration: none;
+        }
+            .iconos-links {
+                display: flex;            
+            }
+                .fontawsome-psique {
+                    font-size: 40px;
+                    color: rgb(180, 161, 120);
+                    margin-left: 60px;
+                    margin-right: 10px;
+                }
+            .correo-links{
+                display: flex;
+            }
+
+        .links-psique h5 {
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat';
+            color: rgb(136, 118, 79);
+        }
+
+
+/* **** Configuracion Laptop 1366px **** */
+@media screen and (max-width: 1366px) {
+    .container-psique {
+        height: 3300px;
+    }
+    .bannerTitle-psique {
+        height: 9%;
+    }
+    .titulo-psique-pagina h1{
+        font-size: 40px;
+    }
+}
+
+/* **** Configuracion iPad PRO 1024px **** */
+@media screen and (max-width: 1024px) {
+    .container-psique {
+        height: 3550px;
+    }    
+    .bannerTitle-psique {
+        height: 8%;
+    }
+    .titulo-psique-pagina p{
+        width: 100%;
+
+    }
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    .imagen-psique-1{
+        width: 90%;
+        height: 190px;
+    }
+    .frase-psique-1 {
+        font-size: 18px;
+    }
+
+    .imagen-psique-2{
+        width: 90%;
+        height: 180px;
+    }
+    .frase-psique-2 {
+        font-size: 20px;
+    }
+
+    .subtitulo-psique{
+        font-size: 20px;
+    }
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .container-psique {
+        height: 4800px;
+    }    
+    .bannerTitle-psique {
+        height: 5.6%;
+    }
+        .bannerTitle-psique h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+    .titulo-psique-pagina h1 {
+        text-align: left;
+    }
+
+    .bloque1-psique {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+        .cont-imagen-psique-1 {
+            width: 100%;    
+        }
+            .imagen-psique-1{
+                width: 80%;
+                height: 200px;
+            }
+    
+    .bloque2-psique {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+        .cont-imagen-psique-2 {
+            width: 100%;    
+        }
+            .imagen-psique-2{
+                width: 80%;
+                height: 200px;
+            }
+    
+    .subtitulo-psique{
+        font-size: 18px;
+    }
+        .subtitulo-psique h2 {
+            text-align: left;
+        }
+    .contacto-psique{
+        margin-top: -10px;
+    }
+        .links-psique{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: -20px;
+        }   
+            .iconos-links {
+                width: 60%;
+                justify-content: space-evenly;
+            }            
+                .fontawsome-psique {
+                    width: 100%;
+                    font-size: 50px;
+                    color: rgb(180, 161, 120);
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                }
+            .correo-links {
+                margin-top: -10px;
+            }
+                .arroba{
+                    display: none;
+                }
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px) {
+    .container-psique {
+        height: 5200px;
+    }    
+    .bannerTitle-psique {
+        height: 5.2%;
+    }
+    .subtitulo-psique{
+        margin-top: -10px;
+    }    
+}
+
+/* **** Configuracion iPhone 375px **** */
+@media screen and (max-width: 375px) {
+    .container-psique {
+        height: 6000px;
+    }    
+    .bannerTitle-psique {
+        height: 4.5%;
+    }
+        .bannerTitle-psique h1 {
+            font-size: 35px;
+        }
+
+    .titulo-psique-pagina h1 {
+        font-size: 40px;
+    }
+
+    .imagen-psique-1{
+        width: 0%;
+        height: 0px;
+        background-image: none
+    }
+
+    .imagen-psique-2{
+        width: 0%;
+        height: 0px;
+        background-image: none
+    }
+
+    .contacto-psique{
+        margin-bottom: 80px;
+    }
+    .fontawsome-psique {
+        margin-left: 10px;
+    }
+}
+        
+/* **** Configuracion iPhone 5/SE 320px **** */
+@media screen and (max-width: 320px) {
+    .container-psique {
+        height: 6000px;
+    }    
+    
+    .bannerTitle-psique {
+        height: 4.5%;
+    }
+    .bannerTitle-psique h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .titulo-psique-pagina h1 {
+        font-size: 35px;
+    }
+
+    .imagen-psique-1{
+        width: 60%;
+        height: 280px;
+        background-image: url('../Images/Ara1.jpg');
+        background-size: cover;
+    }
+    .imagen-psique-2{
+        width: 60%;
+        height: 280px;
+        background-image: url('../Images/Ara2.jpg');
+        background-size: cover;
+    }   
+    .contacto-psique h2 {
+        margin-top: -5px;
+    }
+    .links-psique {
+        margin-top: 10px;
+    }
+    
+    
+}
+
+

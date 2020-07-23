@@ -1,0 +1,321 @@
+.card-container {
+    height: 1300px;
+    margin-top: -142px;
+    /* background: yellow; */
+}
+    .card-banner{
+        width: 100%;
+        height: 800px;        
+        background-image: url('../Images/Cintura.JPG');
+        background-size:cover;
+        margin-top: -550px;
+        /* background: hotpink; */
+    }
+        .card-banner-filtro{
+            width: 100%;
+            height: 800px;            
+            background: linear-gradient(254deg, rgba(0,212,195,0) 26%, rgba(6,37,136,0.8155637254901961) 62%);
+        }
+        .card-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            top: -240px;
+            left: 180px;   
+        }
+            .card-text h1 {
+                color: white;
+                font-size: 50px;
+                margin-bottom: -20px;
+            }
+            .card-text p {
+                color: white;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+    .cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        /* background: rgba(74, 243, 7, 0.5); */
+        position: relative;
+        top: -40px;
+    }
+        .abc-card, .cambridge-card, .habito-card {
+            width: 20%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;  
+            align-items: center;          
+            box-shadow: 2px 2px 5px gray;            
+            border-radius: 10px;
+        }
+            .header-abc-card, .header-cambridge-card, .header-habito-card{
+                width: 100%;
+                height: 38%;
+                border-radius: 10px 10px 0px 0px;
+            }         
+                .header-abc-card {
+                    background-image: url('../Images/KetoSuperior.PNG');
+                    background-size:cover;
+                }   
+                .header-cambridge-card {
+                    background-image: url('../Images/Cambridge.png');
+                    background-size:cover;
+                } 
+                .header-habito-card {
+                    background-image: url('../Images/HabitoAlimeticioCard.jpeg');
+                    background-size:cover;
+                } 
+
+            .body-abc-card, .body-cambridge-card, .body-habito-card {
+                width: 85%;
+                height: 45%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content:center;
+                font-size: 18px;       
+                list-style: none;           
+                
+            }
+                .body-abc-card li, .body-cambridge-card li, .body-habito-card li {
+                    width: 100%;
+                    line-height: 40px;       
+                    letter-spacing: 1px;             
+                }
+                .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
+                    font-size: 11px;
+                    text-align: justify;
+                }
+            
+            .footer-abc-card, .footer-cambridge-card, .footer-habito-card {
+                width: 100%; 
+                height: 17%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(1, 1, 58);
+                border-radius: 0px 0px 10px 10px;                
+            }
+                .btn-border-descubreMas{
+                    width: 190px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;    
+                    background: linear-gradient(
+                                    45deg, 
+                                    rgba(78,11,149,1) 29%, 
+                                    rgba(39,151,242,1) 60%, 
+                                    rgba(40,255,235,1) 100%);
+                    box-shadow: 5px -2px 10px rgba(40,255,235,0.6) ;
+                }
+                    .btn-descubreMas{
+                        width: 180px;
+                        height: 40px;
+                        background: rgb(1, 1, 58); 
+                        list-style: none;
+                        border-style: none;
+                        cursor: pointer;
+                        border-radius: 10px;
+                        transition: all 0.2s;
+                    }   
+                        .btn-descubreMas li{                            
+                            font-family: 'Nunito';
+                            font-size: 18px;
+                            font-weight: 600;
+                            letter-spacing: 2px;
+                            word-spacing: 6px;
+                            color: white 
+                        }
+                        .btn-descubreMas a{
+                            text-decoration: none;
+                        }
+                        .btn-descubreMas:hover{
+                            width: 180px;
+                            height: 55px;
+                        }
+                        .btn-border-descubreMas:hover{
+                            box-shadow: none ;
+                        }
+
+
+/* ********************* MEDIA QUERIES ********************** */
+
+/* **** Configuracion laptop 1366px **** */
+@media screen and (max-width: 1366px) {
+    .card-container {
+        height: 1400px;
+    }
+    .abc-card, .cambridge-card, .habito-card {
+        width: 28%;
+        height: 700px;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    .card-text {
+        top: -260px;
+        left: 100px; 
+    }
+    .abc-card, .cambridge-card, .habito-card {
+        width: 30%;
+        height: 700px;
+    }
+    .header-abc-card, .header-cambridge-card, .header-habito-card{
+        width: 100%;
+        height: 24%; 
+    }
+    .body-abc-card, .body-cambridge-card, .body-habito-card {
+        width: 85%;
+        height: 60%;
+    }
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    .card-container {
+        height: 3200px;
+    }
+    .card-text {
+        width: 80%;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .abc-card, .cambridge-card, .habito-card {
+        width: 90%;
+        margin-bottom: 40px;
+        height: 800px;
+    }
+        .header-abc-card, .header-cambridge-card, .header-habito-card{
+            width: 100%;
+            height: 80%; 
+        }
+        .body-abc-card, .body-cambridge-card, .body-habito-card {
+            font-size: 18px;  
+        }
+        .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
+            font-size: 14px;
+        }    
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .card-container {
+        height: 3000px;
+    }
+    .card-banner{
+        width: 100%;
+        height: 700px;
+        margin-top: -280px;
+    }
+        .card-banner-filtro{
+            width: 100%;
+            height: 700px;
+        }
+    .card-text {
+        text-align: justify;  
+        top: -350px;
+        left: 50px; 
+    }
+        .card-text h1 {
+            font-size: 50px;
+            letter-spacing: 3px;
+            line-height: 50px;        
+            margin-bottom: 0px;
+        }
+        .card-text p {
+            font-size: 19px;
+            letter-spacing: 1px;
+        }
+    
+    .header-abc-card, .header-cambridge-card, .header-habito-card{
+        width: 100%;
+        height: 40%; 
+    }
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px) {
+    .abc-card, .cambridge-card, .habito-card {
+        width: 95%;
+    }
+        .header-abc-card, .header-cambridge-card, .header-habito-card{
+            height: 35%;
+        }
+        .body-abc-card, .body-cambridge-card, .body-habito-card {
+            font-size: 20px;  
+        }
+            .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
+                font-size: 15px;
+            }            
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px) {
+    .card-banner{
+        width: 100%;
+        height: 700px;
+        margin-top: -280px;
+    }
+        .card-banner-filtro{
+            width: 100%;
+            height: 700px;            
+            background: linear-gradient(254deg, rgba(0,212,195,0) 16%, rgba(6,37,136,0.8155637254901961) 42%);
+        }
+            .card-text {
+                width: 90%; 
+                top: -370px;
+                left: 20px; 
+            }
+                .card-text h1 {
+                    font-size: 43px;
+                }
+                .card-text p {
+                    font-size: 18px;
+                    letter-spacing: 1px;                    
+                    line-height: 24px;
+                }
+    .header-abc-card, .header-cambridge-card, .header-habito-card{
+        height: 28%;
+    }
+    .body-abc-card, .body-cambridge-card, .body-habito-card {
+        height: 60%;
+        width: 95%;
+        font-size: 17px;  
+    }
+        .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
+            font-size: 14px;
+        }  
+
+    .btn-border-descubreMas{
+        width: 210px;
+    }
+    .btn-descubreMas{
+        width: 200px;
+    }
+    
+}
+
+/* **** Configuracion iPhone 5/SE 320px **** */
+@media screen and (max-width: 320px) {
+    .card-text p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header-abc-card, .header-cambridge-card, .header-habito-card{
+        height: 26%;
+    }
+    .body-abc-card, .body-cambridge-card, .body-habito-card {
+        height: 65%;
+        font-size: 17px;  
+    }
+    
+}

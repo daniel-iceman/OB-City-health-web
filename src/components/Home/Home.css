@@ -1,0 +1,320 @@
+.home-container {
+    height: 950px;
+    width: 100%;
+}
+
+.header-imageHome {
+    width: 100%;
+    height: 750px; /*AQUI REGULO TAMAÑO DE IMAGEN*/   
+    background-image: url('../Images/CinturaSunscreen.jpg');
+    background-size:cover;
+    position: absolute;
+    z-index: -2;
+    top:-150px;
+    right: 0;    
+}
+
+.header-textHome{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top:90px;
+    z-index: 1;
+}
+.header-textHome h1 {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.header-textHome p {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 0px;
+    margin-top: 5px;
+}
+
+.container-home-intro{    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 220px;
+    /* background: greenyellow; */
+}
+    .container-home-intro h1 {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .adorno-intro{
+        width: 4%;
+        height: 19px; /*AQUI REGULO TAMAÑO DE IMAGEN*/   
+        background-image: url('../Images/AdornoIntro.jpeg');
+        background-size:cover;
+        margin-top: -10px;
+    }
+    .container-home-intro h2 {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 10px;
+        letter-spacing: 1px;
+    }
+.container-chatbot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* ********************* MEDIA QUERIES ********************** */
+
+/* **** Configuracion laptop 1366px **** */
+@media screen and (max-width: 1366px){
+    .home-container {
+        height: 750px;
+    }
+    .header-imageHome {
+        width: 100%;
+        height: 480px; /*AQUI REGULO TAMAÑO DE IMAGEN*/           
+    }
+    
+    .header-textHome{
+        top:-100px;
+    }
+    .header-textHome h1 {        
+        font-size: 30px;
+    }
+    .header-textHome p {        
+        font-size: 17px;
+    }
+    .container-home-intro {        
+        margin-top: -30px;
+    }
+    .adorno-intro{
+        width: 5%;        
+    }    
+    .container-home-intro h2 {
+        width: 80%;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    .home-container {
+        min-height: 820px;
+    }
+    .header-imageHome {
+        width: 100%;
+        height: 390px; /*AQUI REGULO TAMAÑO DE IMAGEN*/ 
+        margin-top: 100px;          
+    }    
+    .header-textHome{
+        top:-100px;
+    }
+    .header-textHome h1 {        
+        font-size: 28px;
+    }
+    .container-home-intro{ 
+        margin-top: -30px;
+    }        
+        .adorno-intro{
+            width: 7%;
+        }
+        .container-home-intro h2 {
+            width: 80%;
+            font-size: 18px;
+            font-weight: 200;
+            margin-top: 10px;
+        }
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    .home-container {
+        height: 1160px;
+    }
+    .header-imageHome {
+        width: 100%;
+        height: 300px; /*AQUI REGULO TAMAÑO DE IMAGEN*/   
+        top: -100px;        
+    }    
+    .header-textHome{
+        top:-120px;
+    }
+    .header-textHome h1 {        
+        font-size: 25px;
+    }
+    .header-textHome p {        
+        font-size: 18px;
+    }
+    .container-home-intro{ 
+        margin-top: -70px;
+    }        
+        .container-home-intro h1 {
+            font-size: 20px;
+        }
+        .adorno-intro{
+            width: 6%;
+            height: 14px;
+        }
+        .container-home-intro h2 {
+            width: 90%;
+            font-size: 16px;
+            text-align: justify;
+        }
+    
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .home-container {
+        height: 4200px;
+    }
+    .header-imageHome {
+        width: 100%;
+        height: 500px; /*AQUI REGULO TAMAÑO DE IMAGEN*/   
+        top: -100px;        
+    } 
+    
+    .header-textHome{
+        width: 80%;
+        text-align: center;
+        left: 45px;
+        top: 20px;
+    }
+        .header-textHome h1 {        
+            font-size: 28px;
+            line-height: 29px;
+        }
+        .header-textHome p {  
+            font-size: 20px;
+            margin-top: 190px;      
+        }
+    .container-home-intro{ 
+        margin-top: 180px;
+    }   
+        .container-home-intro h2 {
+            font-size: 17px;
+            font-weight: 300;          
+        }             
+          
+        .adorno-intro{
+            width: 10%;
+            height: 12px;
+        }
+    
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px) {
+    .home-container {
+        height: 4300px;
+    }
+    .header-imageHome {
+        width: 100%;
+        height: 500px; /*AQUI REGULO TAMAÑO DE IMAGEN*/   
+        top: -30px;        
+    }   
+        .header-textHome {
+            height: 200px;
+            top: 50px;
+        }
+        .header-textHome h1 {        
+            font-size: 28px;
+            /* margin-top: 190px; */
+        }
+        .header-textHome p {  
+            font-size: 20px;
+            margin-top: 190px;  
+            padding-left: 30px;
+            padding-right: 30px;
+            line-height: 24px;
+            text-align: center;
+            /* text-shadow: 2px 2px 2px rgb(29, 28, 28);     */
+        }
+    .container-home-intro{
+        margin-top: 230px;
+    }
+    .container-home-intro h1{ 
+        font-size: 19px;
+    } 
+    .adorno-intro{
+        margin-top: 1px;
+    }
+    .container-home-intro h2{ 
+        width: 80%;
+        font-size: 16px;
+        font-weight: 300;
+    } 
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px) {
+    .home-container {
+        height: 4400px;
+    }
+    .header-textHome{
+        top: 160px;
+        margin: 0px;
+    }
+        .header-textHome h1 {        
+            font-size: 25px;
+            margin-top: 0px;
+        }
+        .header-textHome p { 
+            font-size: 19px;
+            margin-top: 220px;   
+            text-align: center;
+            line-height: 23px;
+        }
+    .container-home-intro{
+        margin-top: 310px;
+    }
+    
+        .container-home-intro h1{ 
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+        } 
+    .adorno-intro{
+        margin-top: 1px;
+    }
+    .container-home-intro h2{ 
+        width: 90%;
+        font-size: 16px;
+    } 
+}
+
+/* **** Configuracion iPhone SE 320px **** */
+@media screen and (max-width: 320px) {
+    .header-textHome{
+        left: 30px;
+    }
+    .header-textHome p {  
+        width: 162px;
+        line-height: 18px;
+        margin-top: 220px;      
+        font-size: 18px;
+        text-align: center;
+    }
+    .adorno-intro{
+        width: 10%;
+        height: 8px;
+        margin-top: 1px;
+        
+    }    
+}
+

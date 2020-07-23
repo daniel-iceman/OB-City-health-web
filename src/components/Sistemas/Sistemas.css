@@ -1,0 +1,784 @@
+.container-sistemas{
+    height: 1390px;
+    
+}
+    .card-banner-sistemas{
+        width: 100%;
+        height: 580px;  
+        margin-top: -550px;
+        background: rgb(0, 0, 83);
+    }
+                
+.container-folder{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    background: rgb(194, 194, 194);
+}
+    .folder-abc, .folder-cambridge, .folder-habito {
+        width: 95%;
+        height: 80%; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: white;
+        top: 150px;
+        /* position: absolute; */
+    }   
+        .seccion-imagen-abc,
+        .seccion-imagen-cambridge,
+        .seccion-imagen-habito {             
+            width: 20%; 
+            height: 100%;
+            animation: despliega 1s forwards;
+        }
+        .seccion-contenido-abc,
+        .seccion-contenido-cambridge,
+        .seccion-contenido-habito{
+            width: 60%;
+        }
+        .seccion-buttons-caracteristicas{
+            width: 20%; 
+            height: 100%;
+            animation: desdobla 1s forwards;
+        }
+        
+        
+        /* ************* SECCIÓN IMAGEN Y TITULO ************** */
+        .seccion-imagen-abc,
+        .seccion-imagen-cambridge,
+        .seccion-imagen-habito{
+            background: linear-gradient(331deg, rgba(49,6,102,1) 15%, rgba(129,25,40,1) 49%, rgba(2,54,157,1) 92%);
+            /* background: #c81912; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;       
+                 
+        }
+            .imagen-abc{
+                width: 90%;
+                height: 21%;
+                background-image: url('../Images/KetoSuperior.PNG');
+                background-size: cover;  
+                margin-top: 50px;
+            }
+            .imagen-cambridge{
+                width: 90%;
+                height: 20%;
+                background-image: url('../Images/Cambridge.png');
+                background-size: cover; 
+                margin-top: 50px;
+            }
+            .imagen-habito{
+                width: 80%;
+                height: 23%;
+                background-image: url('../Images/HabitoAlimenticio.jpg');
+                background-size: cover; 
+                margin-top: 50px;
+            }
+            .imagen-abc,
+            .imagen-cambridge,
+            .imagen-habito{                                    
+                animation: desvanece 2s forwards;
+            }
+            .titulo-imagen-abc,
+            .titulo-imagen-cambridge,
+            .titulo-imagen-habito{
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 800;
+                text-align: center;
+                animation: desvaneceFotoTitulo 2s forwards;
+            }
+        
+        /* ************* SECCIÓN CONTENIDO ************** */
+
+        /* .seccion-contenido-abc{
+            
+        }    */
+            .seccion-contenido-abc h2,
+            .seccion-contenido-cambridge h2,
+            .seccion-contenido-habito h2{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                color: rgb(197, 196, 196);
+                letter-spacing: -1px;
+                padding-left: 60px;
+                padding-right: 60px;
+                animation: vanishContent 2s forwards;
+            }
+            .seccion-contenido-abc h1,
+            .seccion-contenido-cambridge h1,
+            .seccion-contenido-habito h1{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 35px;
+                font-weight: 800;
+                color: #c02739;
+                /* color: red; */
+                padding-left: 60px;
+                padding-right: 60px;
+                animation: vanishContent 2s forwards;
+            }
+            .seccion-contenido-abc p,
+            .seccion-contenido-cambridge p,
+            .seccion-contenido-habito p{
+                font-size: 18px;
+                text-align: justify;
+                padding-left: 60px;
+                padding-right: 60px;
+                animation: vanishContent 2s forwards;
+            }
+
+            .seccion-contenido-abc li,
+            .seccion-contenido-cambridge li,
+            .seccion-contenido-habito li{            
+                color:gray;
+                text-align: center;
+                list-style: none;
+                margin-top: 80px;
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+            .seccion-contenido-abc a,
+            .seccion-contenido-cambridge a,
+            .seccion-contenido-habito a{
+                text-decoration: none;
+            }
+            
+
+        
+        /* ************* SECCIÓN BOTONES Y CARACTERISTICAS ************** */
+
+        .seccion-buttons-caracteristicas{  
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background: white;
+        }
+            .botones-sistemas {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                text-decoration: none;
+                background: linear-gradient(331deg, rgba(49,6,102,1) 15%, rgba(129,25,40,1) 49%, rgba(2,54,157,1) 92%);
+                /* background: #c81912; */
+            }
+                .botones-sistemas h1 {
+                    font-family: 'Montserrat', sans-serif;
+                    color: white;
+                    font-size: 25px;
+                    font-weight: 800;
+                    text-align: unset;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+                .boton-abc, 
+                .boton-cambridge, 
+                .boton-habito {
+                    list-style: none;
+                    animation: desvanece 2s forwards;
+                }
+                    .boton-abc a, 
+                    .boton-cambridge a, 
+                    .boton-habito a {
+                        text-decoration: none;
+                    }
+
+                    .boton-abc button {
+                        width: 220px;
+                        height: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: white;
+                        border-style: none;
+                        border-radius: 10px;
+                    }
+                    .boton-abc li {
+                        width: 120px;
+                        height: 50px;
+                        background-image: url('../Images/KetoDietButton.jpeg');
+                        background-size: cover;
+                    }
+                    .boton-cambridge button {
+                        width: fit-content;
+                        background: white;
+                        border-style: none;
+                        border-radius: 10px;
+                    }
+                    .boton-cambridge li {
+                        width: 200px;
+                        height: 60px;
+                        background-image: url('../Images/CambridgeLogo.jpg');
+                        background-size: cover;
+                    }
+                    .boton-habito button {
+                        width: 220px;
+                        height: 60px;                      
+                        background: white;
+                        border-style: none;
+                        border-radius: 10px;
+                    }
+                    .boton-habito li {
+                        width: 200px;
+                        height: 50px;
+                        background-image: url('../Images/HabitoAlimenticioLogo.jpeg');
+                        background-size: cover;
+                    }
+
+        .seccion-caracteristicas {
+            width: 100%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: rgb(236, 236, 236);
+            animation: desvanece 2s forwards;
+        }
+            .seccion-caracteristicas h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 800;
+                color: rgb(0, 43, 124);
+                text-align: center;
+            }
+            .seccion-caracteristicas li {
+                font-size: 18px;
+                list-style: none;
+                padding-left: 20px;
+            }
+            .seccion-caracteristicas h5 {
+                font-size: 15px;
+                color: gray;
+                text-align: center;         
+                padding-left: 20px;
+                padding-right: 20px;       
+            }
+            .seccion-caracteristicas p {
+                font-size: 15px;
+                color: gray;
+                text-align: justify;         
+                padding-left: 20px;
+                padding-right: 20px;       
+            }
+                .caracteristicas-niveles{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+                    .caracteristicas-niveles h1{
+                        text-align: center;
+                    }
+
+
+/* ***************** ANIMACIONES ****************  */
+
+@keyframes despliega {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 20%;
+    }
+}
+@keyframes desvanece {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes vanishContent {
+    from{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes desdobla {
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
+
+
+/* ********************* MEDIA QUERIES ********************** */
+
+/* **** Configuracion laptop 1366px **** */
+@media screen and (max-width: 1366px) {
+    .container-sistemas{
+        height: 1390px;
+    }
+    .container-folder{
+        height: 80%; 
+    }
+        .folder-abc, 
+        .folder-cambridge, 
+        .folder-habito {
+            height: 90%; 
+        }
+            .seccion-imagen-abc, 
+            .seccion-imagen-cambridge, 
+            .seccion-imagen-habito{
+                height: 100%;
+            }
+            .seccion-contenido-abc,
+            .seccion-contenido-cambridge,
+            .seccion-contenido-cambridge{
+                height: 100%;
+            }
+            .seccion-buttons-caracteristicas{
+                height: 100%;
+            }   
+                .imagen-abc,
+                .imagen-cambridge, 
+                .imagen-habito{   
+                    border-radius: 20px 20px 20px 20px;   
+                }          
+                
+                .imagen-abc{
+                    width: 90%;
+                    height: 14%;
+                }
+                .imagen-cambridge{
+                    width: 90%;
+                    height: 14%;
+                }
+                .imagen-habito{
+                    width: 90%;
+                    height: 17%;
+                }
+                .titulo-imagen-abc,
+                .titulo-imagen-cambridge,
+                .titulo-imagen-habito {
+                    font-size: 18px;
+                }           
+
+                
+                .boton-abc button {
+                    width: 160px;
+                    height: 50px;
+                }
+                .boton-abc li {
+                    width: 100px;
+                    height: 40px;
+                }
+                .boton-cambridge button {
+                    width: fit-content;                    
+                }
+                .boton-cambridge li {
+                    width: 150px;
+                    height: 50px;
+                }
+                .boton-habito button {
+                    width: 160px;
+                    height: 50px;
+                }
+                .boton-habito li {
+                    width: 140px;
+                    height: 40px;
+                }
+
+                .seccion-caracteristicas h5 {
+                    font-size: 17px;
+                }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    .container-sistemas{
+        height: 2000px;
+    }
+    .container-folder {
+        width: 100%;
+    }
+
+    .folder-abc, 
+    .folder-cambridge, 
+    .folder-habito {
+        width: 95%;
+        height: 95%;
+        border-radius: 20px 20px 0px 0px;
+        /* background: pink; */
+    }
+
+    .seccion-imagen-abc,
+    .seccion-imagen-cambridge, 
+    .seccion-imagen-habito{   
+        height: 20%;
+        /* width: 100%; */
+        flex-basis: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-radius: 20px 20px 0px 0px;
+    }
+        .imagen-abc{
+            width: 36%;
+            height: 80%;
+            margin: 0px;
+        }
+        .imagen-cambridge{
+            width: 40%;
+            height: 70%;
+            margin: 0px;
+        }
+        .imagen-habito {
+            width: 30%;
+            height: 80%;
+            margin: 0px;
+        }
+        .imagen-abc, 
+        .imagen-cambridge, 
+        .imagen-habito{
+            border-radius: 20px;
+        }
+
+        .titulo-imagen-abc,
+        .titulo-imagen-cambridge,
+        .titulo-imagen-habito{
+            width: 35%;
+        }
+
+    .seccion-contenido-abc,
+    .seccion-contenido-cambridge,
+    .seccion-contenido-habito{
+        /* width: 60%;  */
+        height: 90%;
+        flex-basis: 60%;
+        /* background: red; */
+    }
+        
+    .seccion-buttons-caracteristicas{
+        /* width: 40%;  */
+        /* height: 50%; */
+        flex-basis: 40%;
+        margin-top: -155px;
+    }
+        .botones-sistemas{
+            height: 40%;
+        }
+            .boton-abc button {
+                width: 190px;
+                height: 63px;
+            }
+            .boton-abc li {
+                width: 140px;
+                height: 60px;
+            }
+            .boton-cambridge button {
+                width: fit-content;                    
+            }
+            .boton-cambridge li {
+                width: 180px;
+                height: 60px;
+            }
+            .boton-habito button {
+                width: 190px;
+                height: 63px;
+            }
+            .boton-habito li {
+                width: 170px;
+                height: 50px;
+            }
+        .seccion-caracteristicas{
+            height: 60%;
+        }
+        .seccion-caracteristicas h5 {
+            font-size: 20px;
+        }
+        .seccion-caracteristicas p {
+            font-size: 16px;
+            color: rgb(155, 153, 153);
+        }
+
+    @keyframes despliega {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    @keyframes desdobla {
+        from{
+            height: 0%;
+        }
+        to{
+            height: 80%;
+        }
+    }
+    
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    .container-sistemas{
+        height: 2200px;
+        /* background: yellow; */
+    }
+    .container-folder{
+        height: 90%;
+        /* background: red; */
+    }
+    .folder-abc, .folder-cambridge, .folder-habito {
+        width: 95%;
+        height: 95%;
+        border-radius: 20px 20px 0px 0px;
+        /* background: salmon; */
+    }
+        .seccion-imagen-abc,
+        .seccion-imagen-cambridge, 
+        .seccion-imagen-habito{   
+            height: 13%;            
+        }
+            .imagen-abc{
+                width: 40%;
+                height: 80%;
+            }
+            .imagen-cambridge{
+                width: 40%;
+                height: 70%;
+            }
+            .imagen-habito {
+                width: 30%;
+                height: 70%;
+                margin: 0px;
+            }
+        .seccion-contenido-abc,
+        .seccion-contenido-cambridge,
+        .seccion-contenido-habito{
+            width: 60%; 
+            height: 90%;
+        }
+        .seccion-buttons-caracteristicas{
+            margin-top: -190px;
+        }
+        
+        
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px){    
+
+    .container-sistemas{
+        height: 3200px;
+    }
+                            
+    .container-folder{
+        width: 100%;
+        height: 90%;
+    }
+        
+        .folder-abc, .folder-cambridge, .folder-habito {
+            width: 95%;
+            height: 100%; /*193*/
+            border-radius: 20px 20px 0px 0px;
+        }        
+            .seccion-imagen-abc,
+            .seccion-imagen-cambridge, 
+            .seccion-imagen-habito{   
+                height: 12%;          
+                flex-basis: 100%;
+                flex-direction: column;
+                border-radius: 20px 20px 0px 0px;
+            }
+                .imagen-abc{
+                    width: 81%;
+                    height: 70%;
+                }
+                .imagen-cambridge{
+                    width: 72%;
+                    height: 59%;
+                }
+                .imagen-habito {
+                    width: 64%;
+                    height: 64%;
+                }
+                .titulo-imagen-abc,
+                .titulo-imagen-cambridge,
+                .titulo-imagen-habito{
+                    width: 80%;
+                }
+                .titulo-imagen-abc,
+                .titulo-imagen-habito{
+                    font-size: 16px;
+                    margin-left: 20px;
+                }
+                .titulo-imagen-cambridge{
+                    font-size: 14px;
+                    margin-left: 20px;
+                }
+
+            .seccion-contenido-abc,
+            .seccion-contenido-cambridge,
+            .seccion-contenido-habito{
+                flex-basis: 100%; 
+                height: 50%;
+            }
+                .seccion-contenido-abc h1,
+                .seccion-contenido-cambridge h1,
+                .seccion-contenido-habito h1{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                .seccion-contenido-abc p,
+                .seccion-contenido-cambridge p,
+                .seccion-contenido-habito p{
+                    font-size: 20px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }                    
+
+            .seccion-buttons-caracteristicas{
+                flex-direction: column-reverse;
+                flex-basis: 100%;
+                height: 38%;                
+                animation: none;
+                margin-top: 0px;
+            }   
+                               
+                .seccion-caracteristicas {
+                    width: 100%;
+                    height: 50%;
+                }
+                .botones-sistemas {
+                    width: 100%;
+                    height: 50%;
+                }                
+}
+
+/* **** Configuracion iPhone PLUS 414px **** */
+@media screen and (max-width: 414px){
+
+    .container-sistemas{
+        height: 3800px; /*3600*/
+    }
+    
+        .seccion-contenido-abc,
+        .seccion-contenido-cambridge,
+        .seccion-contenido-habito{
+            height: 55%;
+        }
+        .seccion-buttons-caracteristicas{
+            height: 34%;   
+        }
+            .seccion-caracteristicas {
+                height: 55%;
+            }
+            .botones-sistemas {
+                height: 45%;
+            }   
+
+            .imagen-abc{
+                width: 81%;
+                height: 55%;
+            }
+            .imagen-cambridge{
+                width: 78%;
+                height: 50%;
+            }
+            .imagen-habito {
+                width: 74%;
+                height: 60%;
+            }
+            .titulo-imagen-abc{
+                font-size: 18px;                 
+            }   
+            .titulo-imagen-cambridge{
+                font-size: 16px;
+            }
+            .titulo-imagen-habito{
+                font-size: 16px;
+            }
+            .seccion-contenido-abc h1,
+            .seccion-contenido-cambridge h1,
+            .seccion-contenido-habito h1{
+                font-size: 33px;
+            }
+                   
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px) {
+    .container-sistemas{
+        height: 4200px;
+    }
+        .imagen-abc{
+            width: 88%;
+            height: 50%;
+        }
+        .imagen-cambridge{
+            width: 88%;
+            height: 45%;
+        }
+        .imagen-habito {
+            width: 88%;
+            height: 60%;
+        }
+
+        
+}
+
+/* **** Configuracion iPhone 5/SE 320px **** */
+@media screen and (max-width: 320px) {
+    .container-sistemas{
+        height: 4100px;
+    }
+        .imagen-abc{
+            width: 90%;
+            height: 40%;
+        }
+        .imagen-cambridge{
+            width: 95%;
+            height: 35%;
+        }
+        .imagen-habito {
+            width: 90%;
+            height: 48%;
+        }
+
+        .seccion-contenido-abc,
+        .seccion-contenido-cambridge,
+        .seccion-contenido-habito{
+            flex-basis: 100%; 
+            height: 56%;
+        }
+            .seccion-contenido-abc h1,
+            .seccion-contenido-cambridge h1,
+            .seccion-contenido-habito h1{
+                font-size: 30px;
+            }
+
+        .seccion-buttons-caracteristicas{
+            height: 32%; 
+        }
+            .seccion-caracteristicas {
+                height: 60%;
+            }
+            .botones-sistemas {
+                height: 40%;
+            }  
+            
+}
+        

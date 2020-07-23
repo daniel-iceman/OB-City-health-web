@@ -1,0 +1,505 @@
+.container-pacienteIndividual{
+    width: 100%;
+    height: 1200px;
+    /* background: yellow; */
+}
+.titulo-pacienteIndividual{
+    width: 100%;
+    height: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -120px;
+    background: linear-gradient(166deg, rgba(240,218,67,1) 15%, rgba(199,182,19,1) 28%, rgba(111,95,0,1) 90%);
+}
+    .titulo-texto-pacienteIndividual {
+        font-size: 23px;
+        letter-spacing: 2px;
+        color: white;
+        animation: desvanece 2s forwards;
+    }
+
+.about-paciente {
+    /* background: crimson; */
+}
+    .bloque1-aboutPaciente{
+        display: flex;
+        justify-content: center;
+        align-items: auto;
+        background: white;
+    }   
+        .imagen-paciente{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 40%;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: #b9ac92;
+        }
+            .generalImage{
+                width: 30%;
+                height: 690px;  
+                background: white;
+                background-size: cover;   
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px gray;
+                animation: despliega 2s forwards;         
+            }
+            .foto-Ivonne{
+                background-image: url('../Images/ivonne1.png');
+            }
+            .foto-JoseJuan{
+                background-image: url('../Images/JoseJuan.PNG');
+            }
+            .foto-MariaLuisa{
+                background-image: url('../Images/marialuisa.jpg');
+            }
+            .foto-Carlos{
+                background-image: url('../Images/carlos.jpg');
+            }
+
+        .testimonial-paciente{
+            display: flex;
+            flex-direction: column;
+            font-size: 17px;
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 150px;
+            flex-basis: 60%;
+        }   
+            .edad-peso-paciente{
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 1px;
+                background-color: rgb(185, 171, 108);                                
+            }
+            .testimonial-paciente h2{
+                color: rgb(173, 0, 0);
+                font-size: 30px;
+                padding: 0px 30px 0px 30px;
+            }
+    
+    .bloque2-aboutPaciente{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content:center;
+        margin-top: 20px;
+        /* background: deeppink; */
+    }
+        .subBloque-antes{
+            flex-basis: 30%;
+            display: flex;
+            justify-content: center;
+            /* background: darkorchid; */
+        }
+            .foto-Ivonne-antes {                
+                width: 50%;
+                height: 490px;  
+                background-size: cover; 
+                background-image: url('../Images/antesIvonne.JPG');
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px gray;
+            }
+            .foto-JoseJuan-antes {                
+                width: 90%;
+                height: 490px;  
+                background-size: cover; 
+                background-image: url('../Images/antesJoseJuan.PNG');
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px gray;
+            }
+            .foto-MariaLuisa-antes {                
+                width: 50%;
+                height: 490px;  
+                background-size: cover; 
+                background-image: url('../Images/antesMarialuisa.jpg');
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px gray;
+            }
+            .foto-Carlos-antes {                
+                width: 50%;
+                height: 490px;  
+                background-size: cover; 
+                background-image: url('../Images/antesCarlos.jpg');
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px gray;
+            }
+
+        .subBloque-despues{
+            flex-basis: 30%;
+            display: flex;
+            justify-content: center;
+            /* background: darkorchid; */
+        }
+            .foto-Ivonne-despues {
+                width: 50%;
+                height: 490px;  
+                background: white;
+                background-size: cover; 
+                background-image: url('../Images/despuesIvonne.PNG');
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px gray;
+            }
+            .foto-JoseJuan-despues {
+                width: 65%;
+                height: 490px;  
+                background: white;
+                background-size: cover; 
+                background-image: url('../Images/despuesJoseJuan.JPG');
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px gray;
+            }
+            .foto-MariaLuisa-despues {
+                width: 45%;
+                height: 490px;  
+                background-size: cover; 
+                background-image: url('../Images/despuesMarialuisa.jpg');
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px gray;
+            }
+            .foto-Carlos-despues {
+                width: 45%;
+                height: 490px;  
+                background-size: cover; 
+                background-image: url('../Images/despuesCarlos.jpg');
+                border-radius: 20px;
+                box-shadow: 4px 4px 5px gray;
+            }
+
+/* ***************** ANIMACIONES ****************  */
+
+@keyframes desvanece {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes despliega {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 30%;
+    }
+}
+
+/* ********************* MEDIA QUERIES ********************** */
+
+/* **** Configuracion laptop 1366px **** */
+@media screen and (max-width: 1366px) {
+    .container-pacienteIndividual{
+        height: 1300px;
+    }
+    .titulo-pacienteIndividual{
+        height: 19%;
+    }
+    .generalImage{
+        width: 100%;
+        height: 490px
+    }
+    @keyframes despliega {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+
+    .testimonial-paciente{
+        padding-right: 50px;
+    }
+
+    .subBloque-antes{
+        flex-basis: 40%;
+    }
+        .foto-Ivonne-antes {                
+            width: 75%;
+        }
+        .foto-JoseJuan-antes {                
+            width: 87%;
+            height: 470px; 
+        }
+        
+    .subBloque-despues{
+        flex-basis: 40%;
+    }
+        .foto-Ivonne-despues {
+            width: 52%;
+        }
+        
+        .foto-JoseJuan-despues {
+            width: 65%;
+            height: 490px;  
+        }
+        
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {    
+    .titulo-pacienteIndividual{
+        height: 19%;
+    }
+
+    .imagen-paciente{
+        align-items: flex-start;
+        padding-left: 0px;
+
+    }
+        .generalImage{
+            width: 100%;
+            height: 360px;
+            margin-top: 30px;
+        }
+
+    .testimonial-paciente{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+
+    .bloque2-aboutPaciente {
+        margin-top: 20px;
+    }
+        .foto-Ivonne-antes {                
+            width: 90%;
+        }
+        .foto-JoseJuan-antes {                
+            width: 100%;
+            height: 410px; 
+
+        }
+        .foto-MariaLuisa-antes {                
+            width: 60%;
+        }
+        .foto-Carlos-antes {                
+            width: 65%;
+        }
+
+        .foto-Ivonne-despues {
+            width: 72%;
+        }   
+        .foto-JoseJuan-despues {
+            width: 85%;
+            height: 490px;  
+        } 
+        .foto-MariaLuisa-despues {
+            width: 55%;
+            height: 490px; 
+        }
+        .foto-Carlos-despues {
+            width: 65%;
+        }
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    .container-pacienteIndividual{
+        height: 1500px;
+    }
+    .titulo-pacienteIndividual{
+        height: 16.4%;
+    }
+    .generalImage{
+        height: 310px;
+    }
+
+    .testimonial-paciente{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+    }    
+        .edad-peso-paciente{
+            width: 114%;
+        }
+
+    .subBloque-antes{
+        flex-basis: 60%;
+    }
+        .foto-Ivonne-antes {                
+            width: 80%;
+        }
+        .foto-JoseJuan-antes {                
+            width: 95%;
+            height: 365px; 
+        }
+    .subBloque-despues{
+        flex-basis: 60%;
+    }    
+        .foto-Ivonne-despues {
+            width: 78%;
+        }   
+        .foto-JoseJuan-despues {
+            width: 85%;
+            height: 490px;  
+        } 
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .container-pacienteIndividual{
+        height: 2600px;
+    }
+    .titulo-pacienteIndividual{
+        height: 9%;
+    }
+        .titulo-texto-pacienteIndividual {
+            font-size: 21px;
+        }
+        
+    .bloque1-aboutPaciente {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+        .imagen-paciente{
+            padding-bottom: 20px;
+        }
+            .generalImage{        
+                width: 30%;        
+                height: 510px;
+            }
+            .edad-peso-paciente{
+                font-size: 17px;
+                width: 114%;
+                text-align: center;    
+                padding: 0px;
+            }
+            .testimonial-paciente h2{
+                padding: 0px;
+            }
+            
+    .bloque2-aboutPaciente {
+        flex-direction: column;
+    }
+        .foto-Ivonne-antes {                
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        .foto-JoseJuan-antes {                
+            width: 95%;
+            height: 455px; 
+            margin-bottom: 10px;
+        }
+        .foto-MariaLuisa-antes{
+            margin-bottom: 10px;
+        }
+        .foto-Carlos-antes {                
+            width: 60%;
+            margin-bottom: 10px;
+        }
+
+        .foto-Ivonne-despues {
+            width: 60%;
+        }   
+        .foto-JoseJuan-despues {
+            width: 85%;
+            height: 550px;  
+        } 
+        .foto-Carlos-despues {
+            width: 54%;
+        }
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px) {
+    .titulo-pacienteIndividual{
+        height: 8.6%;
+    }
+        .titulo-texto-pacienteIndividual {
+            font-size: 19px;
+        }
+
+    .generalImage{        
+        width: 30%;        
+        height: 410px;
+    }
+        .foto-JoseJuan-antes {                
+            width: 95%;
+            height: 393px; 
+        }
+        .foto-Ivonne-despues {
+            width: 70%;
+        } 
+        .foto-JoseJuan-despues {
+            width: 85%;
+            height: 450px;  
+        } 
+        .foto-Carlos-despues {
+            width: 60%;
+        }
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px) {
+    .container-pacienteIndividual{
+        height: 3000px;
+    }
+    .titulo-pacienteIndividual{
+        height: 8.4%;
+    }
+        .titulo-texto-pacienteIndividual {
+            font-size: 18px;
+        }
+
+    .foto-JoseJuan-antes {                
+        width: 95%;
+        height: 357px; 
+        margin-bottom: 10px;
+    }
+    .foto-MariaLuisa-antes {                
+        width: 70%;
+    }
+    .foto-Carlos-antes {                
+        width: 68%;
+    }
+
+    .foto-Ivonne-despues {
+        width: 80%;
+    } 
+    .foto-MariaLuisa-despues {
+        width: 70%;
+    } 
+    .foto-Carlos-despues {
+        width: 67%;
+    }
+}
+
+/* **** Configuracion iPhone 5/SE 320px **** */
+@media screen and (max-width: 320px) {
+    .container-pacienteIndividual{
+        height: 2800px;
+    }
+        .titulo-pacienteIndividual{
+            height: 7.6%;
+        }
+            .titulo-texto-pacienteIndividual {
+                font-size: 17px;
+            }
+    .generalImage{        
+        width: 30%;        
+        height: 310px;
+    }
+    
+    .foto-Carlos-antes {                
+        width: 80%;
+    }
+    .foto-Ivonne-despues {
+        width: 90%;
+    } 
+    .foto-Carlos-despues {
+        width: 80%;
+    }
+}

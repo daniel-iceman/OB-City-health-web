@@ -1,0 +1,398 @@
+.container-covid19{
+    height: 1900px;
+    /* background: yellow; */
+}
+
+
+.header-covid19 {
+    width: 100%;
+    height: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('../Images/COVIDBanner.jpg');
+    background-size: cover;
+    margin-top: -142px;
+}   
+    .header-covid19 h1{
+        font-family: 'Montserrat';
+        font-size: 55px;
+        color: white;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 7px black;
+    }
+
+.alertBanner-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .alertBanner{
+        width: 90%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background: rgb(236, 0, 0);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+        .alertBanner h5 {
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: white;
+        }
+        .FontAwseomeCovidAlert{
+            color: white;
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+
+.cuadroCovid-contenedor{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background: rosybrown; */
+}    
+    .cuadroCovid{
+        padding: 0px 20px 30px 20px;
+        background: white;
+        color: rgb(59, 112, 180);
+        border: 2px solid rgb(59, 112, 180);
+        border-radius: 10px;
+    }
+        .cuadroCovid h3{
+            font-size: 13px;
+            letter-spacing: 1px;
+            background: rgb(226, 226, 226);
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px 0px 5px 0px;
+            margin-top: 25px;
+            margin-bottom: -10px;
+        }
+        .cuadroCovid h4{
+            letter-spacing: 1px;
+            margin-bottom: -5px;
+        }
+        .FontAwseomeCovid {
+            font-size: 30px;
+            padding-right: 15px;
+        }
+
+.blogCovid{
+    width: 100%;
+    height: 80%;
+    /* background: salmon; */
+}
+    .parrafo-1-covid{
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }    
+        .imagen-covid-container {
+            flex-basis: 25%;
+        }   
+            .imagen-covid{
+                width: 100%;
+                height: 300px;        
+                background-image: url('../Images/Covid19top.PNG');
+                background-size: cover;
+                border-radius: 20px;
+            }
+            .frase-covid{
+                flex-basis: 65%;
+                font-size: 22px;
+                color: red;
+                text-align: justify;
+                background: rgb(226, 226, 226);
+                border-radius: 20px;
+            }
+                .frase-covid h1 {
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+    
+               
+    .parrafo-2-covid{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }     
+        .texto-covid{        
+            font-size: 20px;
+            text-align: justify;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+            .span-txt{
+                color: orangered;
+            }
+
+        .factor-risk-button{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            text-align: center;
+            /* background: blue; */
+        }
+            .factor-risk-button h3 {
+                font-size: 22px;
+                font-weight: 600;
+                padding-left: 10px;
+                padding-right: 10px;
+
+            }
+            .factor-risk-button button {
+                width: 280px;
+                height: 60px;
+                font-size: 20px;
+                border-style: none;
+                border-radius: 10px;
+                background: rgb(196, 0, 0);
+                cursor: pointer;
+            }
+                .factor-risk-button button:hover {
+                    animation: zoomButton 1.3s forwards;
+                }
+                .factor-risk-button a {
+                    color: white;
+                    text-decoration: none;
+                    list-style: none;
+                }
+
+@keyframes zoomButton {
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.09);
+        background: rgb(245, 11, 11);
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+/* **************************** MEDIA QUERIES *************************** */
+
+/* **** Configuracion Laptop 1366px **** */
+@media screen and (max-width: 1366px){
+    .container-covid19{
+        height: 2300px;
+    }
+    .header-covid19 {
+        height: 13%;
+    }
+    .cuadroCovid-contenedor{
+        height: 20%;
+    }
+
+    .imagen-covid-container {
+        flex-basis: 30%;
+    } 
+    .frase-covid{
+        flex-basis: 60%;
+        font-size: 18px;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    .container-covid19{
+        height: 2400px;
+    }
+    .header-covid19 {
+        height: 12%;
+    }
+    .alertBanner h5 {
+        font-size: 17px;
+    }
+    .cuadroCovid-contenedor{
+        height: 20%;
+    }
+    .imagen-covid-container {
+        flex-basis: 40%;
+    } 
+    .frase-covid{
+        flex-basis: 50%;
+        font-size: 14px;
+    }
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    .container-covid19{
+        height: 3000px;
+    }
+    .header-covid19 {
+        height: 9.5%;
+    }
+    .alertBanner{
+        height: 70px;
+        text-align: center;
+    }
+        .alertBanner h5 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .FontAwseomeCovidAlert{
+            padding-left: 0px;
+        }
+
+    .cuadroCovid-contenedor{
+        height: 16%;
+    }
+    .blogCovid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .parrafo-1-covid{
+        width: 90%;
+        flex-direction: column;  
+        padding-left: 0px;
+        padding-right: 0px;
+    } 
+        .imagen-covid-container {
+            flex-basis: 10%;
+            display: flex;
+            justify-content: center;
+        } 
+            .imagen-covid{
+                width: 90%;
+                height: 300px; 
+            }
+        .frase-covid{
+            margin-top: 20px;
+        }
+        .factor-risk-button h3 {
+            width: 60%;
+        }
+}
+
+/* **** Configuracion Nokia N9  480px **** */
+@media screen and (max-width: 480px) {   
+    .container-covid19{
+        height: 3400px;
+    } 
+    .header-covid19 {
+        height: 8.5%;
+    }
+
+    .cuadroCovid-contenedor{
+        height: 14%;
+    }
+
+    .frase-covid {
+        width: 100%;
+    }
+    .frase-covid h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .texto-covid{        
+        font-size: 20px;
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .factor-risk-button h3 {
+        width: 80%;
+        font-size: 23px;
+    }
+    
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px) {
+    .container-covid19{
+        height: 3700px;
+    } 
+    .header-covid19 {
+        height: 8%;
+    }
+
+    .cuadroCovid-contenedor{
+        width: 100%;
+        height: 13%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+        .cuadroCovid{
+            width: 90%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    .alertBanner{
+        height: 80px;
+    }
+
+    .imagen-covid{
+        width: 90%;
+        height: 220px; 
+    }
+    .frase-covid h1 {
+        font-size: 23px;
+    }
+    .parrafo-1-covid{
+        height: auto;
+    }
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px) {
+    .container-covid19{
+        height: 4700px;
+    } 
+    .header-covid19 {
+        height: 6.4%;
+    }
+    .alertBanner{
+        height: 120px;
+    }
+    .cuadroCovid-contenedor{
+        height: 13%;
+    }
+    .parrafo-1-covid{
+        height: auto;
+    }
+    
+}
+
+/* **** Configuracion iPhone 5/SE 320px **** */
+@media screen and (max-width: 320px) {
+    .container-covid19{
+        height: 4300px;
+    } 
+    .header-covid19 {
+        height: 6.5%;
+    }
+    .imagen-covid{
+        width: 95%;
+        height: 190px; 
+    }
+    .cuadroCovid-contenedor{
+        height: 13%;
+    }
+    .factor-risk-button {
+        margin-top: -10px;
+    }
+}
