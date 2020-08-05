@@ -8,7 +8,7 @@
         margin-top: -550px;
         background: rgb(0, 0, 83);
     }
-                
+
 .container-folder{
     width: 100%;
     height: 90%;
@@ -31,17 +31,20 @@
         .seccion-imagen-abc,
         .seccion-imagen-cambridge,
         .seccion-imagen-habito {             
-            width: 20%; 
+            /* width: 20%;  */
+            flex-basis: 20%;
             height: 100%;
             animation: despliega 1s forwards;
         }
         .seccion-contenido-abc,
         .seccion-contenido-cambridge,
         .seccion-contenido-habito{
-            width: 60%;
+            flex-basis: 60%;;
+            /* width: 60%; */
         }
         .seccion-buttons-caracteristicas{
-            width: 20%; 
+            /* width: 20%;  */
+            flex-basis: 20%;
             height: 100%;
             animation: desdobla 1s forwards;
         }
@@ -98,9 +101,13 @@
         
         /* ************* SECCIÓN CONTENIDO ************** */
 
-        /* .seccion-contenido-abc{
-            
-        }    */
+        .seccion-contenido-abc,        
+        .seccion-contenido-habito{
+            margin-top: -200px;
+        }   
+        .seccion-contenido-cambridge {
+            margin-top: -100px;
+        }
             .seccion-contenido-abc h2,
             .seccion-contenido-cambridge h2,
             .seccion-contenido-habito h2{
@@ -111,6 +118,7 @@
                 letter-spacing: -1px;
                 padding-left: 60px;
                 padding-right: 60px;
+                margin-top: 80px;
                 animation: vanishContent 2s forwards;
             }
             .seccion-contenido-abc h1,
@@ -343,11 +351,15 @@
             .seccion-imagen-habito{
                 height: 100%;
             }
-            .seccion-contenido-abc,
-            .seccion-contenido-cambridge,
-            .seccion-contenido-cambridge{
-                height: 100%;
+
+            .seccion-contenido-abc,        
+            .seccion-contenido-habito{
+                margin-top: -200px;
+            }   
+            .seccion-contenido-cambridge {
+                margin-top: -100px;
             }
+            
             .seccion-buttons-caracteristicas{
                 height: 100%;
             }   
@@ -385,11 +397,12 @@
                     height: 40px;
                 }
                 .boton-cambridge button {
-                    width: fit-content;                    
+                    width: 160px;
+                    height: 50px                    
                 }
                 .boton-cambridge li {
-                    width: 150px;
-                    height: 50px;
+                    width: 140px;
+                    height: 40px;
                 }
                 .boton-habito button {
                     width: 160px;
@@ -412,6 +425,7 @@
     }
     .container-folder {
         width: 100%;
+        margin-top: 10px;
     }
 
     .folder-abc, 
@@ -466,6 +480,7 @@
         /* width: 60%;  */
         height: 90%;
         flex-basis: 60%;
+        margin-top: -40px;
         /* background: red; */
     }
         
@@ -473,7 +488,7 @@
         /* width: 40%;  */
         /* height: 50%; */
         flex-basis: 40%;
-        margin-top: -155px;
+        margin-top: -112px;
     }
         .botones-sistemas{
             height: 40%;
@@ -483,14 +498,15 @@
                 height: 63px;
             }
             .boton-abc li {
-                width: 140px;
+                width: 150px;
                 height: 60px;
             }
             .boton-cambridge button {
-                width: fit-content;                    
+                width: 190px;
+                height: 63px;                    
             }
             .boton-cambridge li {
-                width: 180px;
+                width: 170px;
                 height: 60px;
             }
             .boton-habito button {
@@ -499,7 +515,7 @@
             }
             .boton-habito li {
                 width: 170px;
-                height: 50px;
+                height: 45px;
             }
         .seccion-caracteristicas{
             height: 60%;
@@ -572,7 +588,7 @@
             height: 90%;
         }
         .seccion-buttons-caracteristicas{
-            margin-top: -190px;
+            margin-top: -149px;
         }
         
         
@@ -582,7 +598,7 @@
 @media screen and (max-width: 480px){    
 
     .container-sistemas{
-        height: 3200px;
+        height: auto;
     }
                             
     .container-folder{
@@ -597,22 +613,22 @@
         }        
             .seccion-imagen-abc,
             .seccion-imagen-cambridge, 
-            .seccion-imagen-habito{   
-                height: 12%;          
+            .seccion-imagen-habito{ 
+                height: 400px;          
                 flex-basis: 100%;
                 flex-direction: column;
                 border-radius: 20px 20px 0px 0px;
             }
                 .imagen-abc{
-                    width: 81%;
-                    height: 70%;
+                    width: 85%;
+                    height: 64%;
                 }
                 .imagen-cambridge{
-                    width: 72%;
+                    width: 83%;
                     height: 59%;
                 }
                 .imagen-habito {
-                    width: 64%;
+                    width: 76%;
                     height: 64%;
                 }
                 .titulo-imagen-abc,
@@ -634,7 +650,7 @@
             .seccion-contenido-cambridge,
             .seccion-contenido-habito{
                 flex-basis: 100%; 
-                height: 50%;
+                height: auto;
             }
                 .seccion-contenido-abc h1,
                 .seccion-contenido-cambridge h1,
@@ -653,98 +669,94 @@
             .seccion-buttons-caracteristicas{
                 flex-direction: column-reverse;
                 flex-basis: 100%;
-                height: 38%;                
                 animation: none;
                 margin-top: 0px;
             }   
                                
                 .seccion-caracteristicas {
                     width: 100%;
-                    height: 50%;
+                    height: 500px;
                 }
                 .botones-sistemas {
                     width: 100%;
-                    height: 50%;
+                    height: 500px;
                 }                
 }
 
 /* **** Configuracion iPhone PLUS 414px **** */
 @media screen and (max-width: 414px){
 
-    .container-sistemas{
-        height: 3800px; /*3600*/
+    .seccion-contenido-abc,
+    .seccion-contenido-cambridge,
+    .seccion-contenido-habito{
+        height: auto;
     }
+            
+        .imagen-abc{
+            width: 82%;
+            height: 53%;
+        }
+        .imagen-cambridge{
+            width: 78%;
+            height: 50%;
+        }
+        .imagen-habito {
+            width: 74%;
+            height: 60%;
+        }
+        .titulo-imagen-abc{
+            font-size: 18px;                 
+        }   
+        .titulo-imagen-cambridge{
+            font-size: 16px;
+        }
+        .titulo-imagen-habito{
+            font-size: 16px;
+        }
+        .seccion-contenido-abc h1,
+        .seccion-contenido-cambridge h1,
+        .seccion-contenido-habito h1{
+            font-size: 33px;
+        }
     
-        .seccion-contenido-abc,
-        .seccion-contenido-cambridge,
-        .seccion-contenido-habito{
-            height: 55%;
-        }
-        .seccion-buttons-caracteristicas{
-            height: 34%;   
-        }
-            .seccion-caracteristicas {
-                height: 55%;
-            }
-            .botones-sistemas {
-                height: 45%;
-            }   
-
-            .imagen-abc{
-                width: 81%;
-                height: 55%;
-            }
-            .imagen-cambridge{
-                width: 78%;
-                height: 50%;
-            }
-            .imagen-habito {
-                width: 74%;
-                height: 60%;
-            }
-            .titulo-imagen-abc{
-                font-size: 18px;                 
-            }   
-            .titulo-imagen-cambridge{
-                font-size: 16px;
-            }
-            .titulo-imagen-habito{
-                font-size: 16px;
-            }
-            .seccion-contenido-abc h1,
-            .seccion-contenido-cambridge h1,
-            .seccion-contenido-habito h1{
-                font-size: 33px;
-            }
                    
 }
 
 /* **** Configuracion iPhone X y 6/7/8 375px **** */
 @media screen and (max-width: 375px) {
-    .container-sistemas{
-        height: 4200px;
+    
+    .imagen-abc{
+        width: 88%;
+        height: 46%;
     }
-        .imagen-abc{
-            width: 88%;
-            height: 50%;
-        }
-        .imagen-cambridge{
-            width: 88%;
-            height: 45%;
-        }
-        .imagen-habito {
-            width: 88%;
-            height: 60%;
-        }
+    .imagen-cambridge{
+        width: 88%;
+        height: 45%;
+    }
+    .imagen-habito {
+        width: 88%;
+        height: 60%;
+    }
+    /* .boton-habito button {
+        width: 220px;
+        height: 60px;      
+    } */
+    .boton-habito li {
+        width: 170px;
+        height: 45px;
+        /* background: rgb(170, 129, 129, 0.2); */
+    }
 
         
 }
 
 /* **** Configuracion iPhone 5/SE 320px **** */
 @media screen and (max-width: 320px) {
-    .container-sistemas{
-        height: 4100px;
-    }
+    .seccion-imagen-abc,
+    .seccion-imagen-cambridge, 
+    .seccion-imagen-habito{ 
+        height: 350px;  
+    }  
         .imagen-abc{
             width: 90%;
             height: 40%;
@@ -754,15 +766,14 @@
             height: 35%;
         }
         .imagen-habito {
-            width: 90%;
-            height: 48%;
+            width: 88%;
+            height: 50%;
         }
 
         .seccion-contenido-abc,
         .seccion-contenido-cambridge,
         .seccion-contenido-habito{
             flex-basis: 100%; 
-            height: 56%;
         }
             .seccion-contenido-abc h1,
             .seccion-contenido-cambridge h1,
@@ -770,15 +781,6 @@
                 font-size: 30px;
             }
 
-        .seccion-buttons-caracteristicas{
-            height: 32%; 
-        }
-            .seccion-caracteristicas {
-                height: 60%;
-            }
-            .botones-sistemas {
-                height: 40%;
-            }  
-            
+                   
 }
         

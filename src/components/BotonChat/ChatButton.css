@@ -1,39 +1,37 @@
 .container-chatbutton {
-    width: 10%;
+    width: 180px;
+    height: 150px;
     display: flex;
-    align-self: flex-end;
-    justify-content: flex-end;
+    align-items: flex-start; /*flex-end*/
+    justify-content: center; /*flex-end*/
     font-size: 20px;
     position: sticky;
-    bottom: 0;
-    padding: 50px;
+    bottom: 0px;
+    /* padding: 50px; */
     /* background: red; */
 }
 
 .chatbutton {
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center; 
     align-items: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    /* border-radius: 100px; */
     /* background: sienna; */
-}
-    .chatbutton li {
-        width: 120px;
-        height: 80px;
-        list-style: none;
-        margin-top: -40px;
-    }
+}    
     .fontAwesomeChat{      
-        width: fit-content;
-        height: fit-content;  
+        width: 50% ;
+        height: 50%;  
         font-size: 100px;
-        color: white;
-        background: rgb(7, 156, 144);
+        /* color: rgb(7, 156, 144); */
+        color: rgb(0, 195, 186);
+        /* color: lime; */
+        /* color: limegreen; */
+        /* background: rgb(7, 156, 144); */
         padding: 30px;
-        border-radius: 100px;  
-        margin-left: -40px;    
+        /* border-radius: 100px;   */
+        margin-left: 0px;  
     }
         
         
@@ -41,57 +39,97 @@
 
     /* **** Configuracion LapTop 1366px **** */
 @media screen and (max-width: 1366px) {
-    .fontAwesomeChat{
-        font-size: 80px;
-        padding: 30px;
-    }
+   
 }
 
 /* **** Configuracion iPad Pro 1024px **** */
 @media screen and (max-width: 1024px) {
-    .fontAwesomeChat{
-        font-size: 60px;        
-        padding: 30px; 
-        margin-left: -10px;    
+    .container-chatbutton {
+        width: 170px;
+        height: 140px;
     }
+        .chatbutton {
+            width: 140px;
+            height: 140px;
+        }
+            .fontAwesomeChat{      
+                width: 50% ;
+                height: 50%;  
+                font-size: 100px;
+            }    
 }
 
 /* **** Configuracion iPad 768px **** */
 @media screen and (max-width: 768px) {
-    .fontAwesomeChat{
-        margin-left: 0px;
-        padding: 25px;
+    .container-chatbutton {
+        width: 150px;
+        height: 130px;
     }
+        .chatbutton {
+            width: 130px;
+            height: 130px;
+        }
+            .fontAwesomeChat{   
+                font-size: 100px;
+            }      
 }
 
 /* **** Configuracion Nokia N9 480px **** */
 @media screen and (max-width: 480px) {
-    .fontAwesomeChat{        
-        height: 60px;
-        font-size: 45px;
-        margin-left: 40px;
-        margin-top: 60px;
-        padding: 25px;
+    .container-chatbutton {
+        width: 140px;
+        height: 120px;
     }
+        .chatbutton {
+            width: 120px;
+            height: 120px;
+        }
+            .fontAwesomeChat{   
+                font-size: 110px;
+            }   
+    
 }
 
-/* **** Configuracion iPhone 6/7/8 414px **** */
+/* **** Configuracion iPhone Plus 414px **** */
 @media screen and (max-width: 414px) {
-    .fontAwesomeChat{
-        font-size: 40px;
+    .container-chatbutton {
+        width: 130px;
+        height: 110px;
     }
+        .chatbutton {
+            width: 110px;
+            height: 110px;
+        }
+            .fontAwesomeChat{   
+                font-size: 100px;
+                padding: 25px;
+                margin-left: 5px;
+            }  
     
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px) {
+    .fontAwesomeChat{   
+        font-size: 90px;
+        margin-left: 0px;
+    }
 }
 
 /* **** Configuracion iPhone 5/SE 320px **** */
 @media screen and (max-width: 320px) {
     .container-chatbutton {
-        height: 135px;
-        align-self: center;
+        width: 85px;
+        height: 110px;
     }
-    .fontAwesomeChat{
-        font-size: 35px;
-        margin-left: 50px;
-        padding: 10px;
-    }
+        .chatbutton {
+            width: 85px;
+            height: 110px;
+        }
+            .fontAwesomeChat{   
+                font-size: 80px;
+                padding: 20px;
+            }  
+
+  
 }

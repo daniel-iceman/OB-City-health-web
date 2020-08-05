@@ -24,7 +24,7 @@ function SocialMediaCambridge() {
                     quote={notaCambridge}
                     >
                     <FacebookIcon 
-                        size={25}
+                        size={30}
                         round={true}
                         bgStyle={{fill:'#c7b198'}}
                         />
@@ -35,7 +35,7 @@ function SocialMediaCambridge() {
                     quote={notaCambridge}
                     >
                     <TwitterIcon
-                        size={25}
+                        size={30}
                         round={true}
                         bgStyle={{fill:'#c7b198'}}
                     />
@@ -46,7 +46,7 @@ function SocialMediaCambridge() {
                     quote={notaCambridge}
                     >
                     <WhatsappIcon 
-                        size={25}
+                        size={30}
                         round={true}
                         bgStyle={{fill:'#c7b198'}}/>
                 </WhatsappShareButton>

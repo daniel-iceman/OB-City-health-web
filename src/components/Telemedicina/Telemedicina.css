@@ -10,11 +10,11 @@
 }
 /* **************************** */
 .container-telemedicina{
-    height: 2200px;
+    height: auto;
 }
 .bannerTitle-telemedicina {
     width: 100%;
-    height: 17%;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -51,6 +51,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
     .informacion-telemedicina{
         width: 90%;
@@ -104,15 +105,17 @@
                 box-shadow: 2px 3px 8px gray;
             }
                 .FontAwseomeTelemedicina{
-                    font-size: 50px;
+                    font-size: 100px !important;
                     background: rgb(64, 112, 173);
                     padding: 20px;
                     border-radius: 100px;
-                    margin-top: 10px;
+                    margin-top: 30px;
+                    margin-bottom: 40px;
                 }   
                     .telephone{
-                        padding-left: 27px;
-                        padding-right: 27px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        /* border-radius: 100px; */
                     }
                     .calendar{
                         padding-left: 25px;
@@ -168,9 +171,7 @@
             color:rgb(31, 64, 104);
             background-color:transparent;
             border:1px solid rgb(31, 64, 104);
-            border-radius: 50px;                    
-            /* padding-top: 10px; */
-            /* padding-bottom: 10px; */
+            border-radius: 50px;     
             margin:5px;  
             margin-top: 20px;                          
             background-size: 200% 100%;	
@@ -246,23 +247,16 @@
 
 /* **** Configuracion Lap top 1366px **** */
 @media screen and (max-width: 1366px) {
-    .container-telemedicina{
-        height: 2400px;
-    }
+    
     .bannerTitle-telemedicina {
         width: 100%;
-        height: 17%;
+        height: 380px;
     }
 }
 
 /* **** Configuracion iPad Pro 1024px **** */
 @media screen and (max-width: 1024px) {
-    .container-telemedicina{
-        height: 3200px;
-    }
-    .bannerTitle-telemedicina {
-        height: 13%;
-    }
+    
     .pasos-telemedicina {
         flex-direction: column;
     }
@@ -296,12 +290,7 @@
 
 /* **** Configuracion iPad 768px **** */
 @media screen and (max-width: 768px) {
-    .container-telemedicina{
-        height: 3400px;
-    }
-    .bannerTitle-telemedicina {
-        height: 12.5%;
-    }
+    
     .subtitulo-inicial-telemedicina h2{
         width: 90%;
     } 
@@ -327,14 +316,16 @@
 
 /* **** Configuracion Nokia N9 480px **** */
 @media screen and (max-width: 480px) {
-    .container-telemedicina{
-        height: 5200px;
-    }
     .bannerTitle-telemedicina {
-        height: 9%; /*8.5*/
+        height: auto;
     }
     .bannerTitle-telemedicina h1 {
         font-size: 50px;
+        margin-top: 180px;
+    }
+    .subtitulo-inicial-telemedicina h2{
+        font-size: 19px ;
+        margin-bottom: 35px;       
     }
     .informacion-telemedicina{
         width: 90%;
@@ -366,6 +357,15 @@
             .botonAContacto li {
                 margin: 0px;
         }
+
+        .FontAwseomeTelemedicina{
+            font-size: 100px !important;
+            background: rgb(64, 112, 173);
+            padding: 20px;
+            border-radius: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }   
     
     .fotos-telemedicina{
         /* height: 1000px; */
@@ -410,13 +410,21 @@
 
 /* **** Configuracion iPhone Plus 414px **** */
 @media screen and (max-width: 414px) {
-    .container-telemedicina{
-        height: 5650px;
-    }    
     .bannerTitle-telemedicina {
-        height: 10%; /*10*/
-        font-size: 22px;
+        height: auto;
+    }  
+    .bannerTitle-telemedicina h1 {
+        font-size: 40px;
+        margin-bottom: 60px;
     }
+        .subtitulo-inicial-telemedicina h2{
+            font-size: 19px ;      
+        }
+    
+    .documento-telemedicina h3 {
+        text-align: left;
+    }
+
     .paso1 p,
     .paso2 p, 
     .paso3 p, 
@@ -424,7 +432,6 @@
     .paso5 p {
         padding-left: 20px;
     }    
-
     .oms{
         width: 50%;           
         height: 170px; 
@@ -451,15 +458,14 @@
 
 /* **** Configuracion iPhone X y 6/7/8 375px **** */
 @media screen and (max-width: 375px) {
-    .container-telemedicina{
-        height: 6000px;
-    }  
     .bannerTitle-telemedicina {
-        height: 9%; /*9*/
-    }
+        height: auto;
+    } 
         .bannerTitle-telemedicina h1 {
             font-size: 40px;
-            margin-bottom: 70px;
+        }
+        .subtitulo-inicial-telemedicina h2{
+            font-size: 19px ;    
         }
 
     .botonAContacto button {
@@ -471,18 +477,6 @@
     .fotos-telemedicina {
         margin-top: 10px;
     }
-    /* .fotos-telemedicina {
-        flex-direction: row;
-        flex-wrap: wrap;   
-        justify-content: space-around;
-        width: 100%;     
-    }
-        .cont-oms, 
-        .cont-zoom, 
-        .cont-meet, 
-        .cont-whatsapp{
-            flex-basis: 40%;
-        } */
     .oms{
         width: 50%;           
         height: 150px; 
@@ -509,16 +503,14 @@
                 
 /* **** Configuracion iPhone 5/SE 320px **** */
 @media screen and (max-width: 320px)  {
-    .container-telemedicina{
-        height: 6000px;
-    } 
-    
     .bannerTitle-telemedicina {
-        height: 10%; /*4*/
-        font-size: 18px;
+        height: auto;
+    } 
+    .bannerTitle-telemedicina h1 {
+        font-size: 35px;
     }
     .subtitulo-inicial-telemedicina h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .oms{

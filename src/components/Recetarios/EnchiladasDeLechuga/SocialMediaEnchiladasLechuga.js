@@ -25,7 +25,7 @@ function SocialMediaEnchiladasLechuga() {
                     quote={notaEnchiladasLechuga}
                     >
                     <FacebookIcon 
-                        size={25}
+                        size={30}
                         round={true}
                         bgStyle={{fill:'#c7b198'}}
                         />
@@ -36,7 +36,7 @@ function SocialMediaEnchiladasLechuga() {
                     quote={notaEnchiladasLechuga}
                     >
                     <TwitterIcon
-                        size={25}
+                        size={30}
                         round={true}
                         bgStyle={{fill:'#c7b198'}}
                     />
@@ -47,7 +47,7 @@ function SocialMediaEnchiladasLechuga() {
                     quote={notaEnchiladasLechuga}
                     >
                     <WhatsappIcon 
-                        size={25}
+                        size={30}
                         round={true}
                         bgStyle={{fill:'#c7b198'}}/>
                 </WhatsappShareButton>

@@ -1,11 +1,11 @@
 .container-pacienteIndividual{
     width: 100%;
-    height: 1200px;
+    height: auto;
     /* background: yellow; */
 }
 .titulo-pacienteIndividual{
     width: 100%;
-    height: 21%;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -13,11 +13,15 @@
     background: linear-gradient(166deg, rgba(240,218,67,1) 15%, rgba(199,182,19,1) 28%, rgba(111,95,0,1) 90%);
 }
     .titulo-texto-pacienteIndividual {
-        font-size: 23px;
         letter-spacing: 2px;
         color: white;
+        margin-bottom: 25px;
         animation: desvanece 2s forwards;
     }
+    .titulo-texto-pacienteIndividual h1{
+            font-family: 'Montserrat';
+            font-size: 50px;
+        }
 
 .about-paciente {
     /* background: crimson; */
@@ -61,25 +65,31 @@
             }
 
         .testimonial-paciente{
+            flex-basis: 60%;
             display: flex;
             flex-direction: column;
             font-size: 17px;
             text-align: justify;
             padding-left: 30px;
             padding-right: 150px;
-            flex-basis: 60%;
+            margin-top: 30px;
         }   
             .edad-peso-paciente{
                 color: white;
                 font-size: 18px;
                 text-align: center;
                 letter-spacing: 1px;
-                background-color: rgb(185, 171, 108);                                
+                background-color: rgb(185, 171, 108);    
+                margin-top: 20px;                            
             }
             .testimonial-paciente h2{
                 color: rgb(173, 0, 0);
                 font-size: 30px;
                 padding: 0px 30px 0px 30px;
+                margin-top: 40px;
+            }
+            .testimonial-paciente p {
+                margin-top: 20px;
             }
     
     .bloque2-aboutPaciente{
@@ -194,12 +204,8 @@
 
 /* **** Configuracion laptop 1366px **** */
 @media screen and (max-width: 1366px) {
-    .container-pacienteIndividual{
-        height: 1300px;
-    }
-    .titulo-pacienteIndividual{
-        height: 19%;
-    }
+    
+    
     .generalImage{
         width: 100%;
         height: 490px
@@ -244,10 +250,7 @@
 
 /* **** Configuracion iPad Pro 1024px **** */
 @media screen and (max-width: 1024px) {    
-    .titulo-pacienteIndividual{
-        height: 19%;
-    }
-
+    
     .imagen-paciente{
         align-items: flex-start;
         padding-left: 0px;
@@ -303,12 +306,7 @@
 
 /* **** Configuracion iPad 768px **** */
 @media screen and (max-width: 768px) {
-    .container-pacienteIndividual{
-        height: 1500px;
-    }
-    .titulo-pacienteIndividual{
-        height: 16.4%;
-    }
+    
     .generalImage{
         height: 310px;
     }
@@ -349,15 +347,10 @@
 
 /* **** Configuracion Nokia N9 480px **** */
 @media screen and (max-width: 480px) {
-    .container-pacienteIndividual{
-        height: 2600px;
+    
+    .titulo-texto-pacienteIndividual {
+        font-size: 21px;
     }
-    .titulo-pacienteIndividual{
-        height: 9%;
-    }
-        .titulo-texto-pacienteIndividual {
-            font-size: 21px;
-        }
         
     .bloque1-aboutPaciente {
         height: 100%;
@@ -372,10 +365,11 @@
                 height: 510px;
             }
             .edad-peso-paciente{
+                width: 100%;
+                height: 80px;
                 font-size: 17px;
-                width: 114%;
                 text-align: center;    
-                padding: 0px;
+                padding-top: 20px;
             }
             .testimonial-paciente h2{
                 padding: 0px;
@@ -415,12 +409,10 @@
 
 /* **** Configuracion iPhone Plus 414px **** */
 @media screen and (max-width: 414px) {
-    .titulo-pacienteIndividual{
-        height: 8.6%;
+    
+    .titulo-texto-pacienteIndividual {
+        font-size: 19px;
     }
-        .titulo-texto-pacienteIndividual {
-            font-size: 19px;
-        }
 
     .generalImage{        
         width: 30%;        
@@ -440,19 +432,17 @@
         .foto-Carlos-despues {
             width: 60%;
         }
+    .testimonial-paciente h2 {
+        text-align: left;
+    }
 }
 
 /* **** Configuracion iPhone X y 6/7/8 375px **** */
 @media screen and (max-width: 375px) {
-    .container-pacienteIndividual{
-        height: 3000px;
+    
+    .titulo-texto-pacienteIndividual h1 {
+        font-size: 40px;
     }
-    .titulo-pacienteIndividual{
-        height: 8.4%;
-    }
-        .titulo-texto-pacienteIndividual {
-            font-size: 18px;
-        }
 
     .foto-JoseJuan-antes {                
         width: 95%;
@@ -479,15 +469,11 @@
 
 /* **** Configuracion iPhone 5/SE 320px **** */
 @media screen and (max-width: 320px) {
-    .container-pacienteIndividual{
-        height: 2800px;
+    
+    .titulo-texto-pacienteIndividual h1{
+        font-size: 30px;
+        margin-bottom: 20px;
     }
-        .titulo-pacienteIndividual{
-            height: 7.6%;
-        }
-            .titulo-texto-pacienteIndividual {
-                font-size: 17px;
-            }
     .generalImage{        
         width: 30%;        
         height: 310px;
@@ -501,5 +487,12 @@
     } 
     .foto-Carlos-despues {
         width: 80%;
+    }
+    .edad-peso-paciente {
+        width: 114%;
+    }
+
+    .edad-peso-paciente h3{
+        font-size: 23px;
     }
 }

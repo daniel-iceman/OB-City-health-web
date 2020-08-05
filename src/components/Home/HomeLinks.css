@@ -1,16 +1,16 @@
 .container-homeLinks {
     width: 100%;
-    height: 500px;
+    height: auto; /*500px*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 0px;
+    margin-top: 20px;
     /* background: yellow; */
 }
 .bloque-1{
     width: 30%;
-    height: 95%;    
+    height: 550px;  /*95%*/  
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -20,7 +20,7 @@
 
 .bloque-2{
     width: 25%;
-    height: 95%;
+    height: 540px;    /*95%*/ 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -32,7 +32,7 @@
     
 .bloque-3{
     width: 30%;
-    height: 95%;
+    height: 540px;   /*95%*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -68,6 +68,7 @@ background-size:cover;
     justify-content: flex-end;
     align-items: flex-start;   
 }
+
 
 .linkHome-1{
     background-image: url('../Images/Cintura.JPG');
@@ -107,6 +108,7 @@ background-size:cover;
     margin-bottom: 20px;
     background: rgba(0, 63, 122, 0.7);
     transition: all 0.3s;
+    
 }
 
 .linkHome-1 a, 
@@ -127,6 +129,14 @@ background-size:cover;
     width: 395px;
     background: rgba(0, 63, 122, 0.9);
 }
+.linkHome-1 a:hover,
+.linkHome-2 a:hover,
+.linkHome-3 a:hover,
+.linkHome-4 a:hover, 
+.linkHome-5 a:hover,
+.linkHome-6 a:hover {
+    text-decoration: none;
+}
 
 /* Visibilidad del boton para moviles */
 .linkHome-1 button, 
@@ -143,7 +153,21 @@ background-size:cover;
 /* *************  MEDIA QUERIES ************ */
 
 /* **** Configuracion laptop 1366px **** */
-@media screen and (max-width: 1366px) {    
+@media screen and (max-width: 1366px) {   
+    
+    .bloque-1{
+        width: 30%;
+        height: 450px;  
+    }    
+    .bloque-2{
+        width: 25%;
+        height: 445px;
+    }       
+    .bloque-3{
+        width: 30%;
+        height: 445px;
+    }
+
     .linkHome-1 li, 
     .linkHome-2 li, 
     .linkHome-3 li, 
@@ -192,18 +216,18 @@ background-size:cover;
 
 
 /* **** Configuracion iPad 768px **** */
-@media screen and (max-width: 768px)  {    
+@media screen and (max-width: 768px)  {  
     .bloque-1{
         margin-left: -60px;
-        height: 95%;
+        height: 450px;
         flex-basis: 45%;
     }
     .bloque-2{
-        height: 95%;    
+        height: 445px;    
         flex-basis: 45%;        
     }
     .bloque-3{
-        height: 95%;            
+        height: 700px;            
         flex-basis: 100%;      
         align-items: center;  
     }
@@ -225,21 +249,41 @@ background-size:cover;
 
 /* **** Configuracion Nokia N9 480px **** */
 @media screen and (max-width: 480px){
+/* 
+    .bloque-1{
+        margin-left: -60px;
+        height: 450px;
+        flex-basis: 45%;
+    }
+    .bloque-2{
+        height: 445px;    
+        flex-basis: 45%;        
+    }
+    .bloque-3{
+        height: 700px;            
+        flex-basis: 100%;      
+        align-items: center;  
+    }
     .bloque-1{
         width: 100%;
         height: 250%;
         margin-left: 0px;
         flex-basis: 100%;
         margin-bottom: -36px;
+    } */
+    .bloque-1{
+        margin-left: 0px;
+        height: 1200px;
+        flex-basis: 100%;
     }
     .bloque-2{
         width: 100%;
-        height: 140%;    
+        height: 650px;    
         flex-basis: 100%;   
         margin-bottom: -7px;     
     }
     .bloque-3{   
-        height: 370%;     
+        height: 1700px;     
         flex-basis: 100%;      
         align-items: center; 
     }
@@ -277,7 +321,7 @@ background-size:cover;
         .linkHome-4 li, 
         .linkHome-5 li,
         .linkHome-6 li {
-            width: 390px;   
+            width: 320px;   
             justify-content:center;
             background: none;
             font-size: 30px;

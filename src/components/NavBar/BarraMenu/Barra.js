@@ -21,8 +21,9 @@ function Barra() {
     const [nombreSubmenu2] = useState('Articulos')
     const [articulosOpcion1] = useState ('Obesidad y CoViD-19')
     const [articulosOpcion2] = useState ('Obesidad e Influenza A H1N1')
-    const [articulosOpcion3] = useState ('Obesidad y Síndrome Metabólico')
-    const [articulosOpcion4] = useState ('Obesidad y Embarazo')
+    const [articulosOpcion3] = useState ('Obesidad y Alteraciones Osteoarticulares')
+    const [articulosOpcion4] = useState ('Embarazo y obesidad')
+    const [articulosOpcion5] = useState ('Resistencia a la insulina y Nutriterapia')
 
     
     return (
@@ -55,6 +56,7 @@ function Barra() {
                                 sm1Opcion2={serviciosOpcion2}
                                 sm1Opcion3={serviciosOpcion3}
                                 sm1Opcion4={serviciosOpcion4}
+
                             />
                             <NavLink activeClassName='active-menulink' className='opciones-menubar'  to='/acerca' >
                                 <li > 
@@ -67,6 +69,7 @@ function Barra() {
                                 sm2Opcion2={articulosOpcion2}
                                 sm2Opcion3={articulosOpcion3}
                                 sm2Opcion4={articulosOpcion4}
+                                sm2Opcion5={articulosOpcion5}
                             />
                             <NavLink activeClassName='active-menulink' className='opciones-menubar' to='/contacto' >
                                 <li > 

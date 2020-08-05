@@ -1,0 +1,62 @@
+
+.mod-body-section{
+    background: linear-gradient(0deg, rgba(2,50,82,1) 38%, rgba(0,109,128,1) 83%);    
+}
+    .mod-body-text {
+        font-family: 'Questrial', sans-serif; 
+        color: white;
+    }
+    .mod-body-text h1{
+        font-size: 60px;
+    }
+    .mod-body-text h3{
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+.mod-footer-section {
+    background: rgba(2,50,82,1);
+    border-top: none;
+}
+    
+    .btn-primary {
+        font-family: 'Questrial', sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .btn-secondary{
+        font-family: 'Questrial', sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .mod-body-text h1{
+        font-size: 50px;
+    }
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px) {
+    .mod-body-text h1{
+        font-size: 40px;
+    }
+    .mod-body-text h3{
+        font-size: 20px;
+    }
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 414px) {
+    .mod-body-text h1{
+        font-size: 36px;
+    }
+    .mod-body-text h3{
+        font-size: 17px;
+    }
+    .mod-body-section {
+        /* padding: 0px; */
+        margin: 0px;
+    }
+}

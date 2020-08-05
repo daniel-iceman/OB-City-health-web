@@ -28,7 +28,7 @@
             .card-text h1 {
                 color: white;
                 font-size: 50px;
-                margin-bottom: -20px;
+                margin-bottom: 0px;
             }
             .card-text p {
                 color: white;
@@ -153,19 +153,20 @@
     }
     .abc-card, .cambridge-card, .habito-card {
         width: 28%;
-        height: 700px;
+        height: 630px;
     }
+    
 }
 
 /* **** Configuracion iPad Pro 1024px **** */
 @media screen and (max-width: 1024px) {
     .card-text {
-        top: -260px;
+        top: -230px;
         left: 100px; 
     }
     .abc-card, .cambridge-card, .habito-card {
         width: 30%;
-        height: 700px;
+        height: 790px;
     }
     .header-abc-card, .header-cambridge-card, .header-habito-card{
         width: 100%;
@@ -248,14 +249,20 @@
         width: 95%;
     }
         .header-abc-card, .header-cambridge-card, .header-habito-card{
-            height: 35%;
+            height: 31%;
         }
         .body-abc-card, .body-cambridge-card, .body-habito-card {
-            font-size: 20px;  
+            width: 85%;
+            height: 50%;
+            font-size: 20px;        
+            
         }
             .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
                 font-size: 15px;
-            }            
+            } 
+        .footer-abc-card, .footer-cambridge-card, .footer-habito-card {
+            height: 19%; 
+        }          
 }
 
 /* **** Configuracion iPhone X y 6/7/8 375px **** */
@@ -287,20 +294,22 @@
         height: 28%;
     }
     .body-abc-card, .body-cambridge-card, .body-habito-card {
-        height: 60%;
+        height: 45%;
         width: 95%;
         font-size: 17px;  
     }
         .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
             font-size: 14px;
         }  
-
-    .btn-border-descubreMas{
-        width: 210px;
-    }
-    .btn-descubreMas{
-        width: 200px;
-    }
+    .footer-abc-card, .footer-cambridge-card, .footer-habito-card {
+        height: 27%; 
+    }  
+        .btn-border-descubreMas{
+            width: 210px;
+        }
+        .btn-descubreMas{
+            width: 200px;
+        }
     
 }
 
@@ -311,11 +320,15 @@
         padding-right: 10px;
     }
     .header-abc-card, .header-cambridge-card, .header-habito-card{
-        height: 26%;
+        
+        height: 24%;
     }
     .body-abc-card, .body-cambridge-card, .body-habito-card {
-        height: 65%;
+        height: 45%;
         font-size: 17px;  
     }
+    .footer-abc-card, .footer-cambridge-card, .footer-habito-card {
+        height: 31%; 
+    }  
     
 }

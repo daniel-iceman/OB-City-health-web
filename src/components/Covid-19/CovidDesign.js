@@ -19,7 +19,12 @@ function CovidDesign() {
             </div>
             <div className='alertBanner-container'>
                 <div className='alertBanner'>
-                    <h5><FontAwesomeIcon icon={faExclamationTriangle} className='FontAwseomeCovidAlert'/>Alerta: Si tiene sobrepeso u obesidad el riesgo de complicaciones por SARS-COV2 es mayor.</h5>
+                    <h5><FontAwesomeIcon 
+                            icon={faExclamationTriangle} 
+                            fixedWidth
+                            className='FontAwseomeCovidAlert'/>
+                            Alerta: Si tiene sobrepeso u obesidad el riesgo de complicaciones por SARS-COV2 es mayor.
+                    </h5>
                 </div>
             </div>
 
@@ -27,15 +32,58 @@ function CovidDesign() {
 
             <div className='cuadroCovid-contenedor'>
                 <div className='cuadroCovid'>
-                    <h4><FontAwesomeIcon icon={faVirus} className='FontAwseomeCovid'/> Nombre: COVID-19 / SARS-COV2</h4>
-                    <h4><FontAwesomeIcon icon={faHeadSideCough} className='FontAwseomeCovid'/>Transmisión: Ojos, nariz y boca</h4>
-                    <h4><FontAwesomeIcon icon={faLungsVirus} className='FontAwseomeCovid'/>Afección: Multiorgánica</h4>                    
+                    <h4><FontAwesomeIcon 
+                            icon={faVirus} 
+                            fixedWidth 
+                            className='FontAwseomeCovid'/> 
+                            Nombre: COVID-19 / SARS-COV2
+                    </h4>
+
+                    <h4><FontAwesomeIcon 
+                            icon={faHeadSideCough}
+                            fixedWidth
+                            className='FontAwseomeCovid'/>
+                            Transmisión: Ojos, nariz y boca
+                    </h4>
+
+                    <h4><FontAwesomeIcon 
+                            icon={faLungsVirus} 
+                            fixedWidth
+                            className='FontAwseomeCovid'/>
+                            Afección: Multiorgánica
+                    </h4>         
+
                     <h3>Prevención de contagio:</h3>
-                    <h4><FontAwesomeIcon icon={faPeopleArrows} className='FontAwseomeCovid'/>Distanciamiento social</h4>
-                    <h4><FontAwesomeIcon icon={faHandsWash} className='FontAwseomeCovid'/>Lavado de manos</h4>
-                    <h4><FontAwesomeIcon icon={faHeadSideMask} className='FontAwseomeCovid'/>Uso de cubrebocas y protección ocular</h4>                    
+
+                    <h4><FontAwesomeIcon 
+                            icon={faPeopleArrows} 
+                            fixedWidth
+                            className='FontAwseomeCovid'/>
+                            Distanciamiento social
+                    </h4>
+
+                    <h4><FontAwesomeIcon 
+                            icon={faHandsWash} 
+                            fixedWidth
+                            className='FontAwseomeCovid'/>
+                            Lavado de manos
+                    </h4>
+
+                    <h4><FontAwesomeIcon
+                            icon={faHeadSideMask} 
+                            fixedWidth
+                            className='FontAwseomeCovid'/>
+                            Uso de cubrebocas y protección ocular
+                    </h4>               
+
                     <h3>Prevención de complicaciones:</h3>
-                    <h4><FontAwesomeIcon icon={faShieldVirus} className='FontAwseomeCovid'/>Adecuado estado metabólico e inmunológico</h4>
+
+                    <h4><FontAwesomeIcon 
+                            icon={faShieldVirus}
+                            fixedWidth
+                            className='FontAwseomeCovid'/>
+                            Adecuado estado metabólico e inmunológico
+                    </h4>
                 </div>
             </div>
 
@@ -84,7 +132,16 @@ function CovidDesign() {
                                 </li>
                             </Link>
                         </button>
-
+                    </div>
+                    <div className='article-covid19-button'>
+                        <h3> Si desea leer el artículo escrito por el Dr. Daniel Díaz</h3>
+                        <button>
+                            <Link   to='/articulo_covid19' >
+                                <li> 
+                                    Ingrese aquí
+                                </li>
+                            </Link>
+                        </button>
                     </div>
 
                 </div>

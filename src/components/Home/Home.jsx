@@ -4,6 +4,7 @@ import HomeBanner from './HomeBanner'
 import HomeLinks from './HomeLinks'
 import HomeIntro from './HomeIntro'
 import SocialMediaHome from './SocialMediaHome'
+import ModalHome from './ModalHome'
 
 function Home() {
 
@@ -22,6 +23,7 @@ function Home() {
 
     return (
         <div className='home-container' >
+            
             <HomeBanner
                 tituloBanner={titBanner}
                 textoBanner={txtBanner}
@@ -32,11 +34,7 @@ function Home() {
             />
             <SocialMediaHome />
             <HomeLinks />
-            {/* <div className='container-chatbot' >
-                <div className='chatbot'>
-                    <ChatbotContain />
-                </div>
-            </div> */}
+            <ModalHome />
         </div>
     )
 }

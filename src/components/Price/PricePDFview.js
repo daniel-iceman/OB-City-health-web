@@ -43,22 +43,25 @@ function PricePDFview() {
     </div>
       <div className='pdf-controls'>
         <p>
-          Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
+          Pag. {pageNumber || (numPages ? 1 : '--')} de {numPages || '--'}
         </p>
-        <button
-          type="button"
-          disabled={pageNumber <= 1}
-          onClick={previousPage}
-        >
-          Previous
-        </button>
-        <button
-          type="button"
-          disabled={pageNumber >= numPages}
-          onClick={nextPage}
-        >
-          Next
-        </button>
+
+        <div className='pdf-btns' >
+          <button
+            type="button"
+            disabled={pageNumber <= 1}
+            onClick={previousPage}
+          >
+            Previa
+          </button>
+          <button
+            type="button"
+            disabled={pageNumber >= numPages}
+            onClick={nextPage}
+          >
+            Siguiente
+          </button>
+        </div>
       </div>
     </>
   );

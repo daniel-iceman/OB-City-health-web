@@ -19,6 +19,8 @@ function CambridgeDesign({
                 <div className='card-banner-sistemas-filtro'/>                
             </div>
 
+            <SocialMediaCambridge />
+            
             <div className='container-folder' >
 
                 <div className='folder-cambridge descripcion-cambridge'>
@@ -35,7 +37,7 @@ function CambridgeDesign({
 
                     
                     <div className='seccion-contenido-cambridge'>
-                        <SocialMediaCambridge />
+                        
 
                         <div className='subtitulo-cambridge'>
                             <h2>

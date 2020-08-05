@@ -16,9 +16,15 @@ import TelemedicinaPage from './pages/TelemedicinaPage'
 import PricePage from './pages/PricePage'
 import PDFPricePage from './pages/pdfPrisePage'
 import ArticuloObesidadCovid from './pages/ObesidadCovid19Page'
+import PDFObesidadCovid from './pages/pdfArticuloSARSCOV2Page'
 import ArticuloObesidadInfluenza from './pages/ObesidadInfluenzaPage'
-import ArticuloObesidadSxMetabolico from './pages/ObesidadSxMetabolicoPage'
+import PDFObesidadInfluenza from './pages/pdfArticuloInfluenzaPage'
+import ArticuloObesidadResistenciaInsulina from './pages/ObesidadResistenciaInsulinaPage'
+import PDFResistenciaInsulina from './pages/pdfArticuloResistInsulinPage'
 import ArticuloObesidadEmbarazo from './pages/ObesidadEmbarazoPage'
+import PDFEmbarazo from './pages/pdfArticuloEmbarazoPage'
+import ArticuloOsteoarticular from './pages/ObesidadOsteoarticularPage'
+import PDFOsteoarticular from './pages/pdfArticuloOsteoarticularPage'
 import ExitosPage from './pages/ExitosPage'
 import IvonneFlores from './pages/ExitoIvoneFloresPage'
 import JoseJuan from './pages/ExitoJoseJuanPage'
@@ -31,6 +37,7 @@ import TortillaDeVegetales from './pages/RecetaTortillaVegetalesPage'
 import QuicheEspinacas from './pages/RecetaQuicheEspinacasPage'
 import RollitosJamon from './pages/RecetaRollitosJamonPage'
 import PanNube from './pages/RecetaPanNubePage'
+import PizzaColiflor from './pages/RecetaPizzaColiflorPage'
 
 function Routes() {
     return (
@@ -52,10 +59,16 @@ function Routes() {
             <Route exact path="/price" component={PricePage} />
             <Route exact path="/priceViewPDF" component={PDFPricePage} />
             <Route exact path="/emocionesyalimentacion" component={PsicologiaPage} />
-            <Route exact path="/articulo_covid19" component={ArticuloObesidadCovid} />
+            <Route exact path="/articulo_covid19" component={ArticuloObesidadCovid} />            
+            <Route exact path="/covid19ViewPDF" component={PDFObesidadCovid} />
             <Route exact path="/articulo_influenza" component={ArticuloObesidadInfluenza} />
-            <Route exact path="/articulo_sxmetabolico" component={ArticuloObesidadSxMetabolico} />
+            <Route exact path="/influenzaViewPDF" component={PDFObesidadInfluenza} />
+            <Route exact path="/articulo_resistenciainsulina" component={ArticuloObesidadResistenciaInsulina} />
+            <Route exact path="/resistenciainsulinaViewPDF" component={PDFResistenciaInsulina} />
             <Route exact path="/articulo_embarazo" component={ArticuloObesidadEmbarazo} />
+            <Route exact path="/embarazoyobesidadViewPDF" component={PDFEmbarazo} />
+            <Route exact path="/articulo_osteoarticular" component={ArticuloOsteoarticular} />
+            <Route exact path="/osteoarticularViewPDF" component={PDFOsteoarticular} />
             <Route exact path="/exitos" component={ExitosPage} />
             <Route exact path="/exitosIvonne" component={IvonneFlores} />
             <Route exact path="/exitosJoseJuan" component={JoseJuan} />
@@ -67,6 +80,7 @@ function Routes() {
             <Route exact path="/quicheespinacas" component={QuicheEspinacas} />
             <Route exact path="/rollitosjamon" component={RollitosJamon} />
             <Route exact path="/pannube" component={PanNube} />
+            <Route exact path="/pizzacoliflor" component={PizzaColiflor} />
         </Switch>
 
         

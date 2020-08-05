@@ -1,9 +1,9 @@
 .container-recetarios{
-    height: 1500px;
+    height: auto;
 }
 .header-recetarios {
     width: 100%;
-    height: 21%;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,17 +14,17 @@
     .header-recetarios h1 {
         font-size: 45px;
         color: white;
-        margin-top: 110px;
+        margin-top: 100px;
         animation: desvanece 2s forwards;
     }
     .header-recetarios p {
         font-size: 20px;
         color: white;
-        margin-top: -20px;
         text-align: center;
         padding-left: 100px;
         padding-right: 100px;
         letter-spacing: 1px;
+        margin-top: 20px;
         animation: desvanece 2s forwards;
     }
 
@@ -34,7 +34,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 50px;
+    padding-bottom: 0px;
+    margin-top: 50px;    
     /* background: yellow; */
 }
 
@@ -51,6 +52,8 @@
     box-shadow: 2px 2px 8px rgb(47, 47, 47);
     border-radius: 10px;
     margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
     /* background: red; */
 }   
     .platillo p {
@@ -97,6 +100,10 @@
             background-image: url('../Images/PanNube.jpg');
             background-size: cover;
         } 
+        .plat_6 li{
+            background-image: url('../Images/PizzaColiflor.jpg');
+            background-size: cover;
+        } 
     
 
 @keyframes desvanece {
@@ -113,28 +120,33 @@
 
 
 /* **************************** MEDIA QUERIES *************************** */
-
-/* **** Configuracion iPad 768px **** */
-@media screen and (max-width: 768px){
+/* **** Configuracion Lap Top 1366px **** */
+@media screen and (max-width: 1366px){
     .header-recetarios h1 {
-        font-size: 42px;
+        font-size: 45px;
         margin-top: 120px;
     }
     .header-recetarios p {
-        font-size: 19px;
-        padding-left: 60px;
-        padding-right: 60px;
-        margin-top: -30px;
+        margin-top: 10px;
     }
 }
 
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px){
+    .header-recetarios p {
+        line-height: 26px;
+        margin-top: 5px;
+    }
+
+}
+
+
 /* **** Configuracion Nokia N9 480px **** */
 @media screen and (max-width: 480px) {
-    .container-recetarios{
-        height: 2500px;
-    }
+    
     .header-recetarios {
-        height: 15%;
+        height: 400px;
     }
         .header-recetarios h1 {
             font-size: 44px;
@@ -154,27 +166,30 @@
 /* **** Configuracion iPhone PLUS 414px **** */
 @media screen and (max-width: 414px) {
     .header-recetarios {
-        height: 17%;
+        height: 450px;
     }        
 }
 
 /* **** Configuracion iPhone X y 7/8/9 375px **** */
 @media screen and (max-width: 375px) {
     .header-recetarios {
-        height: 18%;
-    }  
+        height: 460px;
+    } 
         .header-recetarios h1 {
             font-size: 44px;
-            margin-top: 140px;
+            margin-top: 120px;
         }
 }
 
 /* **** Configuracion iPhone 5/SE 320px **** */
 @media screen and (max-width: 320px) {
     .header-recetarios {
-        height: 19%;
+        height: 490px;
     } 
+        .header-recetarios h1 {
+            margin-top: 110px;
+        }
         .header-recetarios p {
-            margin-top: -20px;
+            margin-top: 10px;
         }
 }

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const steps=[
     {
         id: 'Bienvenida',
-        message: 'Hola, yo soy OB-i, estoy aquí para apoyarte',
+        message: 'Hola, estoy aquí para apoyarte',
         trigger: 'Preguntar Nombre',
     },
     {
@@ -21,7 +21,7 @@ const steps=[
     },
     {
         id: 'Saludo usuario',
-        message: 'Hola {previousValue}, gusto en conocerte!',
+        message: 'Hola {previousValue}, ¿Cómo puedo ayudarte?',
         trigger: 'Pregunta sobre interes'        
     },
     {
@@ -203,7 +203,7 @@ const steps=[
                                                         id: 'Link a ABC',
                                                         component: (
                                                             <div className='chatLink'>
-                                                                <Link to='/servicios' >
+                                                                <Link to='/protocoloabc' >
                                                                     <li> 
                                                                         <p>Presiona el botón</p>
                                                                         <h1>Ir a Protocolo ABC</h1>
@@ -249,7 +249,7 @@ const steps=[
                                                             id: 'Link a Cambridge',
                                                             component: (
                                                                 <div className='chatLink'>
-                                                                    <Link to='/articulos' >
+                                                                    <Link to='/cambridgeweightplan' >
                                                                         <li> 
                                                                             <p>Presiona el botón</p>
                                                                             <h1>Ir a Cambridge WP</h1>

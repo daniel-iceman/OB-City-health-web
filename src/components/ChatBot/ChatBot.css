@@ -1,12 +1,13 @@
 .container-chatbot {
     width: 100%;
-    height: 320px;
+    height: 480px;      
     /* background: red; */
 }
 .chatbot-area{
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
     background: white;
@@ -53,14 +54,17 @@
 .chatLink {
     width: 100%;
     height: 80px;
-    background: rgb(3, 24, 83); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(331deg, rgba(49,6,102,1) 15%, rgba(129,25,40,1) 49%, rgba(2,54,157,1) 92%);
     border-radius: 20px;
 }
     .chatLink p {
         color: white;
         text-align: center;
         font-size: 12px;
-        margin-bottom: -8px;
+        margin-bottom: 0px;
     }
     .chatLink h1 {
         color: white;
@@ -74,12 +78,14 @@
         text-decoration: none;
     }
 
+
+
 /* ********************* MEDIA QUERIES ********************** */
 
 /* **** Configuracion iPad Pro 1024px **** */
 @media screen and (max-width: 1024px) {
     .container-chatbot {
-        height: 500px;
+        height: 650px;
         margin-top: -60px;
     }
     .chatbot-area {
@@ -95,19 +101,34 @@
             }
 }
 
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    .container-chatbot {
+        height: 660px;
+    }
+}
+
 /* **** Configuracion Nokia N9 480px **** */
 @media screen and (max-width: 480px) {
-    .texto-bienvenida-chat{
+    .container-chatbot {
+        height: 530px;
+    }
+    .texto-bienvenida-chat {
+        display: none;
+    }
+    /* .texto-bienvenida-chat{
         width: 100%;
-        height: 150px;
+        height: auto; 
         margin-bottom: 20px;
     }
         .texto-bienvenida-chat h1{
+            margin-top: 30px;
             font-size: 30px;
         }
         .texto-bienvenida-chat p{
             font-size: 17px;
-        }
+            margin-bottom: 30px;
+        } */
     .ventana-chat {
         width: 100%;
     }
@@ -116,14 +137,9 @@
 /* **** Configuracion iPhone Plus 414px **** */
 @media screen and (max-width: 414px) {
     .container-chatbot {
-        height: 450px;
+        height: 530px;
     }
-    .texto-bienvenida-chat{
-        width: 100%;
-        height: 100px;
-        margin-bottom: 20px;        
-    }
-        .texto-bienvenida-chat h1{
+        /* .texto-bienvenida-chat h1{
             font-size: 25px;
         }
         .texto-bienvenida-chat p{
@@ -131,22 +147,25 @@
             padding-left: 20px;
             padding-right: 20px;
             text-align: center;
-        }
+        } */
 }
 
 /* **** Configuracion iPhone X y 6/7/8 375px **** */
 @media screen and (max-width: 375px) {
-    .texto-bienvenida-chat h1{
+    .container-chatbot {
+        height: 530px;
+    }
+    /* .texto-bienvenida-chat h1{
         font-size: 23px;
     }
     .texto-bienvenida-chat p{
         font-size: 15px;
-    }
+    } */
 }
 
 /* **** Configuracion iPhone 5/SE 320px **** */
 @media screen and (max-width: 320px) {
-    .texto-bienvenida-chat h1{
+    /* .texto-bienvenida-chat h1{
         font-size: 20px;
-    }
+    } */
 }

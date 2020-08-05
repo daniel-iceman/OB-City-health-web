@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 function AcercaDesign() {
+
+    useEffect(() => {
+        window.scroll(0,0)
+      });
+
     return (
         <div className='container-acercaDe'>   
             <div className='banner-acercaDe'>

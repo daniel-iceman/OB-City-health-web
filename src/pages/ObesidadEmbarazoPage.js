@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ObesidadEmbarazo from '../components/Articulos/ObesidadEmbarazo'
+import ObesidadEmbarazo from '../components/Articulos/ArticuloEmbarazo/ObesidadEmbarazo'
 
 class ObesidadEmbarazoPage extends Component {
     render() {

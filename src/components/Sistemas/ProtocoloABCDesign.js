@@ -22,6 +22,8 @@ function ProtocoloABCDesign({
                                
             </div>
 
+            <SocialMediaABC />
+
             <div className='container-folder' >
 
                 <div className='folder-abc'>
@@ -33,12 +35,10 @@ function ProtocoloABCDesign({
                         <div className='titulo-imagen-abc' >
                             <h1>Keto Diet</h1>
                         </div>
-                    </div>                                   
+                    </div>                             
 
 
-                    
                     <div className='seccion-contenido-abc'>
-                        <SocialMediaABC />
                         <div className='subtitulo-abc'>
                             <h2>
                                 NUESTROS SISTEMAS

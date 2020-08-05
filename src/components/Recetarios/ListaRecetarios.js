@@ -71,6 +71,16 @@ function ListaRecetarios() {
                     <p>Pan nube</p>
                 </div>
 
+                <div className='platillo plat_6'>
+                    <button>
+                        <Link  to='/pizzacoliflor' >
+                            <li> 
+                            </li>
+                        </Link>
+                    </button>
+                    <p>Pizza con base de coliflor</p>
+                </div>
+
 
             </div>            
         </div>

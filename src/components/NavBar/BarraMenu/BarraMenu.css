@@ -17,7 +17,9 @@ li {
     justify-content: center;
     align-items: center;
     background:rgb(247, 247, 247);  
-    border-bottom: 3px solid rgb(231, 231, 231);
+    /* border-bottom: 3px solid rgb(231, 231, 231); */
+    border-radius: 15px;
+    /* box-shadow: 1px 1px 8px rgb(71, 71, 71); */
 }
 /* ******** Boton para abrir menú lateral ***** */
 .container-boton-menu-lateral {
@@ -26,13 +28,14 @@ li {
 
 /* ******* Configuración para barra de menú superior ****** */
 .barraMenu{
-    width: 80%;    
+    width: 80%;   
     display: flex; 
 }
 
 .barraMenu_logo img {
     width: 180px; 
-    padding-top: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .separacionMenu{
@@ -41,7 +44,7 @@ li {
 
 .icono-home{
     color: rgb(0, 39, 77);
-    margin: -10px 0px -20px 0px;
+    margin: -10px 0px -10px 0px;
     padding: 10px 30px 15px 30px;
 }
 
@@ -75,7 +78,7 @@ li {
     transition: all .3s;
     background:rgb(0, 39, 77)
 }
-.menu>a{
+.menu a{
     text-decoration: none;
 }
 
@@ -130,6 +133,9 @@ li {
     .separacionMenu {
         display: none;
     }    
+    .posicion-barraMenu {
+        border-radius: 0px;
+    }
 }
 
 /* **** Configuracion iPad 768px **** */

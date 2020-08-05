@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import Steps from './ChatbotSteps'
 import ChatStyles from './ChatbotStyles'
 // import './ChatBot.css'
-
+import logoOBCITY from '..//Images/logo192.png'
 
 function ChatbotContain() {
 
@@ -22,8 +22,11 @@ function ChatbotContain() {
                 <ThemeProvider theme={ChatStyles} >
                     <ChatBot
                         steps={Steps}
-                        headerTitle="¿Tienes dudas?"
-                        style={{fontSize:'18px' }}
+                        headerTitle="¿Tiene dudas?"
+                        style={{fontFamily:'Questrial', fontSize:'16px', letterSpacing:'1px', textAlign:'center' }}
+                        placeholder="Escribe tu respuesta"
+                        bubbleOptionStyle={{background:'rgb(7, 156, 144)' }}
+                        botAvatar={logoOBCITY}
                     />  
                 </ThemeProvider>      
 

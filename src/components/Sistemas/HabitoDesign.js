@@ -19,6 +19,8 @@ function HabitoDesign({
                 <div className='card-banner-sistemas'>
                     <div className='card-banner-sistemas-filtro'/>                
                 </div>
+                
+                <SocialMediaHabito />
     
                 <div className='container-folder' >
     
@@ -36,7 +38,7 @@ function HabitoDesign({
     
                         
                         <div className='seccion-contenido-habito'>
-                            <SocialMediaHabito />
+                            
     
                             <div className='subtitulo-habito'>
                                 <h2>

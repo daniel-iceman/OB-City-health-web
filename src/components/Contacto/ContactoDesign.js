@@ -123,7 +123,10 @@ function ContactoDesign() {
             <div className='adress-phone-email'>
                 <div className='contact-adress'>
                     <div className='icon-contact'>
-                        <FontAwesomeIcon icon={faMapMarkerAlt} className='FontAwseomeContact iconoDireccionExtra'/>
+                        <FontAwesomeIcon 
+                            icon={faMapMarkerAlt} 
+                            fixedWidth 
+                            className='FontAwseomeContact iconoDireccionExtra'/>
                         <h3> DIRECCIÓN </h3>
                     </div>
                     <div className='text-contact'>
@@ -138,7 +141,10 @@ function ContactoDesign() {
 
                 <div className='contact-phone'>
                     <div className='icon-contact'>
-                        <FontAwesomeIcon icon={faPhone} className='FontAwseomeContact'/>
+                        <FontAwesomeIcon 
+                            icon={faPhone} 
+                            fixedWidth
+                            className='FontAwseomeContact'/>
                         <h3> TELEFONO </h3>
                     </div>
                     <div className='text-contact'>                        
@@ -150,7 +156,10 @@ function ContactoDesign() {
 
                 <div className='contact-email'>
                     <div className='icon-contact'>
-                        <FontAwesomeIcon icon={faCommentDots} className='FontAwseomeContact'/>
+                        <FontAwesomeIcon 
+                            icon={faCommentDots} 
+                            fixedWidth
+                            className='FontAwseomeContact'/>
                         <h3> EMAIL </h3>
                     </div>
                     <div className='text-contact'>                        

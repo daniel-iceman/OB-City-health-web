@@ -1,7 +1,7 @@
 import React from 'react'
 import './ChatButton.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment } from "@fortawesome/free-solid-svg-icons";
+import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom'
 
 function ChatButton() {
@@ -10,11 +10,12 @@ function ChatButton() {
             <div className='chatbutton'>
                 {/* <button> */}
                     <Link  to='/chat' >
-                        <li>
+                        <div>
                             <FontAwesomeIcon className='fontAwesomeChat'
-                                    icon={faComment} />
+                                    icon={faCommentDots}
+                                    fixedWidth />
                             
-                        </li>
+                        </div>
                     </Link>
                 {/* </button> */}
             </div>
