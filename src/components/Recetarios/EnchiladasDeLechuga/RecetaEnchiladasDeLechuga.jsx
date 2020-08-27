@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import '..//Recetas.css'
 import EnchiladasDeLechuga from './EnchiladasDeLechuga'
+import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
 
-function RecetaEnchiladasDeLechuga() {
+
+const RecetaEnchiladasDeLechuga = ({ uid }) => {
 
     const [ tituloReceta ] = useState ('Enchiladas de lechuga')
 
@@ -35,6 +38,8 @@ function RecetaEnchiladasDeLechuga() {
         window.scroll(0,0)
       });
 
+    
+    if(!uid) return <Redirect to='/login' />
     return (
         <div>
             <EnchiladasDeLechuga 
@@ -66,4 +71,14 @@ function RecetaEnchiladasDeLechuga() {
     )
 }
 
-export default RecetaEnchiladasDeLechuga
+const mapStateToProps = state => {
+    const uid = state.firebase.auth.uid;
+    return {
+        uid: uid,
+    };
+};
+
+
+export default connect(mapStateToProps)(RecetaEnchiladasDeLechuga)
+
+

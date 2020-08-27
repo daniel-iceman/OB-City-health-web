@@ -23,7 +23,7 @@ function FooterContent() {
     const [fLink1] = useState ('Servicios') 
     const [fLink2] = useState ('Sistemas')
     const [fLink3] = useState ('Acerca de')
-    const [fLink4] = useState ('Articulos')
+    const [fLink4] = useState ('Artículos')
     const [fLink5] = useState ('Recetarios') 
 
 

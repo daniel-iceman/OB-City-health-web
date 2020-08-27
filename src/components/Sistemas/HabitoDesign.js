@@ -5,8 +5,13 @@ import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
 import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons"
 import SocialMediaHabito from './SocialMediaHabito';
 
-function HabitoDesign({    
-    pie_cards
+function HabitoDesign({  
+    habito_frase_inicial,   
+    habito_parrafo_1,
+    habito_parrafo_2,
+    habito_parrafo_3,
+    habito_parrafo_4, 
+    habito_parrafo_5
 }) {
 
     useEffect(() => {
@@ -45,32 +50,32 @@ function HabitoDesign({
                                     NUESTROS SISTEMAS
                                 </h2>
                                 <h1>
-                                    Después de terminar el tratamiento, no volveras a subir.                                          
+                                    { habito_frase_inicial }                                          
                                 </h1>
                             </div>
     
                             <div className='texto-habito'>                           
                                 <div className='segmento1-texto-habito' >
                                     <p>
-                                        Aprende a comer es la base del éxito.    Recuerde comer sano no está peleado con comer rico.
+                                        { habito_parrafo_1 }
                                     </p>                                
                                     <p>
-                                        No es una dieta de calorías, ni tampoco le pediré que pese sus alimentos o cuente puntos, simplemente tendrá que aprender que alimentos son adecuados y cuales no, a que hora puede consumirlos y como mantener su masa muscular y unicamente perder grasa.  
+                                        { habito_parrafo_2 }
                                     </p>
                                     <p>
-                                        Con este método podrá darse cuenta que puede llevar una vida normal, bajar de peso y medidas y no volverlos a subir.
+                                        { habito_parrafo_3 }
                                     </p>
                                     <p>
-                                        Durante el tratamiento lo apoyaremos y asesoraremos para que pueda llegar a la meta de la manera mas comoda posible.
+                                        { habito_parrafo_4 }
                                     </p>
                                     <p>
-                                        Si usted adquiere un hábito alimenticio evitará recuperar la grasa que perdió y podrá mantenerse en la talla con la que concluyó su tratamiento.
+                                        { habito_parrafo_5 }
                                     </p>
-                                    <Link  to='/ketodietarticle' >
+                                    {/* <Link  to='/ketodietarticle' >
                                             <li> 
                                                 Si deseas conocer más acerca de este tipo de metodos ingresa aquí.
                                             </li>
-                                    </Link>
+                                    </Link> */}
                                 </div>
                                 
                             </div>
@@ -198,7 +203,6 @@ function HabitoDesign({
     
                                 </div>
                                 
-                                <p> { pie_cards } </p>
                             
                             </div>  
                         

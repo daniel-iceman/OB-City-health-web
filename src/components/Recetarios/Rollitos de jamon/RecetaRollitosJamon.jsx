@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import '..//Recetas.css'
 import RollitosJamon from './RollitosJamon'
+import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
 
-function RecetaRollitosJamon() {
+
+
+const RecetaRollitosJamon = ({ uid }) => {
 
     const [ tituloReceta ] = useState ('Rollitos de lechuga con jamón')
 
@@ -28,7 +32,9 @@ function RecetaRollitosJamon() {
     useEffect(() => {
         window.scroll(0,0)
       });
+    
 
+    if(!uid) return <Redirect to='/login' />
     return (
         <div>
             <RollitosJamon 
@@ -53,4 +59,13 @@ function RecetaRollitosJamon() {
     )
 }
 
-export default RecetaRollitosJamon
+const mapStateToProps = state => {
+    const uid = state.firebase.auth.uid;
+    return {
+        uid: uid,
+    };
+};
+
+
+export default connect(mapStateToProps)(RecetaRollitosJamon)
+

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import emailjs from 'emailjs-com'
+import swal from 'sweetalert'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -22,6 +23,12 @@ function ContactoDesign() {
         .then(
             result => {
               console.log(result.text);
+              swal({
+                title: "Mensaje enviado",
+                text: "En breve nos pondremos en contacto con usted",
+                icon: "success",
+                button: "Cerrar",
+              });
             },
             error => {
               console.log(error.text);
@@ -33,7 +40,13 @@ function ContactoDesign() {
     useEffect(() => {
         window.scroll(0,0)
       });
-
+    
+    // function mensaje(e) {
+    //     e.preventDefault();
+    //     console.log('The link was clicked.');
+    //     alert('Su mensaje fue enviado con éxito, en breve nos pondremos en contacto con usted')
+    
+    // }
     
 
     return (
@@ -105,14 +118,9 @@ function ContactoDesign() {
                             form='form-datos-contacto'
                             placeholder='Ingrese sus comentarios...'>
                         </textarea>
-                        <input className='buttonContactOBcity' type="submit" value="Enviar" />  
-                        {/* <input className='buttonContactOBcity' type="submit" value="Enviar">  
-                            <Link  to='/' >
-                                <li> 
-                                    Quiero una cita
-                                </li>
-                            </Link>
-                        </input> */}
+                        <input className='buttonContactOBcity' type="submit"  value="Enviar" /> 
+                        {/* <button className='buttonContactOBcity' type="submit" onClick={mensaje} value="Enviar" /> */}
+                         
                         
                     </form>                   
                 </div>                             

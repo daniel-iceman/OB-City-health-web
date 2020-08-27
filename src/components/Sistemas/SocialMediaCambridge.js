@@ -10,8 +10,8 @@ import '..//ComparteSocialMediaButtons/SocialMedia.css'
 
 function SocialMediaCambridge() {
 
-    const [direccionCambridge] = useState ('http://www.medicobariatra.com.mx/inicio/cambridge-weight-plan/')
-    const [notaCambridge] = useState ('Aqui agrego una nota')
+    const [direccionCambridge] = useState ('http://www.obcityhealth.com/inicio/cambridge-weight-plan/')
+    const [notaCambridge] = useState ('Cambridge Weight Plan')
 
     return (
         <div className='container-socialmedia'>

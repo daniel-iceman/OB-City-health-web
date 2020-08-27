@@ -1,0 +1,29 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+.container-tareas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.box-tareas{
+    width: 95%;
+    background: rgb(27, 41, 87);
+}
+
+.tabla-tareas{
+    width: 100%;
+    border:1px solid rgb(27, 41, 87);    
+    color: white;
+    letter-spacing: 1px;
+}
+
+.titulos-tabla{
+    height: 60px;
+    font-family: 'Questrial', sans-serif;
+    font-size:25px;
+    color: rgb(33, 145, 250);
+    letter-spacing: 2px;
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+.container-dashboard{
+    width: 100%;
+    height: auto;
+}
+    .dashboard-block{
+        width: 100%;
+        height: auto;
+        display: flex;        
+        justify-content: space-evenly;
+        
+    }
+        .dashboard-publicity-container{
+            flex-basis: 38%;
+            background: red;
+            
+        }
+        .dashboard-buttons-links{
+            flex-basis: 58%;
+            background: greenyellow;
+        }

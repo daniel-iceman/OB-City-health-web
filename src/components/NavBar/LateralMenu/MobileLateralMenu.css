@@ -66,6 +66,10 @@
             text-decoration: none;
         }
 
+    .line-division{
+        border-top: 1px solid #006d80;
+    }
+
   .FontAwesomeLateralMenu {
     font-size: 35px !important;
     padding-left: 20px;
@@ -77,6 +81,25 @@
     }
     .faArt {
         font-size: 31px !important;
+        margin-left: 3px;
+    }
+    .falogin{
+        margin-bottom: -5px;
+    }
+    .fasignup{
+        margin-bottom: -4px;
+    }
+    .dashboard-list{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+    .dashboard-icon{
+        color: white;
+        margin-left: 15px;
+        margin-right: 20px;
+        margin-bottom: 15px;
     }
 
 
@@ -111,6 +134,10 @@
         margin-left: -120px;
     }
 
+    .menlat header {
+        height: 100px;
+    }
+
     .menuButtons li {
         font-size: 18px;
     }
@@ -140,6 +167,9 @@
         .menlat header {
             height: 100px;
         }
+        .menuButtons button {
+            height: 70px;
+        }
 }
 
 /* **** Configuracion iPhone 5 /SE 320px **** */
@@ -150,7 +180,10 @@
     .menlat {
         width: 240px; 
     }
-    /* .menuButtons li {
-        font-size: 18px;
-    } */
+    .menuButtons button {
+        height: 65px;
+    }
+    .falogin{
+        margin-right: 27px;
+    }
 }

@@ -77,7 +77,7 @@ function HomeLinks() {
                     </div>
                     <Link to='/articulos' >
                         <li> 
-                            Articulos
+                            Artículos
                         </li>
                     </Link>
                 </div>

@@ -1,0 +1,72 @@
+import React from 'react'
+import { Switch, Route, BrowserRouter } from 'react-router-dom'
+// import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom'
+// import { withRouter } from "react-router-dom";
+// import Routes from './Routes'
+import BarraMenu from './components/NavBar/BarraMenu/BarraMenu'
+import ChatButton from './components/BotonChat/ChatButton'
+import Footer from './components/Footer/Footer'
+
+
+
+
+import ProfilePage from './pages/ProfilePage'
+
+
+
+
+
+
+
+
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+
+        <BarraMenu />
+
+        <Switch >
+                                 
+            <Route exact path="/profile" component={ProfilePage} /> */}
+            
+            
+            
+        </Switch>
+      
+        {/* <Routes />   */}
+        <ChatButton />
+
+        <Footer /> 
+
+      </BrowserRouter>
+    </>
+  
+    
+    );
+    
+  }
+   
+    
+export default App
+
+
+
+// class App extends Component {
+//   render() {
+//     return (
+      
+//         <div>
+//           <BarraMenu />
+//           <Routes />  
+//           <ChatButton />
+//           <Footer />      
+
+//         </div>
+      
+        
+//         )
+//       }
+//     }
+    
+// export default App

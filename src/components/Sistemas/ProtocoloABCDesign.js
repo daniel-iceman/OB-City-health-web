@@ -9,6 +9,9 @@ import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons"
 function ProtocoloABCDesign({    
     abc_frase_inicial,   
     abc_parrafo_1,
+    abc_parrafo_2,
+    abc_parrafo_3,
+    abc_parrafo_4,
     pie_cards
 }) {
 
@@ -54,19 +57,19 @@ function ProtocoloABCDesign({
                                     { abc_parrafo_1 }
                                 </p>                                
                                 <p>
-                                    Las cetonas son producidas en el hígado a partir de la grasa corporal y estas a su vez son usadas como combustible en el cuerpo incluido el cerebro y el corazón.
+                                    { abc_parrafo_2 }
                                 </p>
                                 <p>
-                                   Este método consiste en el consumo de una malteada baja en carbohidratos y rica en proteínas como desayuno y cena. Durante la comida consumirá alimentos balanceados, reduciendo la ingesta de carbohidratos. De esta forma, obtendrá resultados más rápidos en la pérdida de grasa corporal y medidas.
+                                    { abc_parrafo_3 }
                                 </p>
                                 <p>
-                                    Aprenda a balancear sus alimentos de forma adecuada.      Este es un metodo económico, práctico y seguro que le ayudará a alcanzar sus metas en un corto plazo.
+                                    { abc_parrafo_4 }
                                 </p>
-                                <Link  to='/ketodietarticle' >
+                                {/* <Link  to='/ketodietarticle' >
                                         <li> 
                                             Si deseas conocer más acerca de este tipo de metodos ingresa aquí.
                                         </li>
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                         

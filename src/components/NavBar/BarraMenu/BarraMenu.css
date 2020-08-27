@@ -28,8 +28,9 @@ li {
 
 /* ******* Configuración para barra de menú superior ****** */
 .barraMenu{
-    width: 80%;   
+    width: 90%;   
     display: flex; 
+    justify-content: space-evenly;
 }
 
 .barraMenu_logo img {
@@ -80,6 +81,11 @@ li {
 }
 .menu a{
     text-decoration: none;
+    list-style: none;
+}
+.menu a:hover{
+    text-decoration: none;
+    list-style: none;
 }
 
 .opciones-menubar{
@@ -106,6 +112,7 @@ li {
     .container-barraMenu{
         margin-top: 30px;    
     }
+       
 }
 
 /* **** Configuracion iPad Pro 1024px **** */
@@ -122,6 +129,9 @@ li {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .container-boton-user {
+        display: none;
     }
     .barraMenu_logo img {
         width: 180px;

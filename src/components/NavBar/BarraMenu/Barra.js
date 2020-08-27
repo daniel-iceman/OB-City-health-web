@@ -4,9 +4,11 @@ import '../../Images/OBC.PNG'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { connect } from 'react-redux'
 
 import SubMenu1 from '../SubMenu_1/SubMenu_1'
 import SubMenu2 from '../SubMenu_2/SubMenu_2';
+import SubMenu3 from '../SubMenu_3/SubMenu_3';
 import LateralMenu from '../LateralMenu/LateralMenu';
 
 function Barra() {
@@ -18,14 +20,14 @@ function Barra() {
     const [serviciosOpcion4] = useState ('PRISE')
 
     // SUBMENU 2
-    const [nombreSubmenu2] = useState('Articulos')
+    const [nombreSubmenu2] = useState('Artículos')
     const [articulosOpcion1] = useState ('Obesidad y CoViD-19')
     const [articulosOpcion2] = useState ('Obesidad e Influenza A H1N1')
     const [articulosOpcion3] = useState ('Obesidad y Alteraciones Osteoarticulares')
     const [articulosOpcion4] = useState ('Embarazo y obesidad')
     const [articulosOpcion5] = useState ('Resistencia a la insulina y Nutriterapia')
 
-    
+        
     return (
        
         <div className='container-barraMenu'>
@@ -77,8 +79,14 @@ function Barra() {
                                 </li>
                             </NavLink>
 
+                            {/* <SubMenu3 /> */}
+
                         </ul>
                     </nav>
+
+                    <div className='container-boton-user'>
+                        <SubMenu3 />
+                    </div>
 
                 
                 </div>
@@ -91,7 +99,11 @@ function Barra() {
     )
 }
     
-    export default Barra
+const mapStateToProps = (state) => {
+    console.log(state)
+}
+
+    export default connect(mapStateToProps)(Barra)
 
         
 

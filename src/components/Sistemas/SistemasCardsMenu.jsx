@@ -19,11 +19,11 @@ function SistemasCardsMenu() {
     const [abc_li_4] = useState('1 malteada desayuno y cena.')
     const [abc_li_5] = useState('Reduce consumo de carbos.')
 
-    const [cambridge_li_1] = useState('Comodo.')
+    const [cambridge_li_1] = useState('Cómodo.')
     const [cambridge_li_2] = useState('Balanceado.')
     const [cambridge_li_3] = useState('Pérdida de 1 talla en 15 días.*')
     const [cambridge_li_4] = useState('1 malteada 3 veces al día.')
-    const [cambridge_li_5] = useState('Reduce consumo de carbos.')
+    const [cambridge_li_5] = useState('Dieta muy baja en calorías')
 
     const [habito_li_1] = useState('Aprende a comer.')
     const [habito_li_2] = useState('Balanceado.')
