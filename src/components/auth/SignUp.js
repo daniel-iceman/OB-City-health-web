@@ -3,17 +3,15 @@ import './auth.css'
 import { signUp } from '../../redux/Actions/authActions'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
-
-
+import SwitchPolicies from './switchPolicies'
+import { Link } from 'react-router-dom'
 
 class SignUp extends Component {
 
     state = {
         email: '',
         password: '',
-        // firstName: '',
-        // lastNameF: '',
-        // lastNameM: ''
+        
      };
 
     handleChange = (e) => {
@@ -48,8 +46,7 @@ class SignUp extends Component {
                             </legend>
                         </div>
 
-                        <div className='secc-form'>
-                             {/* <label htmlFor='firstName'> Nombre </label> */}
+                        {/* <div className='secc-form'>
                              <input 
                                 type='text' 
                                 className="input-field" 
@@ -59,7 +56,6 @@ class SignUp extends Component {
                             />
                          </div>
                          <div className='secc-form'>
-                             {/* <label htmlFor='lastNameF'> Apellido Paterno </label> */}
                              <input 
                                 type='text' 
                                 className="input-field" 
@@ -69,7 +65,6 @@ class SignUp extends Component {
                             />
                          </div>
                          <div className='secc-form'>
-                             {/* <label htmlFor='lastNa meM'> Apellido Materno </label> */}
                              <input 
                                 type='text' 
                                 className="input-field" 
@@ -77,30 +72,46 @@ class SignUp extends Component {
                                 onChange={ this.handleChange } 
                                 placeholder = 'Apellido materno'
                             />
-                         </div>
+                         </div> */}
 
                         <div className='secc-form' >
-                            {/* <label htmlFor="email">Ingresa correo electrónico</label> */}
+                            
                             <input 
                                 type="email" 
                                 className="input-field" 
                                 id="email" 
                                 onChange = {this.handleChange} 
-                                placeholder = 'Ingresa correo electrónico'
+                                placeholder = 'email'
                             />                        
                         </div>
                         <div className='secc-form'>
-                            {/* <label htmlFor="password">Ingresa contraseña</label> */}
+                            
                             <input 
                                 type="password" 
                                 className="input-field" 
                                 id="password"
                                 onChange = {this.handleChange}
-                                placeholder = 'Ingresa contraseña'
+                                placeholder = 'contraseña'
                             />
                         </div>
-                        
+
+                        <div className='politicas-privacidad'>
+                            <a href='https://myappterms.com/reader.php?id=100'>
+                                Política de privacidad
+                            </a>
+                            <SwitchPolicies/>
+                        </div>
+
                         <button type="submit" className="btn-sign">Enviar</button>
+
+                        <div className='cuenta-existente'>                            
+                            <Link   to='/login' >
+                                <li> 
+                                    Usar cuenta existente
+                                </li>
+                            </Link>
+                        </div>                        
+                        
                     </form> 
                 </div>
             </div>

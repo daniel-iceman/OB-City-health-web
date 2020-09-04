@@ -69,20 +69,20 @@
             color:white;
             /* background-color:transparent; */
             background: orangered;
-            border:1px solid rgb(31, 64, 104);
+            border:1px solid orangered;
             border-radius: 10px;     
             margin:5px;  
             margin-top: 20px;  
             margin-bottom: 20px;                        
             background-size: 200% 100%;	
-            background-image: linear-gradient(to right, transparent 50%, rgba(31, 64, 104, 1) 50%);
+            background-image: linear-gradient(to right, transparent 50%, #1b8f8f 50%);
             transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
         }
         .btn-sign:hover {
             color:rgba(255, 255, 255, 1);
-            background-color:rgba(31, 64, 104, 1);
+            background-color:#1b8f8f;
             background-position: -100% 100%;
-            border:2px solid orangered;
+            border:2px solid #1b8f8f;
         }
     
     .no-registrado{
@@ -94,4 +94,33 @@
             text-decoration: none;
             color: orange;
             margin-left: 20px;
+        }
+
+    .politicas-privacidad{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+    }
+        .politicas-privacidad a {
+            margin-bottom: 8px;
+            color: gray;
+            font-size: 13px;
+
+        }
+
+    .cuenta-existente {
+        margin-top: 10px;
+    }
+        .cuenta-existente li {
+            color: white;
+            font-family: 'Questrial', sans-serif;    
+            font-size: 18px;        
+        }
+        .cuenta-existente a {
+            list-style: none;
+        }
+        .cuenta-existente a:hover{
+            text-decoration: none;
         }

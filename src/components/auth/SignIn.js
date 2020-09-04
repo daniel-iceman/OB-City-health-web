@@ -51,7 +51,7 @@ class SignIn extends Component {
                                 className="input-field" 
                                 id="email" 
                                 onChange = {this.handleChange} 
-                                placeholder = 'Correo electrónico...'
+                                placeholder = 'email'
                             />                        
                         </div>
                         <div className='secc-form'>
@@ -61,7 +61,7 @@ class SignIn extends Component {
                                 className="input-field" 
                                 id="password"
                                 onChange = {this.handleChange}
-                                placeholder = 'Contraseña...'
+                                placeholder = 'contraseña'
                             />
                         </div>
                         
