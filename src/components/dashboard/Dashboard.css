@@ -7,14 +7,112 @@
         height: auto;
         display: flex;        
         justify-content: space-evenly;
-        
+        margin-top: 20px;
     }
         .dashboard-publicity-container{
-            flex-basis: 38%;
-            background: red;
+            flex-basis: 58%;
+            display: flex;
+            justify-content: center;
+            background: rgb(231, 230, 230);
+            border-radius: 40px;
             
         }
+            .dashbord-publicity-commercial{
+                width: 90%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background: transparent;                
+            }
+                .dashboard-bienvenida{
+                    width: 100%;
+                    padding: 20px;
+                    text-align: justify;
+                    font-family: 'Questrial';
+                    color: white;                    
+                    background: radial-gradient(circle, rgba(28,167,236,1) 11%, rgba(31,47,152,1) 49%);
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                    .dashboard-bienvenida h1{
+                        letter-spacing: 2px;
+                    }
+                    .dashboard-bienvenida h3{
+                        letter-spacing: 1px;
+                        font-size: 23px;
+                    }
+                
+                .dashboard-publicity-envios{
+                    width: 100%;
+                    padding: 20px;
+                    text-align: justify;
+                    font-family: 'Questrial';
+                    color: white;                    
+                    background: linear-gradient(315deg, rgba(74,222,222,1) 11%, rgba(31,47,152,1) 29%);
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                    .dashboard-publicity-envios h1{
+                        font-size: 30px;
+                        text-align:start ;
+                        letter-spacing: 2px;
+                    }
+                    .dashboard-publicity-envios h3{
+                        font-size: 23px;
+                        letter-spacing: 1px;                        
+                    }
+                
+                .dashboard-publicity-recetas {
+                    width: 100%;
+                    padding: 20px;
+                    text-align: justify;
+                    font-family: 'Questrial';
+                    color: white;                    
+                    background: 
+                        linear-gradient(
+                            41deg, 
+                            rgba(3,53,131,1) 0%, 
+                            rgba(138,104,8,1) 0%, 
+                            rgba(186,42,42,1) 33%, 
+                            rgba(161,42,58,1) 55%, 
+                            rgba(11,40,133,1) 75%);
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                    .dashboard-publicity-recetas h1{
+                        font-size: 30px;
+                        text-align:start ;
+                        letter-spacing: 2px;
+                    }
+                
+                .dashboard-publicity-bitacora{
+                    width: 100%;
+                    padding: 20px;
+                    text-align: justify;
+                    font-family: 'Questrial';
+                    color: white;                    
+                    background: 
+                        linear-gradient(
+                            152deg, 
+                            rgba(27,194,0,1) 5%, 
+                            rgba(20,131,255,1) 36%, 
+                            rgba(6,25,168,1) 58%, 
+                            rgba(4,17,116,1) 85%);
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                    .dashboard-publicity-bitacora h1{
+                        font-size: 30px;
+                        text-align:start ;
+                        letter-spacing: 2px;
+                    }
+
+
         .dashboard-buttons-links{
-            flex-basis: 58%;
+            flex-basis: 38%;
             background: greenyellow;
         }

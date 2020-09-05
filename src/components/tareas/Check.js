@@ -22,7 +22,7 @@ const Check = ({ checked, onClick }) => {
                 onClick={ onClick }
             >
                 {/* check_circle_outline */}
-                thumb_up_alt
+                thumb_down
             </span>
         );
     }
