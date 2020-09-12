@@ -8,11 +8,10 @@ import { FacebookShareButton,
 
 import '..//..//ComparteSocialMediaButtons/SocialMedia.css'
 
+function SocialMediaChileRellenoSinCapear() {
 
-function SocialMediaEnchiladasLechuga() {
-
-    const [enchiladasLechuga] = useState ('http://www.obcityhealth.com/enchiladasdelechuga')
-    const [notaEnchiladasLechuga] = useState ('Enchiladas de lechuga')
+    const [chileRellenoSinCapear] = useState ('http://www.obcityhealth.com/chilerellenosincapear')
+    const [notaChileRellenoSinCapear] = useState ('Chile relleno de queso sin capear')
 
     return (
         <div className='container-socialmedia'>
@@ -21,8 +20,8 @@ function SocialMediaEnchiladasLechuga() {
             </div>
             <div className='comparte-socialmedia'>
                 <FacebookShareButton
-                    url={enchiladasLechuga}
-                    quote={notaEnchiladasLechuga}
+                    url={chileRellenoSinCapear}
+                    quote={notaChileRellenoSinCapear}
                     >
                     <FacebookIcon 
                         size={30}
@@ -32,8 +31,8 @@ function SocialMediaEnchiladasLechuga() {
                 </FacebookShareButton>
 
                 <TwitterShareButton
-                    url={enchiladasLechuga}
-                    quote={notaEnchiladasLechuga}
+                    url={chileRellenoSinCapear}
+                    quote={notaChileRellenoSinCapear}
                     >
                     <TwitterIcon
                         size={30}
@@ -43,8 +42,8 @@ function SocialMediaEnchiladasLechuga() {
                 </TwitterShareButton>
 
                 <WhatsappShareButton
-                    url={enchiladasLechuga}
-                    quote={notaEnchiladasLechuga}
+                    url={chileRellenoSinCapear}
+                    quote={notaChileRellenoSinCapear}
                     >
                     <WhatsappIcon 
                         size={30}
@@ -56,4 +55,4 @@ function SocialMediaEnchiladasLechuga() {
     )
 }
 
-export default SocialMediaEnchiladasLechuga
+export default SocialMediaChileRellenoSinCapear

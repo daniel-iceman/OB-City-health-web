@@ -51,6 +51,7 @@ import QuicheEspinacas from './pages/RecetaQuicheEspinacasPage'
 import RollitosJamon from './pages/RecetaRollitosJamonPage'
 import PanNube from './pages/RecetaPanNubePage'
 import PizzaColiflor from './pages/RecetaPizzaColiflorPage'
+import ChileRellenoQueso from './pages/RecetaChileRellenoQuesoSinCapearPage'
 import FatSecret from './pages/FatSecretPage'
 
 
@@ -78,6 +79,7 @@ function App() {
           <Route exact path="/rollitosjamon" component={RollitosJamon} />
           <Route exact path="/pannube" component={PanNube} />
           <Route exact path="/pizzacoliflor" component={PizzaColiflor} />
+          <Route exact path="/chilerellenosincapear" component={ChileRellenoQueso} />
           <Route exact path="/servicios" component={ServiciosPage} />
           <Route exact path="/acerca" component={AcercaPage} />
           <Route exact path="/articulos" component={ArticulosPage} />

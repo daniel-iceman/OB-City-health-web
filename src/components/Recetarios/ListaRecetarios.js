@@ -81,6 +81,16 @@ function ListaRecetarios() {
                     <p>Pizza con base de coliflor</p>
                 </div>
 
+                <div className='platillo plat_7'>
+                    <button>
+                        <Link  to='/chilerellenosincapear' >
+                            <li> 
+                            </li>
+                        </Link>
+                    </button>
+                    <p>Chile relleno de queso</p>
+                </div>
+
 
             </div>            
         </div>

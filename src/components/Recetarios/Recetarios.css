@@ -104,6 +104,12 @@
             background-image: url('../Images/PizzaColiflor.jpg');
             background-size: cover;
         } 
+
+        .plat_7 li{
+            background-image: url('../Images/chile-relleno.jpg');
+            background-size: cover;
+            height: 210px;
+        }
     
 
 @keyframes desvanece {
@@ -191,5 +197,8 @@
         }
         .header-recetarios p {
             margin-top: 10px;
+        }
+        .plat_7 li{
+            height: 170px;
         }
 }
