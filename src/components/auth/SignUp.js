@@ -6,7 +6,8 @@ import { Redirect } from 'react-router-dom'
 import SwitchPolicies from './switchPolicies'
 import { Link } from 'react-router-dom'
 
-class SignUp extends Component {
+
+class SignUp extends Component {    
 
     state = {
         email: '',
@@ -26,16 +27,21 @@ class SignUp extends Component {
         this.props.signUp(this.state);
     };
 
+    
+    
+
     render() {
 
         const { uid } = this.props;
         if (uid) return <Redirect to='/dashboard' />
 
+        
+
         return (
             <div className='container-form-auth'>
-                <div className='form-block'>
+                <div className='form-block signupFormBlock'>
                     <form 
-                        className='form-auth' 
+                        className='form-auth apearSignup' 
                         autoComplete='off'
                         onSubmit = {this.handleSubmit}
                     >
@@ -43,6 +49,7 @@ class SignUp extends Component {
                             <legend className='form-auth-title' >
                                 {" "}
                                 <h2> Registrate </h2>
+                                <h5> Gratis </h5>
                             </legend>
                         </div>
 
@@ -113,6 +120,11 @@ class SignUp extends Component {
                         </div>                        
                         
                     </form> 
+
+                    <div className='form-advice-signup'>
+                        <h1>Bienvenid@</h1>
+                    </div>
+
                 </div>
             </div>
         )

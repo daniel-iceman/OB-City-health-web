@@ -91,6 +91,16 @@ function ProtocoloABCDesign({
                                 </button>
                             </div>
 
+                            <div className='boton-kiitos' >
+                                <button style={{border:'1px solid rgb(85, 68, 31)', marginRight:'5px'}}>
+                                    <Link  to='/kiitos' >
+                                        <li> 
+                                            {/* KIITOS */}
+                                        </li>
+                                    </Link>
+                                </button>
+                            </div>
+
                             <div className='boton-habito' >
                                 <button style={{border:'1px solid rgb(85, 68, 31)'}}>
                                     <Link  to='/habitoalimenticio' >

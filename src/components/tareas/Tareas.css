@@ -6,24 +6,108 @@ html, body {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .box-tareas{
-    width: 95%;
-    background: rgb(27, 41, 87);
+    width: 95%;    
+    background:rgb(201, 230, 231);
 }
 
 .tabla-tareas{
     width: 100%;
-    border:1px solid rgb(27, 41, 87);    
+    border:1px solid rgba(2,17,64,1);    
     color: white;
     letter-spacing: 1px;
 }
 
 .titulos-tabla{
     height: 60px;
-    font-family: 'Questrial', sans-serif;
+    display: grid;
+    /* grid-gap:5px; */
+    grid-template-columns: 60% 20% 10% 10%;
+    grid-template-rows: 100px ;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
     font-size:25px;
-    color: rgb(33, 145, 250);
-    letter-spacing: 2px;
+    color: rgb(2, 45, 65);
+    letter-spacing: 3px;
     text-align: center;
+}
+.food-text{
+    width: fit-content;
+    height: 40px;
+    place-self: center;
+    margin-bottom: 35px;
+}
+.date-text{
+    width: fit-content;
+    height: 40px;
+    place-self: center;
+    margin-bottom: 35px;
+}
+.thumb-text{
+    width: fit-content;
+    height: 40px;
+    place-self: center;
+    margin-bottom: 35px;
+}
+.trash-text{
+    width: fit-content;
+    height: 40px;
+    place-self: center;
+    margin-bottom: 35px;
+}
+
+
+/* **** Configuracion Lap top 1366px **** */
+@media screen and (max-width: 1366px){
+    .titulos-tabla{
+        font-size:19px;
+    }    
+    
+    .food-text,
+    .date-text,
+    .thumb-text,
+    .trash-text{
+        height: 30px;
+        margin-bottom: 35px;
+    }
+    
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px){
+    .food-text {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .date-text{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .thumb-text,
+    .trash-text{
+        display: none;
+    }
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .titulos-tabla{
+        font-size:25px;
+    } 
+    .food-text {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: -10px;
+    }
+    .date-text{
+        display: none;
+    }
 }

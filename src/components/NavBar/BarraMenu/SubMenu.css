@@ -144,7 +144,17 @@
     width: fit-content;
     font-size:22px;
     margin-top: 15px;
-}
+}   
+    .bitacora-menulat{
+        /* font-size: 30px; */
+        padding-top: 10px;
+    }
+    .recetas-menulat {
+        padding-top: 10px;
+    }
+    .consejos-menulat{
+        padding-top: 10px;
+    }
     .close-icon{
         margin-bottom:-5px;
     }

@@ -1,0 +1,28 @@
+.header-bitacora{
+    width:100%; 
+    height:250px;
+    background: linear-gradient(180deg, rgba(2,17,64,1) 56%, rgba(0,213,150,1) 100%);
+    margin-top:-120px;
+    display:flex;
+    justify-content:center;
+    align-items: flex-end;
+}
+    .header-bitacora h1{
+        font-family: 'Questrial';
+        color: white;
+        font-size: 45px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        animation: desvanece 2s forwards;
+    }
+
+@keyframes desvanece {
+    from{
+        opacity: 0;
+    }
+    to{
+        
+        opacity: 1;
+        
+    }
+}

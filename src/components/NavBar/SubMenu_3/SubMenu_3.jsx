@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../BarraMenu/SubMenu.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faCommentMedical } from "@fortawesome/free-solid-svg-icons";
 import { faCalendarCheck } from "@fortawesome/free-regular-svg-icons";
 import { faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
@@ -62,7 +62,7 @@ const SubMenu_3 = ({ signOut, uid }) => {
                                     to='/bitacora'> 
                                         <li> 
                                             <FontAwesomeIcon 
-                                                className='FontAwesomeLateralMenu'
+                                                className='FontAwesomeLateralMenu bitacora-menulat'
                                                 icon={faCalendarCheck} fixedWidth/>
                                                 Bitácora 
                                         </li>  
@@ -76,9 +76,24 @@ const SubMenu_3 = ({ signOut, uid }) => {
                                     to='/recetarios'> 
                                         <li> 
                                             <FontAwesomeIcon 
-                                                className='FontAwesomeLateralMenu'
+                                                className='FontAwesomeLateralMenu recetas-menulat'
                                                 icon={faUtensils} fixedWidth/>
                                             Recetas 
+                                        </li>  
+                                </NavLink>
+                            </button>
+
+                            <button>
+                                <NavLink 
+                                    activeClassName='active-menulink' 
+                                    className=' opciones-sideMenu'    
+                                    onClick = { toggleMenuUser }
+                                    to='/consejosvip'> 
+                                        <li> 
+                                            <FontAwesomeIcon 
+                                                className='FontAwesomeLateralMenu consejos-menulat'
+                                                icon={faCommentMedical} fixedWidth/>
+                                            Consejos 
                                         </li>  
                                 </NavLink>
                             </button>

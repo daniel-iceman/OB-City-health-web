@@ -1,17 +1,71 @@
 .tr-tarea {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
+    display: grid;
+    /* grid-gap:5px; */
+    grid-template-columns: 60% 20% 10% 10%;
+    grid-template-rows: 100px ;
     font-family: 'Questrial', sans-serif;
     font-size:25px;
     text-align: center;
-    background: rgb(27, 41, 87);
+    background: rgba(2,17,64,1);
 }
 .tr-tarea th {
+    /* width: 40%; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 100;
+    padding: 10px;
+    border-bottom: 3px solid rgb(17, 151, 138);    
 }
 .tr-tarea td {
     font-weight: 100;
-}
+    border-bottom: 3px solid rgb(17, 151, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+    .food-eat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(113deg, rgba(0,94,111,1) 44%, rgba(0,120,140,1) 100%);
+        
+    }
+    .calendar-big-size{
+        /* width: 30%; */
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 10px;
+        background: rgb(3, 24, 88);background: linear-gradient(113deg, rgba(0,109,128,1) 44%, rgba(0,150,176,1) 100%);
+    }
+    .thumb{
+        /* width: 15%; */
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 10px;
+        background: #005e6f;
+    }
+    .trash{
+        /* width: 15%; */
+        color: rgb(14, 37, 105);
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 10px;
+        background: #bdbdbd;
+    }
+
 .material-icons {
     font-size: 40px;
     cursor: pointer;
@@ -23,16 +77,100 @@
         color: rgb(255, 44, 44);
     }
 
-.mobile-size {
-    display:none
+/* **** Configuracion Lap top 1366px **** */
+@media screen and (max-width: 1366px){
+    .tr-tarea {
+        font-size:20px;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    .tr-tarea {
+        font-size:20px;
+    }
+    .material-icons {
+        font-size: 40px;
+    }
+    .tr-tarea td {
+        border-bottom: none;
+    }
+    .tr-tarea th {
+        border-bottom: none;
+    }
+    .food-eat {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        /* border-bottom: none; */
+    }
+    .calendar-big-size{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        
+    }
+    td.thumb{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-bottom: 3px solid rgb(17, 151, 138);
+        padding-bottom: 20px;
+    }
+        
+    td.trash{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-bottom: 3px solid rgb(17, 151, 138);
+        padding-bottom: 20px;
+    }
+    
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    
 }
 
 /* **** Configuracion Nokia N9 480px **** */
 @media screen and (max-width: 480px)  {
-    .mobile-size{
-        display: contents;
+
+    /* .tr-tarea th  {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    } */
+    th.food-eat  {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
-    .big-size{
-        display: none;
+    
+    td.calendar-big-size{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
+    td.thumb{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    td.trash{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    
 }

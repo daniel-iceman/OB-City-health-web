@@ -16,7 +16,7 @@
     justify-content: center;
     background: rgb(194, 194, 194);
 }
-    .folder-abc, .folder-cambridge, .folder-habito {
+    .folder-abc, .folder-kiitos, .folder-cambridge, .folder-habito {
         width: 95%;
         height: auto; 
         display: flex;
@@ -28,6 +28,7 @@
         top: 150px;
     }   
         .seccion-imagen-abc,
+        .seccion-imagen-kiitos,
         .seccion-imagen-cambridge,
         .seccion-imagen-habito {             
             flex-basis: 20%;
@@ -35,6 +36,7 @@
             animation: despliega 1s forwards;
         }
         .seccion-contenido-abc,
+        .seccion-contenido-kiitos,
         .seccion-contenido-cambridge,
         .seccion-contenido-habito{
             flex-basis: 60%;
@@ -52,6 +54,7 @@
         
         /* ************* SECCIÓN IMAGEN Y TITULO ************** */
         .seccion-imagen-abc,
+        .seccion-imagen-kiitos,
         .seccion-imagen-cambridge,
         .seccion-imagen-habito{
             background: linear-gradient(331deg, rgba(49,6,102,1) 15%, rgba(129,25,40,1) 49%, rgba(2,54,157,1) 92%);
@@ -68,10 +71,17 @@
                 background-size: cover;  
                 margin-top: 50px;
             }
+            .imagen-kiitos{
+                width: 90%;
+                height: 330px;
+                background-image: url('../Images/KiitosPaquetes.png');
+                background-size: cover;  
+                margin-top: 50px;
+            }
             .imagen-cambridge{
                 width: 90%;
-                height: 20%;
-                background-image: url('../Images/Cambridge.png');
+                height: 300px;
+                background-image: url('../Images/1to1chocolate.JPG');
                 background-size: cover; 
                 margin-top: 50px;
             }
@@ -83,11 +93,13 @@
                 margin-top: 50px;
             }
             .imagen-abc,
+            .imagen-kiitos,
             .imagen-cambridge,
             .imagen-habito{                                    
                 animation: desvanece 2s forwards;
             }
             .titulo-imagen-abc,
+            .titulo-imagen-kiitos,
             .titulo-imagen-cambridge,
             .titulo-imagen-habito{
                 color: white;
@@ -96,12 +108,13 @@
                 font-weight: 800;
                 text-align: center;
                 margin-top: 40px;
-                animation: desvaneceFotoTitulo 2s forwards;
+                animation: desvanece 2s forwards;
             }
         
         /* ************* SECCIÓN CONTENIDO ************** */
 
-        .seccion-contenido-abc,        
+        .seccion-contenido-abc, 
+        .seccion-contenido-kiitos,        
         .seccion-contenido-habito{
             margin-top: 0px;
         }   
@@ -109,6 +122,7 @@
             margin-top: 0px;
         }
             .seccion-contenido-abc h2,
+            .seccion-contenido-kiitos h2,
             .seccion-contenido-cambridge h2,
             .seccion-contenido-habito h2{
                 font-family: 'Montserrat', sans-serif;
@@ -122,6 +136,7 @@
                 animation: vanishContent 2s forwards;
             }
             .seccion-contenido-abc h1,
+            .seccion-contenido-kiitos h1,
             .seccion-contenido-cambridge h1,
             .seccion-contenido-habito h1{
                 font-family: 'Montserrat', sans-serif;
@@ -133,6 +148,7 @@
                 animation: vanishContent 2s forwards;
             }
             .seccion-contenido-abc p,
+            .seccion-contenido-kiitos p,
             .seccion-contenido-cambridge p,
             .seccion-contenido-habito p{
                 font-size: 18px;
@@ -143,6 +159,7 @@
             }
 
             .seccion-contenido-abc li,
+            .seccion-contenido-kiitos li,
             .seccion-contenido-cambridge li,
             .seccion-contenido-habito li{            
                 color:gray;
@@ -153,6 +170,7 @@
                 padding-right: 13px;
             }
             .seccion-contenido-abc a,
+            .seccion-contenido-kiitos a,
             .seccion-contenido-cambridge a,
             .seccion-contenido-habito a{
                 text-decoration: none;
@@ -190,12 +208,14 @@
                     padding-right: 60px;
                 }
                 .boton-abc, 
+                .boton-kiitos, 
                 .boton-cambridge, 
                 .boton-habito {
                     list-style: none;
                     animation: desvanece 2s forwards;
                 }
                     .boton-abc a, 
+                    .boton-kiitos a,
                     .boton-cambridge a, 
                     .boton-habito a {
                         text-decoration: none;
@@ -215,6 +235,22 @@
                         width: 120px;
                         height: 50px;
                         background-image: url('../Images/KetoDietButton.jpeg');
+                        background-size: cover;
+                    }
+                    .boton-kiitos button {
+                        width: 220px;
+                        height: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: white;
+                        border-style: none;
+                        border-radius: 10px;
+                    }
+                    .boton-kiitos li {
+                        width: 80px;
+                        height: 60px;
+                        background-image: url('../Images/Kiitos_Logo.PNG');
                         background-size: cover;
                     }
                     .boton-cambridge button {
@@ -335,12 +371,14 @@
 /* **** Configuracion laptop 1366px **** */
 @media screen and (max-width: 1366px) {
             .seccion-imagen-abc, 
+            .seccion-imagen-kiitos,
             .seccion-imagen-cambridge, 
             .seccion-imagen-habito{
                 height: 900px;
             }
 
-            .seccion-contenido-abc,        
+            .seccion-contenido-abc,     
+            .seccion-contenido-kiitos,   
             .seccion-contenido-habito{
                 height: 900px;
             }   
@@ -352,6 +390,7 @@
                 height: 900px;
             }   
                 .imagen-abc,
+                .imagen-kiitos,
                 .imagen-cambridge, 
                 .imagen-habito{   
                     border-radius: 20px 20px 20px 20px;   
@@ -361,9 +400,13 @@
                     width: 90%;
                     height: 160px;
                 }
+                .imagen-kiitos{
+                    width: 90%;
+                    height: 250px;
+                }
                 .imagen-cambridge{
                     width: 90%;
-                    height: 140px;
+                    height: 230px;
                 }
                 .imagen-habito{
                     width: 90%;
@@ -415,6 +458,7 @@
     }
 
     .folder-abc, 
+    .folder-kiitos, 
     .folder-cambridge, 
     .folder-habito {
         width: 95%;
@@ -422,6 +466,7 @@
     }
 
     .seccion-imagen-abc,
+    .seccion-imagen-kiitos,
     .seccion-imagen-cambridge, 
     .seccion-imagen-habito{   
         height: 300px;
@@ -435,9 +480,14 @@
             height: 230px;
             margin: 0px;
         }
+        .imagen-kiitos{
+            width: 36%;
+            height: 240px;
+            margin: 0px;
+        }
         .imagen-cambridge{
-            width: 40%;
-            height: 220px;
+            width: 30%;
+            height: 260px;
             margin: 0px;
         }
         .imagen-habito {
@@ -446,12 +496,14 @@
             margin: 0px;
         }
         .imagen-abc, 
+        .imagen-kiitos,
         .imagen-cambridge, 
         .imagen-habito{
             border-radius: 20px;
         }
 
         .titulo-imagen-abc,
+        .titulo-imagen-kiitos,
         .titulo-imagen-cambridge,
         .titulo-imagen-habito{
             width: 35%;
@@ -459,6 +511,7 @@
         }
 
     .seccion-contenido-abc,
+    .seccion-contenido-kiitos,
     .seccion-contenido-cambridge,
     .seccion-contenido-habito{
         height: auto;
@@ -466,6 +519,7 @@
         padding-bottom: 20px;
     }
         .seccion-contenido-abc h2,
+        .seccion-contenido-kiitos h2,
         .seccion-contenido-cambridge h2,
         .seccion-contenido-habito h2{
             padding-top: 40px;
@@ -487,6 +541,14 @@
             }
             .boton-abc li {
                 width: 150px;
+                height: 60px;
+            }
+            .boton-kiitos button {
+                width: 190px;
+                height: 63px;
+            }
+            .boton-kiitos li {
+                width: 80px;
                 height: 60px;
             }
             .boton-cambridge button {
@@ -537,11 +599,12 @@
 
 /* **** Configuracion iPad 768px **** */
 @media screen and (max-width: 768px) {
-    .folder-abc, .folder-cambridge, .folder-habito {
+    .folder-abc, .folder-kiitos, .folder-cambridge, .folder-habito {
         width: 95%;
         border-radius: 20px 20px 0px 0px;
     }
         .seccion-imagen-abc,
+        .seccion-imagen-kiitos,
         .seccion-imagen-cambridge, 
         .seccion-imagen-habito{   
             height: 250px;            
@@ -550,9 +613,13 @@
                 width: 40%;
                 height: 190px;
             }
-            .imagen-cambridge{
+            .imagen-kiitos{
                 width: 40%;
-                height: 180px;
+                height: 190px;
+            }
+            .imagen-cambridge{
+                width: 35%;
+                height: 200px;
             }
             .imagen-habito {
                 width: 30%;
@@ -560,6 +627,7 @@
                 margin: 0px;
             }
         .seccion-contenido-abc,
+        .seccion-contenido-kiitos,
         .seccion-contenido-cambridge,
         .seccion-contenido-habito{
             width: 60%; 
@@ -580,11 +648,12 @@
         width: 100%;
     }
         
-        .folder-abc, .folder-cambridge, .folder-habito {
+        .folder-abc, .folder-kiitos, .folder-cambridge, .folder-habito {
             width: 95%;
             border-radius: 20px 20px 0px 0px;
         }        
             .seccion-imagen-abc,
+            .seccion-imagen-kiitos,
             .seccion-imagen-cambridge, 
             .seccion-imagen-habito{ 
                 height: 400px;          
@@ -596,20 +665,26 @@
                     width: 85%;
                     height: 64%;
                 }
+                .imagen-kiitos{
+                    width: 85%;
+                    height: 64%;
+                }
                 .imagen-cambridge{
-                    width: 83%;
-                    height: 59%;
+                    width: 76%;
+                    height: 65%;
                 }
                 .imagen-habito {
                     width: 76%;
                     height: 64%;
                 }
                 .titulo-imagen-abc,
+                .titulo-imagen-kiitos,
                 .titulo-imagen-cambridge,
                 .titulo-imagen-habito{
                     width: 80%;
                 }
                 .titulo-imagen-abc,
+                .titulo-imagen-kiitos,
                 .titulo-imagen-habito{
                     font-size: 16px;
                    
@@ -620,18 +695,21 @@
                 }
 
             .seccion-contenido-abc,
+            .seccion-contenido-kiitos,
             .seccion-contenido-cambridge,
             .seccion-contenido-habito{
                 flex-basis: 100%; 
                 height: auto;
             }
                 .seccion-contenido-abc h1,
+                .seccion-contenido-kiitos h1,
                 .seccion-contenido-cambridge h1,
                 .seccion-contenido-habito h1{
                     padding-left: 30px;
                     padding-right: 30px;
                 }
                 .seccion-contenido-abc p,
+                .seccion-contenido-kiitos p,
                 .seccion-contenido-cambridge p,
                 .seccion-contenido-habito p{
                     font-size: 20px;
@@ -660,6 +738,7 @@
 @media screen and (max-width: 414px){
 
     .seccion-contenido-abc,
+    .seccion-contenido-kiitos,
     .seccion-contenido-cambridge,
     .seccion-contenido-habito{
         height: auto;
@@ -669,9 +748,13 @@
             width: 82%;
             height: 53%;
         }
+        .imagen-kiitos{
+            width: 82%;
+            height: 53%;
+        }
         .imagen-cambridge{
-            width: 78%;
-            height: 50%;
+            width: 74%;
+            height: 56%;
         }
         .imagen-habito {
             width: 74%;
@@ -680,6 +763,9 @@
         .titulo-imagen-abc{
             font-size: 18px;                 
         }   
+        .titulo-imagen-kiitos{
+            font-size: 18px;                 
+        }
         .titulo-imagen-cambridge{
             font-size: 16px;
         }
@@ -687,6 +773,7 @@
             font-size: 16px;
         }
         .seccion-contenido-abc h1,
+        .seccion-contenido-kiitos h1,
         .seccion-contenido-cambridge h1,
         .seccion-contenido-habito h1{
             font-size: 33px;
@@ -702,9 +789,13 @@
         width: 88%;
         height: 46%;
     }
-    .imagen-cambridge{
+    .imagen-kiitos{
         width: 88%;
-        height: 45%;
+        height: 58%;
+    }
+    .imagen-cambridge{
+        width: 80%;
+        height: 55%;
     }
     .imagen-habito {
         width: 88%;
@@ -722,6 +813,7 @@
 /* **** Configuracion iPhone 5/SE 320px **** */
 @media screen and (max-width: 320px) {
     .seccion-imagen-abc,
+    .seccion-imagen-kiitos,
     .seccion-imagen-cambridge, 
     .seccion-imagen-habito{ 
         height: 350px;  
@@ -730,15 +822,20 @@
             width: 90%;
             height: 180px;
         }
+        .imagen-kiitos{
+            width: 90%;
+            height: 250px;
+        }
         .imagen-cambridge{
-            width: 95%;
-            height: 150px;
+            width: 85%;
+            height: 200px;
         }
         .imagen-habito {
             width: 88%;
             height: 200px;
         }
         .titulo-imagen-abc h1,
+        .titulo-imagen-kiitos h1,
         .titulo-imagen-habito h1{
             font-size: 34px;
         }
@@ -747,11 +844,13 @@
         }
 
         .seccion-contenido-abc,
+        .seccion-contenido-kiitos,
         .seccion-contenido-cambridge,
         .seccion-contenido-habito{
             flex-basis: 100%; 
         }
             .seccion-contenido-abc h1,
+            .seccion-contenido-kiitos h1,
             .seccion-contenido-cambridge h1,
             .seccion-contenido-habito h1{
                 font-size: 30px;

@@ -14,6 +14,11 @@ function SistemasCardsDesign({
     abc_vineta_3,
     abc_vineta_4,
     abc_vineta_5,
+    kiitos_vineta_1,
+    kiitos_vineta_2,
+    kiitos_vineta_3,
+    kiitos_vineta_4,
+    kiitos_vineta_5,
     cambridge_vineta_1,
     cambridge_vineta_2,
     cambridge_vineta_3,
@@ -97,6 +102,66 @@ function SistemasCardsDesign({
                         <div className='btn-border-descubreMas'>
                             <button className='btn-descubreMas'>
                                 <Link  to='/protocoloabc' >
+                                    <li> 
+                                        { boton_cards }
+                                    </li>
+                                </Link>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+{/* **************** KIITOS - CARD ************** */}
+                <div className='kiitos-card'>
+                    <div className='header-kiitos-card'>
+
+                    </div>
+
+                    <div className='body-kiitos-card'>
+                        <li><FontAwesomeIcon 
+                                    icon={faCheckDouble} 
+                                    style={{fontSize:'18px',
+                                            color:'#303960',
+                                            marginRight:'5px'}}/> 
+                            { kiitos_vineta_1 } 
+                        </li>
+                        <li><FontAwesomeIcon 
+                                    icon={faCheckDouble} 
+                                    style={{fontSize:'18px',
+                                            color:'#303960',
+                                            marginRight:'10px'}}/> 
+                            { kiitos_vineta_2 } 
+                        </li>
+                        <li><FontAwesomeIcon 
+                                    icon={faCheckDouble} 
+                                    style={{fontSize:'18px',
+                                            color:'#303960',
+                                            marginRight:'10px'}}/> 
+                            { kiitos_vineta_3 } 
+                        </li>
+                        <li><FontAwesomeIcon 
+                                    icon={faCheckDouble} 
+                                    style={{fontSize:'18px',
+                                            color:'#303960',
+                                            marginRight:'10px'}}/> 
+                            { kiitos_vineta_4 } 
+                        </li>
+                        <li><FontAwesomeIcon 
+                                    icon={faCheckDouble} 
+                                    style={{fontSize:'18px',
+                                            color:'#303960',
+                                            marginRight:'10px'}}/> 
+                            { kiitos_vineta_5 } 
+                        </li>
+                        <p> { pie_cards } </p>
+
+                    </div>
+
+                    <div className='footer-kiitos-card'>
+                        <div className='btn-border-descubreMas'>
+                            <button className='btn-descubreMas'>
+                                <Link  to='/kiitos' >
                                     <li> 
                                         { boton_cards }
                                     </li>

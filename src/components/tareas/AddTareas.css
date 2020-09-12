@@ -20,13 +20,15 @@
         margin-top: 50px;
         margin-bottom: 100px;
         border-radius: 20px;
-        border: 1px solid rgb(24, 55, 110);
+        background: linear-gradient(168deg, rgba(0,67,111,1) 44%, rgba(0,120,140,1) 100%);
+        /* border: 1px solid rgb(24, 55, 110); */
     }
         .form-tareas-title{
             font-size: 25px;
             margin-bottom: -20px;
             margin-top: 0px;
             text-align: center;
+            color: rgb(212, 212, 212);
         }
         .secc-form{
             margin-top: 10px;
@@ -52,10 +54,10 @@
             font-size: 18px;
             font-weight: 400;
             letter-spacing: 2px;
-            text-decoration:none;	                   
-            color:rgb(31, 64, 104);
+            text-decoration:none;
+            color:rgb(170, 170, 170);
             background-color:transparent;
-            border:1px solid rgb(31, 64, 104);
+            border:1px solid rgb(170, 170, 170);
             border-radius: 10px;     
             margin:5px;  
             margin-top: 20px;     
@@ -69,3 +71,29 @@
             background-color:rgba(31, 64, 104, 1);
             background-position: -100% 100%;
         }
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px){
+    .btn-agrega-tareas{
+        color:rgba(255, 255, 255, 1);
+        background-color:rgba(31, 64, 104, 1);
+    }
+}
+
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .form-tareas{
+        width: 95%;
+    }
+    .secc-form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .input-field {
+        width: 95%;
+        height: 60px;
+        font-size: 22px;
+    }
+}

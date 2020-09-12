@@ -13,17 +13,23 @@ function SistemasCardsMenu() {
     const [pieCards] = useState ('* El tiempo y la pérdida de peso puede variar en cada persona dependiendo de como siga indicaciónes, calidad de actividad física y situaciones hormonales preexistentes.')
     const [btnCards] = useState ('Descubre más')
 
-    const [abc_li_1] = useState('Práctico.')
+    const [abc_li_1] = useState('Económico')
     const [abc_li_2] = useState('Balanceado.')
     const [abc_li_3] = useState('Pérdida de 1 talla por mes.*')
     const [abc_li_4] = useState('1 malteada desayuno y cena.')
     const [abc_li_5] = useState('Reduce consumo de carbos.')
 
-    const [cambridge_li_1] = useState('Cómodo.')
+    const [kiitos_li_1] = useState('Práctico.')
+    const [kiitos_li_2] = useState('Balanceado.')
+    const [kiitos_li_3] = useState('Pérdida de 1 talla en 15 días.*')
+    const [kiitos_li_4] = useState('1 malteada 3 veces al día.')
+    const [kiitos_li_5] = useState('Dieta muy baja en calorías.')
+
+    const [cambridge_li_1] = useState('Método Británico')
     const [cambridge_li_2] = useState('Balanceado.')
     const [cambridge_li_3] = useState('Pérdida de 1 talla en 15 días.*')
     const [cambridge_li_4] = useState('1 malteada 3 veces al día.')
-    const [cambridge_li_5] = useState('Dieta muy baja en calorías')
+    const [cambridge_li_5] = useState('Dieta muy baja en calorías.')
 
     const [habito_li_1] = useState('Aprende a comer.')
     const [habito_li_2] = useState('Balanceado.')
@@ -44,6 +50,11 @@ function SistemasCardsMenu() {
                 abc_vineta_3 = { abc_li_3 }
                 abc_vineta_4 = { abc_li_4 }
                 abc_vineta_5 = { abc_li_5 }
+                kiitos_vineta_1 = { kiitos_li_1 }
+                kiitos_vineta_2 = { kiitos_li_2 }
+                kiitos_vineta_3 = { kiitos_li_3 }
+                kiitos_vineta_4 = { kiitos_li_4 }
+                kiitos_vineta_5 = { kiitos_li_5 }
                 cambridge_vineta_1 = { cambridge_li_1 }
                 cambridge_vineta_2 = { cambridge_li_2 }
                 cambridge_vineta_3 = { cambridge_li_3 }

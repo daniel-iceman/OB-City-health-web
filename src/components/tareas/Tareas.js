@@ -12,10 +12,10 @@ const Tareas = ({tareas}) => {
                 <table className="tabla-tareas">
                     <thead>
                         <tr className='titulos-tabla'>
-                        <th scope="col">Alimento</th>
-                        <th scope="col">Agregado</th>
-                        <th scope="col">Valor</th>
-                        <th scope="col">Eliminar</th>
+                        <th scope="col" className='food-text' >Alimento</th>
+                        <th scope="col" className='date-text' >Agregado</th>
+                        <th scope="col" className='thumb-text' >Valor</th>
+                        <th scope="col" className='trash-text'>Eliminar</th>
                         </tr>
                     </thead>
                     <tbody>

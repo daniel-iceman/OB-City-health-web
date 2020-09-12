@@ -17,17 +17,13 @@ function FooterColumna1({
             <div className='terminos-privacidad'>
                 <nav>
                     <ul>
-                        <Link className='opciones-footer'  to='/servicios' >
-                            <li> 
-                                { terminos }
-                            </li>
-                        </Link>
-                        <Link className='opciones-footer'  to='/sistemas' >
-                            <li> 
-                                { privacidad }
-                            </li>
-                        </Link>
                         
+                        <li> 
+                            <a href='https://myappterms.com/reader.php?id=100'>
+                                Política de privacidad
+                            </a>
+                        </li>
+                                             
                     </ul>
                 </nav>
             </div>

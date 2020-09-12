@@ -4,18 +4,40 @@
 }   
     .form-block{
         width: 100%;
-        height: auto;
+        height: 640px;
         display: flex;
         justify-content: center;
         align-items: center;
         background: linear-gradient(0deg, rgba(2,50,82,1) 38%, rgba(0,109,128,1) 83%);
     }
-    .sign-up-form{
-        height: 640px;
-    }
-    .sign-in-form{
+
+    .form-advice-signin{
+        width: 450px;
         height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Questrial';
+        color: white;
+        background: orangered;
+        border-radius: 30px;
+        z-index: 100;
+        animation: crossLeft 1s forwards;
     }
+    .form-advice-signup{
+        width: 450px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Questrial';
+        color: white;
+        background: orangered;
+        border-radius: 30px;
+        z-index: 100;
+        animation: crossRight 1s forwards;
+    }
+    
     .form-auth{
         width: 600px;
         /* height: 400px; */
@@ -29,16 +51,25 @@
         background: none;
         margin-top: 100px;
         margin-bottom: 100px;
-        border-radius: 20px;
-        /* border: 1px solid rgb(65, 72, 85); */
+        border-radius: 20px;        
     }
         .cont-auth-title{
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
-            .form-auth-title{
+        .form-auth-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .form-auth-title h2{
                 font-size: 25px;
+            }
+            .form-auth-title h5{
+                margin-top: -5px;
+                font-size: 17px;
             }
         .secc-form{
             margin-top: 20px;
@@ -124,3 +155,184 @@
         .cuenta-existente a:hover{
             text-decoration: none;
         }
+
+.form-advice-signin h1, .form-advice-signup h1{
+    animation: disolveTitleSign 2s forwards;
+}
+
+.apearSignin{
+    animation: disolvSigninForm 2s forwards;        
+}
+
+.apearSignup{
+    animation: disolvSignupForm 2s forwards;        
+}
+
+@keyframes crossLeft {
+    0%{
+        transform: translateX(500px);
+        border-radius: 0px 0px 0px 0px;
+    }
+    100%{
+        transform: translateX(0px); 
+        border-radius: 30px 0px 0px 30px;
+    }
+}
+
+@keyframes crossRight {
+    0%{
+        transform: translateX(-500px);
+        border-radius: 0px 0px 0px 0px;
+    }
+    100%{
+        transform: translateX(0px); 
+        border-radius: 0px 30px 30px 0px;
+    }
+}
+@keyframes disolvSigninForm{
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px); 
+        opacity: 1;
+    }
+}
+@keyframes disolvSignupForm{
+    0%{
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(-50px); 
+        opacity: 1;
+    }
+}
+
+@keyframes disolveTitleSign {
+    from{
+        opacity: 0;
+    }
+    to{
+        
+        opacity: 1;
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px){
+    .form-block{
+        flex-direction: column;
+    }
+    .signupFormBlock{
+        flex-direction: column-reverse;
+    }
+    .form-advice-signin{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px;
+        z-index: 100;
+        animation: none;
+        margin-top: -60px;
+    }
+    .form-advice-signup{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px;
+        z-index: 100;
+        animation: none;
+        margin-top: -10px;
+    }
+    .form-auth{
+        margin-top: 0px;
+    }
+    .btn-sign:hover {
+        color:white;
+        background: orangered;
+        border:1px solid orangered;
+    }
+
+    @keyframes disolvSignupForm{
+        0%{
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0px); 
+            opacity: 1;
+        }
+    }  
+    
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px){
+    .form-advice-signin{
+        height: 120px;
+        margin-top: -60px;
+        z-index: 0px;
+    }
+    .form-advice-signup{
+        height: 120px;
+        margin-top: -10px;
+        z-index: 0px;
+    }
+    .form-auth{
+        width: 90%;
+    }
+    .apearSignin{
+        animation: none;        
+    }
+    
+    .apearSignup{
+        animation: none;        
+    }
+
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px) {
+    
+    .form-advice-signin{
+        height: 60px;
+        margin-top: -83px;
+        z-index: 0px;
+    }
+    .form-advice-signup{
+        height: 60px;
+        margin-top: -54px; 
+        z-index: 0px;
+    }
+    .no-registrado{ 
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .form-advice-signin h1, .form-advice-signup h1{
+        font-size: 25px;
+    }
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px){
+    .form-advice-signin{
+        height: 50px;
+        margin-top: -92px;
+    }        
+    .form-advice-signup{
+        height: 50px;
+        font-size: 18px;
+        margin-top: -64px; 
+    }
+    .form-advice-signin h1, .form-advice-signup h1{
+        font-size: 23px;
+    }
+       
+}

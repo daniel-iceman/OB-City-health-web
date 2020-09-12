@@ -43,7 +43,7 @@
         position: relative;
         top: -40px;
     }
-        .abc-card, .cambridge-card, .habito-card {
+        .abc-card, .kiitos-card, .cambridge-card, .habito-card {
             width: 20%;
             height: 600px;
             display: flex;
@@ -52,7 +52,7 @@
             box-shadow: 2px 2px 5px gray;            
             border-radius: 10px;
         }
-            .header-abc-card, .header-cambridge-card, .header-habito-card{
+            .header-abc-card, .header-kiitos-card, .header-cambridge-card, .header-habito-card{
                 width: 100%;
                 height: 38%;
                 border-radius: 10px 10px 0px 0px;
@@ -61,8 +61,12 @@
                     background-image: url('../Images/KetoSuperior.PNG');
                     background-size:cover;
                 }   
+                .header-kiitos-card {
+                    background-image: url('../Images/KiitosGirl.PNG');
+                    background-size:cover;
+                } 
                 .header-cambridge-card {
-                    background-image: url('../Images/Cambridge.png');
+                    background-image: url('../Images/1to1diet.JPG');
                     background-size:cover;
                 } 
                 .header-habito-card {
@@ -70,7 +74,7 @@
                     background-size:cover;
                 } 
 
-            .body-abc-card, .body-cambridge-card, .body-habito-card {
+            .body-abc-card, .body-kiitos-card, .body-cambridge-card, .body-habito-card {
                 width: 85%;
                 height: 45%;
                 display: flex;
@@ -81,17 +85,17 @@
                 list-style: none;           
                 
             }
-                .body-abc-card li, .body-cambridge-card li, .body-habito-card li {
+                .body-abc-card li, .body-kiitos-card li,.body-cambridge-card li, .body-habito-card li {
                     width: 100%;
                     line-height: 40px;       
                     letter-spacing: 1px;             
                 }
-                .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
+                .body-abc-card p, .body-kiitos-card p, .body-cambridge-card p, .body-habito-card p {
                     font-size: 11px;
                     text-align: justify;
                 }
             
-            .footer-abc-card, .footer-cambridge-card, .footer-habito-card {
+            .footer-abc-card, .footer-kiitos-card, .footer-cambridge-card, .footer-habito-card {
                 width: 100%; 
                 height: 17%;
                 display: flex;
@@ -151,7 +155,7 @@
     /* .card-container {
         height: 1400px;
     } */
-    .abc-card, .cambridge-card, .habito-card {
+    .abc-card, .kiitos-card, .cambridge-card, .habito-card {
         width: 28%;
         height: 630px;
     }
@@ -164,15 +168,15 @@
         top: -230px;
         left: 100px; 
     }
-    .abc-card, .cambridge-card, .habito-card {
+    .abc-card, .kiitos-card, .cambridge-card, .habito-card {
         width: 30%;
         height: 790px;
     }
-    .header-abc-card, .header-cambridge-card, .header-habito-card{
+    .header-abc-card, .header-kiitos-card, .header-cambridge-card, .header-habito-card{
         width: 100%;
         height: 24%; 
     }
-    .body-abc-card, .body-cambridge-card, .body-habito-card {
+    .body-abc-card, .body-kiitos-card, .body-cambridge-card, .body-habito-card {
         width: 85%;
         height: 60%;
     }
@@ -190,19 +194,19 @@
         flex-direction: column;
         align-items: center;
     }
-    .abc-card, .cambridge-card, .habito-card {
+    .abc-card, .kiitos-card, .cambridge-card, .habito-card {
         width: 90%;
         margin-bottom: 40px;
         height: 800px;
     }
-        .header-abc-card, .header-cambridge-card, .header-habito-card{
+        .header-abc-card, .header-kiitos-card, .header-cambridge-card, .header-habito-card{
             width: 100%;
             height: 80%; 
         }
-        .body-abc-card, .body-cambridge-card, .body-habito-card {
+        .body-abc-card, .body-kiitos-card, .body-cambridge-card, .body-habito-card {
             font-size: 18px;  
         }
-        .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
+        .body-abc-card p, .body-kiitos-card p, .body-cambridge-card p, .body-habito-card p {
             font-size: 14px;
         }    
 }
@@ -237,7 +241,7 @@
             letter-spacing: 1px;
         }
     
-    .header-abc-card, .header-cambridge-card, .header-habito-card{
+    .header-abc-card, .header-kiitos-card, .header-cambridge-card, .header-habito-card{
         width: 100%;
         height: 40%; 
     }
@@ -245,22 +249,22 @@
 
 /* **** Configuracion iPhone Plus 414px **** */
 @media screen and (max-width: 414px) {
-    .abc-card, .cambridge-card, .habito-card {
+    .abc-card, .kiitos-card, .cambridge-card, .habito-card {
         width: 95%;
     }
-        .header-abc-card, .header-cambridge-card, .header-habito-card{
+        .header-abc-card, .header-kiitos-card, .header-cambridge-card, .header-habito-card{
             height: 31%;
         }
-        .body-abc-card, .body-cambridge-card, .body-habito-card {
+        .body-abc-card, .body-kiitos-card, .body-cambridge-card, .body-habito-card {
             width: 85%;
             height: 50%;
             font-size: 20px;        
             
         }
-            .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
+            .body-abc-card p, .body-kiitos-card p, .body-cambridge-card p, .body-habito-card p {
                 font-size: 15px;
             } 
-        .footer-abc-card, .footer-cambridge-card, .footer-habito-card {
+        .footer-abc-card, .footer-kiitos-card, .footer-cambridge-card, .footer-habito-card {
             height: 19%; 
         }          
 }
@@ -291,18 +295,18 @@
                     letter-spacing: 1px;                    
                     line-height: 24px;
                 }
-    .header-abc-card, .header-cambridge-card, .header-habito-card{
+    .header-abc-card, .header-kiitos-card, .header-cambridge-card, .header-habito-card{
         height: 28%;
     }
-    .body-abc-card, .body-cambridge-card, .body-habito-card {
+    .body-abc-card, .body-kiitos-card, .body-cambridge-card, .body-habito-card {
         height: 45%;
         width: 95%;
         font-size: 17px;  
     }
-        .body-abc-card p, .body-cambridge-card p, .body-habito-card p {
+        .body-abc-card p, .body-kiitos-card p, .body-cambridge-card p, .body-habito-card p {
             font-size: 14px;
         }  
-    .footer-abc-card, .footer-cambridge-card, .footer-habito-card {
+    .footer-abc-card, .footer-kiitos-card, .footer-cambridge-card, .footer-habito-card {
         height: 27%; 
     }  
         .btn-border-descubreMas{
@@ -328,15 +332,15 @@
         padding-left: 10px;
         padding-right: 10px;
     }
-    .header-abc-card, .header-cambridge-card, .header-habito-card{
+    .header-abc-card, .header-kiitos-card, .header-cambridge-card, .header-habito-card{
         
         height: 24%;
     }
-    .body-abc-card, .body-cambridge-card, .body-habito-card {
+    .body-abc-card, .body-kiitos-card, .body-cambridge-card, .body-habito-card {
         height: 45%;
         font-size: 17px;  
     }
-    .footer-abc-card, .footer-cambridge-card, .footer-habito-card {
+    .footer-abc-card, .footer-kiitos-card, .footer-cambridge-card, .footer-habito-card {
         height: 31%; 
     }  
     

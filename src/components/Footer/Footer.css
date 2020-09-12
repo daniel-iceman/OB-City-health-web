@@ -109,20 +109,15 @@
             margin-top: 100px;
             margin-right: 150px;
         }
-            .terminos-privacidad ul{
-                width: 100%;
-                display: flex;
-                justify-content: space-evenly;
-            }
-            
-            .terminos-privacidad li{
-                color: grey;
-                list-style: none;
+            .terminos-privacidad a{
+                color: gray;
+                text-decoration: none;
                 margin-left: 50px;
             }
-            .terminos-privacidad a{
-                text-decoration: none;
-            }
+                .terminos-privacidad a:hover{
+                    color: gray;
+                    text-decoration: none;
+                }
 
     .footer-columna2 {        
         width: 35%;

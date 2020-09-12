@@ -1,0 +1,114 @@
+.container-consejos{
+    width: 100%;
+    height: auto;
+}
+.header-consejos{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(180deg, rgba(2,17,64,1) 56%, rgba(0,213,150,1) 100%);
+    margin-top: -120px;
+}
+    .header-consejos h1 {
+        font-family: 'Questrial';
+        font-size: 50px;
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+        animation: desvanece 2s forwards;
+    }
+
+.block-consejos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 150px 50px 150px;
+    background: #b1bac9;
+}
+    .consejo-section{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Questrial';
+        font-style: italic;
+        font-size: 25px;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        border-left: 3px solid #C7F5E4;
+        border-top: 3px solid #C7F5E4;
+        box-shadow: 4px 4px 8px rgb(27, 25, 25);
+        padding: 40px 40px 40px 40px;
+        margin-bottom: 40px;
+        /* background: #3d557b; */
+        background: #618f7e;
+        
+    }
+    .consejo-section p{
+        color: white;
+    }
+    .FontAwseomeConsejo{
+        color: rgb(250, 248, 109);
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+@keyframes desvanece {
+    from{
+        opacity: 0;
+    }
+    to{
+        
+        opacity: 1;
+        
+    }
+}
+
+/* **** Configuracion iPad Pro 1024px **** */
+@media screen and (max-width: 1024px) {
+    .block-consejos{
+        padding: 50px 50px 50px 50px;
+    }
+    
+}
+
+/* **** Configuracion iPad 768px **** */
+@media screen and (max-width: 768px) {
+    .consejo-section{
+        width: 90%;
+    }
+}
+
+/* **** Configuracion Nokia N9 480px **** */
+@media screen and (max-width: 480px) {
+    .block-consejos{
+        padding: 50px 20px 50px 20px;
+    }
+    .consejo-section{
+        width: 90%;
+    }
+}
+
+/* **** Configuracion iPhone Plus 414px **** */
+@media screen and (max-width: 414px) {
+    .consejo-section{    
+        width: 95%;        
+        padding: 40px 20px 40px 20px;
+    }
+}
+
+/* **** Configuracion iPhone X y 6/7/8 375px **** */
+@media screen and (max-width: 375px) {
+    .block-consejos{
+        padding: 50px 15px 50px 15px;
+    }
+    .consejo-section{
+        font-size: 23px;
+    }
+}

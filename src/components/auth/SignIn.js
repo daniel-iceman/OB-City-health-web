@@ -5,13 +5,15 @@ import { signIn } from '../../redux/Actions/authActions'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
+
+
 class SignIn extends Component {
 
     state = {
         email: '',
         password: '',
      };
-
+     
     handleChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value,
@@ -29,11 +31,18 @@ class SignIn extends Component {
         const { uid } = this.props;
             if(uid) return <Redirect to='/dashboard' />
 
+        
+
         return (
             <div className='container-form-auth'>
                 <div className='form-block'>
+
+                    <div className='form-advice-signin'>
+                        <h1>Hola de nuevo</h1>
+                    </div>
+
                     <form 
-                        className='form-auth' 
+                        className='form-auth apearSignin' 
                         autoComplete='off'
                         onSubmit = {this.handleSubmit}
                     >   

@@ -33,6 +33,10 @@
     -->
 
     <!-- <link rel="stylesheet" type="text/css" href="custom.css"></link> -->
+    
+    <!-- Nunito font Type -->
+    <!-- font-family: 'Quicksand', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
     <!-- Nunito font Type -->
     <!-- font-family: 'Nunito', sans-serif; -->
@@ -64,15 +68,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="https://platform.fatsecret.com/js?key=1f3291eff1ce4c46bef2a8a5ef978b8b&theme=blue_small"></script>
-    <script>
-      fatsecret.variables.navOptions = fatsecret.navFeatures.home;
-    </script>
+    <script src="https://platform.fatsecret.com/js?key=1f3291eff1ce4c46bef2a8a5ef978b8b"></script>
+    <!-- <script src="https://platform.fatsecret.com/js?key=1f3291eff1ce4c46bef2a8a5ef978b8b&theme=blue_small"></script> -->
     <script>
       fatsecret.setContainer("my_container");
       fatsecret.setCanvas("home");
+    </script>
+    <script>
+      fatsecret.variables.navOptions = fatsecret.navFeatures.home | fatsecret.navFeatures.diet_calendar;
+    </script>
+    
+    <script>
+      fatsecret.addRef("search", "search");
+      fatsecret.addRef("foodtitle", "food_title");
+      fatsecret.addRef("nutritionpanel", "nutrition_panel");
       </script>
-    <script src="fatsecret.js"></script>
-    <!-- <script src="https://platform.fatsecret.com/js?key=1f3291eff1ce4c46bef2a8a5ef978b8b&auto_nav=false"></script> -->
+
+      <script>fatsecret.writeHolder("search");</script>
+      <script>fatsecret.writeHolder("foodtitle");</script>
+      <script>fatsecret.writeHolder("nutritionpanel");</script>
+    <!-- <script src="fatsecret.js"></script> -->
+    
+    
   </body>
 </html>

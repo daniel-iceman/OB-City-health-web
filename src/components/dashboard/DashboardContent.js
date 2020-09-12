@@ -1,9 +1,15 @@
 import React from 'react'
 import './Dashboard.css'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookOpen, faUtensils, faCommentMedical } from "@fortawesome/free-solid-svg-icons";
 
 function DashboardContent() {
     return (
         <div className='container-dashboard'>
+            <div className='header-dashboard'>
+
+            </div>
             <div className='dashboard-block'>
 
                 <div className='dashboard-publicity-container'>
@@ -12,34 +18,50 @@ function DashboardContent() {
                             <h1>Bienvenid@</h1>
                             <h3>
                                 Si eres nuestro paciente, esta sección será una herramienta para ayudarte a 
-                                lograr tu mejor objetivo: mejorar tu salud y volver a tener la talla que tanto deseas.
-                                Si no eres nuestro paciente, te invitamos a que nos conozcas, y descubras que alcanzar 
+                                lograr tu objetivo: mejorar tu salud y volver a tener la talla que tanto deseas.
+                                Si aún no lo eres, te invitamos a que nos conozcas y descubras que alcanzar 
                                 tu meta es posible, si estas en el lugar indicado.
                             </h3>
                         </div>
-                        <div className='dashboard-publicity-envios'>
-                            <h1>Envío gratuito de tu tratamiento a donde te encuentres</h1>
-                            <h3>
-                                Si deseas que te enviemos tu tratamiento, llámanos y te lo enviaremos sin costo de gastos 
-                                de envío.
-                            </h3>
-                        </div>
-                        <div className='dashboard-publicity-recetas'>
-                            <h1>Disfruta las deliciosas recetas bajas en carbohidratos que te recomendamos aquí.</h1>                        
-                        </div>
-                        <div className='dashboard-publicity-bitacora'>
-                            <h1>Anota en la bitacora todo lo que comas, en el momento en el que lo comes.</h1>                        
-                        </div>
+                        
                     </div>
                         
                 </div>
 
                 <div className='dashboard-buttons-links'>
-                    <button> Bitacora </button>
-                    <button> Recetas </button>
-                    <button> Consejos </button>
 
-                </div>
+                    <Link   to='/bitacora' >
+                        <button className='bitacora-btn'> 
+                            <FontAwesomeIcon 
+                                icon={ faBookOpen } 
+                                fixedWidth
+                                className='FontAwesomeBitacora'/>                           
+                            Bitacora       
+                        </button>
+                    </Link>
+
+                    <Link   to='/recetarios' >
+                        <button className='recetas-btn'>                         
+                            <FontAwesomeIcon 
+                                icon={ faUtensils } 
+                                fixedWidth
+                                className='FontAwesomeCubiertos'/>
+                            Recetas                       
+                        </button>
+                    </Link>
+
+                    <Link   to='/consejosvip' >
+                        <button className='consejos-btn'>                         
+                            <FontAwesomeIcon 
+                                icon={ faCommentMedical } 
+                                fixedWidth
+                                className='FontAwesomeConsejos'/>
+                            Consejos                       
+                        </button>
+                    </Link>
+                        
+                </div>                 
+                    
 
             </div>
             

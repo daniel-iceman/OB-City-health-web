@@ -19,24 +19,26 @@ const Tarea = ({ tarea,  removeTarea, toggleChecked }) => {
     return (        
         <>
             <tr className='tr-tarea'>
-                <th>{ tarea.tarea }</th>
-                <td className='big-size'>{moment(tarea.date.toDate()).calendar()}</td>
-                <td className='mobile-size'>{moment(tarea.date.toDate()).subtract(10, 'days').calendar()}</td>
-                <td>
+                <th className='food-eat'>{ tarea.tarea }</th>
+                {/* <td className='big-size'>{moment(tarea.date.toDate()).calendar()}</td> */}
+                
+                <td className='calendar-big-size'>{moment(tarea.date.toDate()).format('lll')}</td>
+                <td className='thumb'>
                     <Check 
                         onClick = {() => handleCheck(tarea) }
                         checked = {tarea.checked}
                     />
                 </td>
 
-                <td><span 
+                <td className='trash'><span 
                     className="material-icons" 
-                    style={{color:'rgb(199, 198, 197)'}}
+                    // style={{color:'#d8d3cd'}}
                     onClick= {() => handleRemove(tarea) }
                     >
                         delete
                     </span>
                 </td>
+                
             </tr> 
         </>    
         

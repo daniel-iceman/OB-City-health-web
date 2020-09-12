@@ -15,6 +15,7 @@ import ArticulosPage from './pages/ArticulosPage'
 import ContactoPage from './pages/ContactoPage'
 import SistemasCardsPage from './pages/SistemasCardsPage'
 import ProtocoloABC from './pages/ProtocoloABCPage'
+import KiitosPage from './pages/KiitosPage'
 import Cambridge from './pages/CambridgePage'
 import Habito from './pages/HabitoPage'
 import TelemedicinaPage from './pages/TelemedicinaPage'
@@ -42,6 +43,7 @@ import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import Dashboard from './components/dashboard/Dashboard'
 import Bitacora from './components/Bitacora/Bitacora'
+import Consejos from './pages/ConsejosPage'
 import RecetariosPage from './pages/RecetariosPage'
 import EnchiladasDeLechuga from './pages/RecetaEnchiladasDeLechugaPage'
 import TortillaDeVegetales from './pages/RecetaTortillaVegetalesPage'
@@ -50,6 +52,7 @@ import RollitosJamon from './pages/RecetaRollitosJamonPage'
 import PanNube from './pages/RecetaPanNubePage'
 import PizzaColiflor from './pages/RecetaPizzaColiflorPage'
 import FatSecret from './pages/FatSecretPage'
+
 
 
 function App() {
@@ -66,6 +69,8 @@ function App() {
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/bitacora" component={Bitacora} />
+          <Route exact path="/consejosvip" component={Consejos} />
+          <Route exact path="/contenidonutricional" component={FatSecret} />
           <Route exact path="/recetarios" component={RecetariosPage} />         
           <Route exact path="/enchiladasdelechuga" component={EnchiladasDeLechuga} />
           <Route exact path="/tortilladevegetales" component={TortillaDeVegetales} />
@@ -73,13 +78,13 @@ function App() {
           <Route exact path="/rollitosjamon" component={RollitosJamon} />
           <Route exact path="/pannube" component={PanNube} />
           <Route exact path="/pizzacoliflor" component={PizzaColiflor} />
-          <Route exact path="/contenidonutricional" component={FatSecret} />
           <Route exact path="/servicios" component={ServiciosPage} />
           <Route exact path="/acerca" component={AcercaPage} />
           <Route exact path="/articulos" component={ArticulosPage} />
           <Route exact path="/contacto" component={ContactoPage} />
           <Route exact path="/sistemas" component={SistemasCardsPage} />
           <Route exact path="/protocoloabc" component={ProtocoloABC} />
+          <Route exact path="/kiitos" component={KiitosPage} />
           <Route exact path="/cambridgeweightplan" component={Cambridge} />
           <Route exact path="/habitoalimenticio" component={Habito} />
           <Route exact path="/telemedicina" component={TelemedicinaPage} />
