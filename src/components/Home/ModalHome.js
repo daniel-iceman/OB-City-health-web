@@ -33,7 +33,7 @@ function ModalHome() {
                 <Modal.Body className='mod-body-section' >
                     <div className='mod-body-text'>
                         <h1>#estamoscontigo</h1>
-                        <h3>Si vives lejos o no deseas salir, quedate en casa y conoce nuestro sistema de medicina a distancia.</h3>
+                        <h3>Si vives lejos o no deseas salir, quedate en casa, también contamos con consultas online, conoce nuestro sistema de medicina a distancia.</h3>
                     </div>           
                     
                 </Modal.Body>
@@ -51,7 +51,7 @@ function ModalHome() {
                         <button 
                             className='btn btn-primary' 
                             type="button">
-                            Descubre #telemedicina
+                            Consultas online
                         </button>
                     </Link>
                 </Modal.Footer>

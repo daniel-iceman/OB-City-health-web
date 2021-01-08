@@ -5,6 +5,7 @@ import swal from 'sweetalert'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 
 function ContactoDesign() {
@@ -165,14 +166,14 @@ function ContactoDesign() {
                 <div className='contact-email'>
                     <div className='icon-contact'>
                         <FontAwesomeIcon 
-                            icon={faCommentDots} 
+                            icon={faWhatsapp} 
                             fixedWidth
                             className='FontAwseomeContact'/>
-                        <h3> EMAIL </h3>
+                        <h3> Whatsapp </h3>
                     </div>
                     <div className='text-contact'>                        
                         <p>
-                            obcityhealth@gmail.com
+                            (55) 20 83 19 39
                         </p>
                     </div>                     
                 </div>

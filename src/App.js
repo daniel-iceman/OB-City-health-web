@@ -53,6 +53,7 @@ import PanNube from './pages/RecetaPanNubePage'
 import PizzaColiflor from './pages/RecetaPizzaColiflorPage'
 import ChileRellenoQueso from './pages/RecetaChileRellenoQuesoSinCapearPage'
 import FatSecret from './pages/FatSecretPage'
+import LandPagAntojos from './pages/LandingAntojosPage'
 
 
 
@@ -109,12 +110,13 @@ function App() {
           <Route exact path="/exitosCarlos" component={Carlos} />
           <Route exact path="/emocionesyalimentacion" component={PsicologiaPage} />
           <Route exact path="/covid19" component={Covid} />
+          <Route exact path="/antojos_landingpage" component={LandPagAntojos} />
 
         </Switch>
 
         <ChatButton />
         <Footer />
-
+        
       </BrowserRouter>
     </>
   )
