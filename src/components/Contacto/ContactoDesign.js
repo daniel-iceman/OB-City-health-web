@@ -169,7 +169,9 @@ function ContactoDesign() {
                             icon={faWhatsapp} 
                             fixedWidth
                             className='FontAwseomeContact'/>
-                        <h3> Whatsapp </h3>
+                        <h3> Envíenos un mensaje </h3>
+                        <h5> Whatsapp </h5>
+                        <h5> Telegram </h5>
                     </div>
                     <div className='text-contact'>                        
                         <p>

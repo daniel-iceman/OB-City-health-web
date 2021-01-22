@@ -20,7 +20,7 @@ function TelemedicinaDesign() {
                 <h1> Telemedicina </h1>
                 <div className='subtitulo-inicial-telemedicina'>
                     <h2>
-                        En OB City health ponemos a su disposición el uso de telemedicina para poder brindarle nuestro servicio en el lugar en el que se encuentre y desde la comodidad de su casa.
+                        En OB City health ponemos a su disposición el uso de consultas online para poder brindarle nuestro servicio en el lugar en el que se encuentre y desde la comodidad de su casa.
                     </h2>
                 </div>
             </div>

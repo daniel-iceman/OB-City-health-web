@@ -24,13 +24,9 @@
         width: 50% ;
         height: 50%;  
         font-size: 100px;
-        /* color: rgb(7, 156, 144); */
-        color: rgb(0, 195, 186);
-        /* color: lime; */
-        /* color: limegreen; */
-        /* background: rgb(7, 156, 144); */
+        /* color: rgb(0, 195, 186); */
+        color: white;
         padding: 30px;
-        /* border-radius: 100px;   */
         margin-left: 0px;  
     }
         

@@ -8,7 +8,7 @@ import ChatButton from './components/BotonChat/ChatButton'
 import Footer from './components/Footer/Footer'
 
 import HomePage from './pages/HomePage'
-import ChatBot from './pages/ChatBotPage'
+/* import ChatBot from './pages/ChatBotPage' */
 import ServiciosPage from './pages/ServiciosPage'
 import AcercaPage from './pages/AcercaDePage'
 import ArticulosPage from './pages/ArticulosPage'
@@ -38,6 +38,7 @@ import MariaLuisa from './pages/ExitoMariaLuisaPage'
 import Carlos from './pages/ExitoCarlosPage'
 import Covid from './pages/Covid19Page'
 import PsicologiaPage from './pages/PsicologiaPage'
+import ThanksContactPage from './pages/ThanksContactPage'
 
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
@@ -53,7 +54,8 @@ import PanNube from './pages/RecetaPanNubePage'
 import PizzaColiflor from './pages/RecetaPizzaColiflorPage'
 import ChileRellenoQueso from './pages/RecetaChileRellenoQuesoSinCapearPage'
 import FatSecret from './pages/FatSecretPage'
-import LandPagAntojos from './pages/LandingAntojosPage'
+
+
 
 
 
@@ -66,7 +68,7 @@ function App() {
 
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/chat" component={ChatBot} />          
+          {/* <Route exact path="/chat" component={ChatBot} /> */}          
           <Route exact path="/login" component={SignIn} />
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/dashboard" component={Dashboard} />
@@ -110,7 +112,7 @@ function App() {
           <Route exact path="/exitosCarlos" component={Carlos} />
           <Route exact path="/emocionesyalimentacion" component={PsicologiaPage} />
           <Route exact path="/covid19" component={Covid} />
-          <Route exact path="/antojos_landingpage" component={LandPagAntojos} />
+          <Route exact path="/bienvenido_contacto" component={ThanksContactPage} />
 
         </Switch>
 

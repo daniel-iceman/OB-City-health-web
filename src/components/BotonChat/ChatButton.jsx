@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom'
 function ChatButton() {
     return (
         <div className='container-chatbutton'>
-            <div className='chatbutton'>
-                {/* <button> */}
+            {/* Desbloquear el div para que aparezca el icono del chat button y cambiar color en el css */}
+            {/* <div className='chatbutton'>
+                
                     <Link  to='/chat' >
                         <div>
                             <FontAwesomeIcon className='fontAwesomeChat'
@@ -17,8 +18,8 @@ function ChatButton() {
                             
                         </div>
                     </Link>
-                {/* </button> */}
-            </div>
+                
+            </div> */}
             
         </div>
     )
