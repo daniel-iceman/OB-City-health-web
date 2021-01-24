@@ -87,11 +87,20 @@ function TelemedicinaDesign() {
                         </div>
                         <div className='botonAContacto' >
                             <button>
-                                <Link  to='/contacto' >
+                                {/* <Link  to='/contacto' >
                                     <li> 
                                         QUIERO UNA CITA
                                     </li>
-                                </Link>
+                                </Link> */}
+                                <li
+                                    style={{listStyle:'none'}}>                                        
+                                    <a 
+                                        style={{textDecoration:'none'}}
+                                        target="_blank" 
+                                        href="https://www.obcity.store/contacto-ob-city-web/">
+                                        Contacto
+                                    </a>
+                                </li> 
                             </button>
                         </div>
                         <div className='fotos-telemedicina'>

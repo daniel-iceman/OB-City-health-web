@@ -48,11 +48,20 @@ function PriceDesign({
                             </Link>
                         </div>
                         <div className='btn-price-contacto'>
-                            <Link to='/contacto' >
+                            {/* <Link to='/contacto' >
                                 <button >
                                     Contáctenos
                                 </button>
-                            </Link>
+                            </Link> */}
+                            <li
+                                style={{listStyle:'none'}}>                                        
+                                <a 
+                                    style={{textDecoration:'none'}}
+                                    target="_blank" 
+                                    href="https://www.obcity.store/contacto-ob-city-web/">
+                                    Contacto
+                                </a>
+                            </li> 
                         </div>
                     </div>          
                 </div>        

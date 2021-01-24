@@ -73,11 +73,20 @@ function Barra() {
                                 sm2Opcion4={articulosOpcion4}
                                 sm2Opcion5={articulosOpcion5}
                             />
-                            <NavLink activeClassName='active-menulink' className='opciones-menubar' to='/contacto' >
+                            {/* <NavLink activeClassName='active-menulink' className='opciones-menubar' to='/contacto' >
                                 <li > 
                                     Contacto
                                 </li>
-                            </NavLink>
+                            </NavLink> */}
+                            <li>
+                                <a 
+                                    style={{color:'rgb(0, 39, 77)'}}
+                                    target="_blank" 
+                                    href="https://www.obcity.store/contacto-ob-city-web/">
+                                    Contacto
+                                </a>
+                            </li>
+                            
 
                             {/* <SubMenu3 /> */}
 

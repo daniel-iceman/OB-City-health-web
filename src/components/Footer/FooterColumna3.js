@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+/* import { Link } from 'react-router-dom' */
 
 function FooterColumna3() {
     return (
@@ -9,11 +9,21 @@ function FooterColumna3() {
             </div>
             <div>
                 <button>
-                    <Link className='opciones-footer'  to='/contacto' >
+                    {/* <Link className='opciones-footer'  to='/contacto' >
                         <li> 
                             Contáctanos
                         </li>
-                    </Link>
+                    </Link> */}
+                    <li
+                        style={{listStyle:'none'}}>
+                            
+                        <a 
+                            style={{color:'white', textDecoration:'none'}}
+                            target="_blank" 
+                            href="https://www.obcity.store/contacto-ob-city-web/">
+                            Contacto
+                        </a>
+                    </li> 
                 </button>
 
             </div>
