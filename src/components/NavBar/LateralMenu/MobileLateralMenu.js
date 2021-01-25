@@ -132,14 +132,15 @@ const MobileLateralMenu = ({ signOut, uid }) => {
                                 </Link> */}  
                                 <li
                                     style={{listStyle:'none'}}>
-                                        <FontAwesomeIcon 
-                                            className='FontAwesomeLateralMenu'
-                                            icon={faPhoneAlt} fixedWidth/>
+                                        
                                     <a 
                                         style={{color:'white', textDecoration:'none'}}
                                         target="_blank" 
                                         href="https://www.obcity.store/contacto-ob-city-web/">
-                                        Contacto
+                                            <FontAwesomeIcon 
+                                            className='FontAwesomeLateralMenu'
+                                            icon={faPhoneAlt} fixedWidth/>
+                                            Contacto
                                     </a>
                                 </li>                  
                             </button>
