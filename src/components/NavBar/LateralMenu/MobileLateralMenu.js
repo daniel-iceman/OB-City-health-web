@@ -270,7 +270,7 @@ const MobileLateralMenu = ({ signOut, uid }) => {
                             </button>
 
                             <button onClick={toggleMenu}>   
-                                <Link  
+                                {/* <Link  
                                     className='opciones-sideMenu' 
                                     to='/contacto'>
                                     <li>
@@ -279,7 +279,20 @@ const MobileLateralMenu = ({ signOut, uid }) => {
                                             icon={faPhoneAlt} fixedWidth/>
                                         Contacto
                                     </li>
-                                </Link>                    
+                                </Link> */}  
+                                <li
+                                    style={{listStyle:'none'}}>
+                                        
+                                    <a 
+                                        style={{color:'white', textDecoration:'none'}}
+                                        target="_blank" 
+                                        href="https://www.obcity.store/contacto-ob-city-web/">
+                                            <FontAwesomeIcon 
+                                            className='FontAwesomeLateralMenu'
+                                            icon={faPhoneAlt} fixedWidth/>
+                                            Contacto
+                                    </a>
+                                </li>                   
                             </button>
 
                         </div>
