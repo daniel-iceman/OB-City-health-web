@@ -69,8 +69,55 @@
         font-weight: 300;
         margin-top: 10px;
         letter-spacing: 1px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 
+    .container-btn-cita{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .container-btn-cita li {
+        text-align: center;
+        color:rgb(31, 64, 104);
+        margin: 0px;
+        padding: 15px 25px 15px 25px;
+    }
+    .container-btn-cita a{
+        color:rgb(44, 165, 165);               
+    }
+    .container-btn-cita li:hover{
+        color:rgba(255, 255, 255, 1);
+    }
+
+        .btn-quirocita-contacto {
+            width: 260px;            
+            font-family: 'Montserrat';
+            font-size: 21px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            border:1px solid rgb(5, 122, 133);
+            border-radius: 50px;
+            margin-top: 15px;
+        }
+        .btn-quirocita-contacto a{
+            padding: 17px;
+        }
+        .btn-quirocita-contacto:hover{
+            background: rgb(61, 156, 156);
+            color: white;
+        }
+        .btn-quirocita-contacto a:hover{
+            background: rgb(61, 156, 156);
+            color: white;
+        }
 
 
 

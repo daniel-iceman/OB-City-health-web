@@ -18,7 +18,7 @@ function Home() {
 
     // Texto Intro
     const [titIntro] = useState ('Experiencia y actualidad conjugadas')
-    const [txtIntro] = useState ('OB City health cuenta con mas de 20 años de experiencia en el manejo de sobrepeso y obesidad, así como trastornos cardiometabolicos provocados por ellos.')
+    const [txtIntro] = useState ('OB City health cuenta con mas de 20 años de experiencia en el manejo de sobrepeso y obesidad, así como trastornos cardiometabolicos provocados por ellos como diabetes, hipertensión, desorden de lípidos, hígado graso, alteraciones en estudios de laboratorio y muchos otros.')
 
 
     return (
@@ -32,6 +32,20 @@ function Home() {
                 tituloIntro={titIntro}
                 textoIntro={txtIntro}
             />
+            <div className='container-btn-cita'>
+                <div className='btn-quirocita-contacto'>
+                    <li
+                        style={{listStyle:'none'}}>                                        
+                        <a 
+                            style={{textDecoration:'none'}}
+                            target="_blank" 
+                            href="https://www.obcity.store/contacto-ob-city-web/">
+                            Quiero una cita
+                        </a>
+                    </li> 
+                </div>
+            </div>
+            
             <SocialMediaHome />
             <HomeLinks />
             <ModalHome />
