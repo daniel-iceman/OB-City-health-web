@@ -18,31 +18,55 @@ function FooterColumna2(
             </div>
             <nav>
                 <ul>
-                    <Link className='opciones-footer'  to='/servicios' >
+                    {/* <Link className='opciones-footer'  to='/servicios' >
                         <li> 
                             { opcionLinkFoot1 }
                         </li>
-                    </Link>
-                    <Link className='opciones-footer'  to='/sistemas' >
+                    </Link> */}
+                    <li activeClassName='active-submenulink' className='link-menubar'> 
+                        <a  className='opciones-submenubar'
+                            href="https://www.obcity.store/servicios">
+                            { opcionLinkFoot1 }
+                        </a>
+                    </li> 
+                    {/* <Link className='opciones-footer'  to='/sistemas' >
                         <li> 
                             { opcionLinkFoot2 }
                         </li>
-                    </Link>
-                    <Link className='opciones-footer'  to='/acerca' >
+                    </Link> */}
+                    <li activeClassName='active-submenulink' className='link-menubar'> 
+                        <a  className='opciones-submenubar'
+                            href="https://www.obcity.store/nuestros-planes">
+                            { opcionLinkFoot2 }
+                        </a>
+                    </li> 
+                    {/* <Link className='opciones-footer'  to='/acerca' >
                         <li> 
                             { opcionLinkFoot3 }
                         </li>
-                    </Link>
+                    </Link> */}
+                    <li activeClassName='active-submenulink' className='link-menubar'> 
+                        <a  className='opciones-submenubar'
+                            href="https://www.obcity.store/acerca-de">
+                            { opcionLinkFoot3 }
+                        </a>
+                    </li>
                     <Link className='opciones-footer'  to='/articulos' >
                         <li> 
                             { opcionLinkFoot4 }
                         </li>
                     </Link>
-                    <Link className='opciones-footer'  to='/recetarios' >
+                    {/* <Link className='opciones-footer'  to='/recetarios' >
                         <li> 
                             { opcionLinkFoot5 }
                         </li>
-                    </Link>
+                    </Link> */}
+                    <li activeClassName='active-submenulink' className='link-menubar'> 
+                        <a  className='opciones-submenubar'
+                            href="https://www.obcity.store/libro-del-buen-comer">
+                            { opcionLinkFoot5 }
+                        </a>
+                    </li>
                 </ul>
             </nav>
             

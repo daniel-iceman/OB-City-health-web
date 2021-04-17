@@ -65,11 +65,17 @@ function ProtocoloABCDesign({
                                 <p>
                                     { abc_parrafo_4 }
                                 </p>
-                                {/* <Link  to='/ketodietarticle' >
-                                        <li> 
-                                            Si deseas conocer más acerca de este tipo de metodos ingresa aquí.
-                                        </li>
-                                </Link> */}
+
+                                <button> 
+                                    <li
+                                        className='opciones-sideMenu'>                                    
+                                            <a  className='opciones-submenubar'
+                                                target="_blank" 
+                                                href="https://www.obcity.store/agendar-online">
+                                                Agendar Online
+                                            </a>
+                                    </li>                                                 
+                                </button>
                             </div>
                         </div>
                         

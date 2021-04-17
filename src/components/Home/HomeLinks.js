@@ -10,24 +10,39 @@ function HomeLinks() {
                 <div className='linkHome-1'>
                     <div>
                         <button>
-                            <Link className='btn-vermas'  to='/sistemas' >
+                            <li
+                                className='opciones-sideMenu'>                                    
+                                    <a  className='opciones-submenubar'
+                                        href="https://www.obcity.store/nuestros-planes">
+                                            Ver más.
+                                    </a>
+                            </li> 
+                            {/* <Link className='btn-vermas'  to='/sistemas' >
                                 <li> 
                                     Ver más.
                                 </li>
-                            </Link>
+                            </Link> */}
                         </button>
                     </div>
-                    <Link to='/sistemas' >
+                        <li
+                            className='opciones-sideMenu'>                                    
+                                <a  className='opciones-submenubar'
+                                    href="https://www.obcity.store/nuestros-planes">
+                                        Elige tu Plan
+                                </a>
+                        </li> 
+                    {/* <Link to='/sistemas' >
                         <li> 
                             Elige tu plan
                         </li>
-                    </Link>                    
+                    </Link>   */}
+
                 </div>    
                 
                 
                 <div className='linkHome-2'>
                     <div>
-                        <button>
+                        <button>                           
                             <Link className='btn-vermas'  to='/exitos' >
                                 <li> 
                                     Ver más.
@@ -85,18 +100,32 @@ function HomeLinks() {
                 <div className='linkHome-5'>
                     <div>
                         <button>
-                            <Link className='btn-vermas'  to='/recetarios' >
+                            <li
+                                className='opciones-sideMenu'>                                    
+                                    <a  className='opciones-submenubar'
+                                        href="https://www.obcity.store/libro-del-buen-comer">
+                                            Ver más.
+                                    </a>
+                            </li>
+                            {/* <Link className='btn-vermas'  to='/recetarios' >
                                 <li> 
                                     Ver más.
                                 </li>
-                            </Link>
+                            </Link> */}
                         </button>
                     </div>
-                    <Link to='/recetarios' >
+                    <li
+                        className='opciones-sideMenu'>                                    
+                            <a  className='opciones-submenubar'
+                                href="https://www.obcity.store/libro-del-buen-comer">
+                                    Recetarios
+                            </a>
+                    </li>
+                    {/* <Link to='/recetarios' >
                         <li> 
                             Recetarios
                         </li>
-                    </Link>
+                    </Link> */}
                 </div>
 
                 <div className='linkHome-6'>

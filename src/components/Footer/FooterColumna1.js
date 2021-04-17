@@ -19,7 +19,7 @@ function FooterColumna1({
                     <ul>
                         
                         <li> 
-                            <a href='https://myappterms.com/reader.php?id=100'>
+                            <a href='https://www.obcity.store/store-policy'>
                                 Política de privacidad
                             </a>
                         </li>

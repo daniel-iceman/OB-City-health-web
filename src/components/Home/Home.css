@@ -88,10 +88,10 @@
         text-align: center;
         color:rgb(31, 64, 104);
         margin: 0px;
-        padding: 15px 25px 15px 25px;
+        padding: 15px 0px 15px 0px;
     }
     .container-btn-cita a{
-        color:rgb(44, 165, 165);               
+        color:white;               
     }
     .container-btn-cita li:hover{
         color:rgba(255, 255, 255, 1);
@@ -103,20 +103,26 @@
             font-size: 21px;
             font-weight: 400;
             letter-spacing: 2px;
-            border:1px solid rgb(5, 122, 133);
-            border-radius: 50px;
+            border:1px solid white;
+            background: rgb(6, 164, 185);
+            border-radius: 20px;
             margin-top: 15px;
         }
         .btn-quirocita-contacto a{
             padding: 17px;
         }
         .btn-quirocita-contacto:hover{
-            background: rgb(61, 156, 156);
-            color: white;
+            background: white;
+            color: rgb(6, 164, 185);
+            border-radius: 20px;
+            border:1px solid rgb(6, 164, 185);
+            color: rgb(6, 164, 185);
         }
         .btn-quirocita-contacto a:hover{
-            background: rgb(61, 156, 156);
-            color: white;
+            width: 0px;
+            background: rgb(61, 156, 156,0);
+            color: rgb(6, 164, 185);          
+            
         }
 
 

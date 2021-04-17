@@ -38,8 +38,7 @@ function Home() {
                         style={{listStyle:'none'}}>                                        
                         <a 
                             style={{textDecoration:'none'}}
-                            target="_blank" 
-                            href="https://www.obcity.store/contacto-ob-city-web/">
+                            href="https://www.obcity.store/sistemas-de-consulta">
                             Quiero una cita
                         </a>
                     </li> 

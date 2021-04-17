@@ -257,6 +257,12 @@
         width: 100%;
         height: 380px;
     }
+    .bannerTitle-telemedicina h1{
+        font-size: 35px;
+    }
+    .bannerTitle-telemedicina h2{
+        font-size: 20px;
+    }
 }
 
 /* **** Configuracion iPad Pro 1024px **** */
@@ -325,11 +331,11 @@
         height: auto;
     }
     .bannerTitle-telemedicina h1 {
-        font-size: 50px;
+        font-size: 30px;
         margin-top: 180px;
     }
     .subtitulo-inicial-telemedicina h2{
-        font-size: 19px ;
+        font-size: 16px ;
         margin-bottom: 35px;       
     }
     .informacion-telemedicina{
@@ -419,11 +425,11 @@
         height: auto;
     }  
     .bannerTitle-telemedicina h1 {
-        font-size: 40px;
+        font-size: 25px;
         margin-bottom: 60px;
     }
         .subtitulo-inicial-telemedicina h2{
-            font-size: 19px ;      
+            font-size: 15px ;      
         }
     
     .documento-telemedicina h3 {
@@ -467,10 +473,10 @@
         height: auto;
     } 
         .bannerTitle-telemedicina h1 {
-            font-size: 40px;
+            font-size: 23px;
         }
         .subtitulo-inicial-telemedicina h2{
-            font-size: 19px ;    
+            font-size: 14px ;    
         }
 
     .botonAContacto button {
@@ -512,10 +518,10 @@
         height: auto;
     } 
     .bannerTitle-telemedicina h1 {
-        font-size: 35px;
+        font-size: 23px;
     }
     .subtitulo-inicial-telemedicina h2 {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .oms{

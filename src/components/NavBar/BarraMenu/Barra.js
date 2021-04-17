@@ -3,29 +3,31 @@ import './BarraMenu.css'
 import '../../Images/OBC.PNG'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+//import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faCommentMedical } from "@fortawesome/free-solid-svg-icons";
 import { connect } from 'react-redux'
 
 import SubMenu1 from '../SubMenu_1/SubMenu_1'
 import SubMenu2 from '../SubMenu_2/SubMenu_2';
-import SubMenu3 from '../SubMenu_3/SubMenu_3';
+//import SubMenu3 from '../SubMenu_3/SubMenu_3';
 import LateralMenu from '../LateralMenu/LateralMenu';
 
 function Barra() {
     // SUBMENU 1
     const [nombreSubmenu1] = useState('Servicios')
-    const [serviciosOpcion1] = useState ('Sistemas que manejamos')
-    const [serviciosOpcion2] = useState ('Recetarios')
-    const [serviciosOpcion3] = useState ('Telemedicina')
-    const [serviciosOpcion4] = useState ('PRISE')
+    const [serviciosOpcion1] = useState ('Consultas online y presencial')
+    const [serviciosOpcion2] = useState ('Sistemas que manejamos')
+    const [serviciosOpcion3] = useState ('Tienda Online')
+    const [serviciosOpcion4] = useState ('Aplicación Móvil')
+    const [serviciosOpcion5] = useState ('Recetarios')
+    const [serviciosOpcion6] = useState ('Pregunte al experto')
+    const [serviciosOpcion7] = useState ('Blog')
+    const [serviciosOpcion8] = useState ('PRISE')
 
     // SUBMENU 2
-    const [nombreSubmenu2] = useState('Artículos')
-    const [articulosOpcion1] = useState ('Obesidad y CoViD-19')
-    const [articulosOpcion2] = useState ('Obesidad e Influenza A H1N1')
-    const [articulosOpcion3] = useState ('Obesidad y Alteraciones Osteoarticulares')
-    const [articulosOpcion4] = useState ('Embarazo y obesidad')
-    const [articulosOpcion5] = useState ('Resistencia a la insulina y Nutriterapia')
+    const [nombreSubmenu2] = useState('Acerca de')
+    const [acercaDeOpcion1] = useState ('Curriculum')
+    const [acercaDeOpcion2] = useState ('Artículos publicados')
 
         
     return (
@@ -37,7 +39,7 @@ function Barra() {
                         <LateralMenu />
                     </div>
                     <div className="barraMenu_logo">
-                        <a href ="/"> <img src={require('../../Images/OBC.PNG')} /> </a>
+                        <a href ="/"> <img src={require('../../Images/OBCwhiteMedium.jpeg')} /> </a>
                     </div>
 
                     <div className='separacionMenu'>
@@ -46,10 +48,9 @@ function Barra() {
                     
                     <nav className='navegacion' >
                         <ul className='menu' >
-                            <NavLink exact activeClassName='active-menulink' className='icono-home' to='/' >
-                                <li> <FontAwesomeIcon 
-                                    icon={faHome} 
-                                    style={{fontSize:'22px'}} /> 
+                            <NavLink exact activeClassName='active-menulink' className='opciones-menubar' to='/' >
+                                <li> 
+                                    Inicio
                                 </li>
                             </NavLink>
                             <SubMenu1 
@@ -58,20 +59,30 @@ function Barra() {
                                 sm1Opcion2={serviciosOpcion2}
                                 sm1Opcion3={serviciosOpcion3}
                                 sm1Opcion4={serviciosOpcion4}
+                                sm1Opcion5={serviciosOpcion5}
+                                sm1Opcion6={serviciosOpcion6}
+                                sm1Opcion7={serviciosOpcion7}
+                                sm1Opcion8={serviciosOpcion8}
 
                             />
-                            <NavLink activeClassName='active-menulink' className='opciones-menubar'  to='/acerca' >
                                 <li > 
-                                    Acerca de
+                                    <a  className='opciones-menubar'
+                                        href="https://www.obcity.store/agendar-online">
+                                        Agendar Online
+                                    </a>
                                 </li>
-                            </NavLink>
+
+                                <li > 
+                                    <a  className='opciones-menubar'
+                                        href="https://www.obcity.store/">
+                                        Tienda Online
+                                    </a>
+                                </li>
+
                             <SubMenu2 
                                 tituloSMenu2={nombreSubmenu2}
-                                sm2Opcion1={articulosOpcion1}
-                                sm2Opcion2={articulosOpcion2}
-                                sm2Opcion3={articulosOpcion3}
-                                sm2Opcion4={articulosOpcion4}
-                                sm2Opcion5={articulosOpcion5}
+                                sm2Opcion1={acercaDeOpcion1}
+                                sm2Opcion2={acercaDeOpcion2}
                             />
                             {/* <NavLink activeClassName='active-menulink' className='opciones-menubar' to='/contacto' >
                                 <li > 
@@ -79,13 +90,13 @@ function Barra() {
                                 </li>
                             </NavLink> */}
                             <li>
-                                <a 
-                                    style={{color:'rgb(0, 39, 77)'}}
-                                    target="_blank" 
+                                <a  className='opciones-menubar'
                                     href="https://www.obcity.store/contacto-ob-city-web/">
                                     Contacto
                                 </a>
                             </li>
+
+                            
                             
 
                             {/* <SubMenu3 /> */}
@@ -93,9 +104,9 @@ function Barra() {
                         </ul>
                     </nav>
 
-                    <div className='container-boton-user'>
+                    {/*<div className='container-boton-user'>
                         <SubMenu3 />
-                    </div>
+                        </div>*/}
 
                 
                 </div>

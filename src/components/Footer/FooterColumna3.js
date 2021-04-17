@@ -19,7 +19,6 @@ function FooterColumna3() {
                             
                         <a 
                             style={{color:'white', textDecoration:'none'}}
-                            target="_blank" 
                             href="https://www.obcity.store/contacto-ob-city-web/">
                             Contacto
                         </a>

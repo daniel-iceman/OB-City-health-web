@@ -8,17 +8,21 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;    
+    /*margin-top: 40px;    */
+    margin-top: 0px;
 }
 
 .posicion-barraMenu {
-    width: 80%;
+    /*width: 80%;*/
+    width: 100%;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:rgb(247, 247, 247);  
+    background:rgb(3, 32, 66);  
     /* border-bottom: 3px solid rgb(231, 231, 231); */
-    border-radius: 15px;
+    /*border-radius: 15px;*/
+    border-radius: 0px;
     /* box-shadow: 1px 1px 8px rgb(71, 71, 71); */
 }
 /* ******** Boton para abrir menú lateral ***** */
@@ -34,8 +38,8 @@ li {
 }
 
 .barraMenu_logo img {
-    width: 180px; 
-    padding-top: 5px;
+    width: 190px; 
+    padding-top: 25px;
     padding-bottom: 5px;
 }
 
@@ -44,7 +48,7 @@ li {
 }
 
 .icono-home{
-    color: rgb(0, 39, 77);
+    color: rgba(0, 39, 77, 0);
     margin: -10px 0px -10px 0px;
     padding: 10px 30px 15px 30px;
 }
@@ -53,7 +57,7 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 80px;
 }
 
 .menu{
@@ -75,7 +79,7 @@ li {
     padding: 10px 10px 20px 10px;
 }
 .menu p:hover {
-    color: white;
+    color: rgb(39, 200, 232);
     transition: all .3s;
     background:rgb(0, 39, 77)
 }
@@ -89,20 +93,29 @@ li {
 }
 
 .opciones-menubar{
-    color:rgb(0, 39, 77) ;
+    color:rgb(255, 255, 255) ;
     margin: -10px 0px -17px 0px;
     padding: 10px 10px 17px 10px;
 }
 .opciones-menubar:hover{
-    color: white;
+    color: rgb(39, 200, 232);
     transition: all .3s;
-    background:rgb(0, 39, 77)
+    background:rgb(51, 200, 88)
 }
 
 .active-menulink{
-    background:rgb(0, 39, 77);
-    color: whitesmoke;
+    background:rgb(0, 39, 77,);
 }
+.active-menulink li{
+    color: rgb(39, 200, 232);
+}
+
+.FontAwesomeIcon-user{
+    width: fit-content;
+    font-size:20px;
+    margin-top: 0px;
+    color: rgb(39, 200, 232);
+}   
 
 
 /* ********************* MEDIA QUERIES ********************** */
@@ -110,7 +123,24 @@ li {
 /* **** Configuracion Lap top 1366px **** */
 @media screen and (max-width: 1366px) {
     .container-barraMenu{
-        margin-top: 30px;    
+        margin-top: 0px;    
+    }
+    .posicion-barraMenu {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:rgb(3, 32, 66);  
+        border-radius: 0px;
+    }
+    .barraMenu_logo img {
+        width: 170px; 
+        padding-top: 12px;
+        padding-bottom: 5px;
+    }
+    .navegacion{
+        padding-top: 42px;
     }
        
 }
@@ -160,12 +190,14 @@ li {
     }
     .posicion-barraMenu {
         width: 100%;
+        height: 70px;
     }
     .barraMenu{
         width: 100%;
-    }
+        height: 60px; 
+    }     
     .barraMenu_logo img {
-        width: 160px;
+        width: 150px;
         margin-top: 0px; 
     }
     

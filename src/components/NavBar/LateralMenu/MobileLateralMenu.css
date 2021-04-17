@@ -6,14 +6,16 @@
     .burger-btn button {
         width: 60px;
         height: 50px;
-        background-color: rgb(255, 255, 255, 0);
+        background-color: rgb(5, 3, 0, 0);
         border: none;
     }   
         
         .burgerBoy {
-            color: rgb(2, 31, 73);
+            color: white;
             font-size: 40px; 
         }
+
+        
 
 .menlat {
     position: fixed;
@@ -65,6 +67,10 @@
             list-style: none;
             text-decoration: none;
         }
+        .opciones-sideMenu{
+            list-style: none;
+            text-decoration: none;
+        }
 
     .line-division{
         border-top: 1px solid #006d80;
@@ -101,6 +107,7 @@
         margin-right: 20px;
         margin-bottom: 15px;
     }
+    
 
 
 
@@ -133,6 +140,9 @@
     .burger-btn  {
         margin-left: -120px;
     }
+    .burgerBoy {
+        font-size: 33px; 
+    }
 
     .menlat header {
         height: 100px;
@@ -160,6 +170,9 @@
 @media screen and (max-width: 375px) {
     .burger-btn  {
         margin-left: -100px;
+    }
+    .burgerBoy {
+        font-size: 31px; 
     }
     .menlat {
         width: 260px; 

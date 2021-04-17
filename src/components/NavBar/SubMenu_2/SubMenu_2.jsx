@@ -2,7 +2,7 @@ import React from 'react'
 import '../BarraMenu/SubMenu.css'
 import {NavLink} from 'react-router-dom'
 
-function SubMenu_2({tituloSMenu2, sm2Opcion1, sm2Opcion2, sm2Opcion3, sm2Opcion4, sm2Opcion5}) {
+function SubMenu_2({tituloSMenu2, sm2Opcion1, sm2Opcion2}) {
 
     return (
         <div className='contenedor-submenu2'>
@@ -12,49 +12,43 @@ function SubMenu_2({tituloSMenu2, sm2Opcion1, sm2Opcion2, sm2Opcion3, sm2Opcion4
                 </li>
             </NavLink>
             
-                <ul className='lista-submenu'>
-
-                    <div className='bloque-listas'>
-                        <div className='bloque-izq' >
-                            <NavLink activeClassName='active-submenulink' className='link-menubar' to='/articulo_covid19' >
-                                    <li > 
-                                        {sm2Opcion1}
-                                    </li>
-                            </NavLink>
-                            <NavLink activeClassName='active-submenulink' className='link-menubar' to='/articulo_influenza' >
-                                    <li > 
-                                        {sm2Opcion2}
-                                    </li>
-                            </NavLink>
-                            <NavLink activeClassName='active-submenulink' className='link-menubar' to='/articulo_osteoarticular' >
-                                    <li > 
-                                        {sm2Opcion3}
-                                    </li>
-                            </NavLink>
-                            <NavLink activeClassName='active-submenulink' className='link-menubar' to='/articulo_embarazo' >
-                                    <li > 
-                                        {sm2Opcion4}
-                                    </li>
-                            </NavLink>
-                        </div>
-
-                        <div className='bloque-der'>
-                          <NavLink activeClassName='active-submenulink' className='link-menubar' to='/articulo_resistenciainsulina' >
-                                    <li > 
-                                        {sm2Opcion5}
-                                    </li>
-                            </NavLink>
-                        </div>
-
-                    </div>
-
-                    <div className='mensaje-submenu' >
-                        <h1>¿Te gustaría perder medidas con un método practico y sin sacrificar tanto?</h1>
-                        <NavLink className='link-menubar' to='/protocoloabc' >
+                <ul className='lista-submenu'>                   
+                        
+                    {/* <NavLink activeClassName='active-submenulink' className='link-menubar' to='/acerca' >
                             <li > 
-                                Conoce el sistema ABC
+                                {sm2Opcion1}
                             </li>
-                        </NavLink>
+                    </NavLink> */}
+                    <li activeClassName='active-submenulink' className='link-menubar'> 
+                                    <a  className='opciones-submenubar'
+                                        href="https://www.obcity.store/acerca-de">
+                                        {sm2Opcion1}
+                                    </a>
+                                </li>
+                    <NavLink activeClassName='active-submenulink' className='link-menubar' to='/articulos' >
+                            <li > 
+                                {sm2Opcion2}
+                            </li>
+                    </NavLink>
+                            
+                        
+                        
+
+                    
+
+                    <div className='mensaje-submenu publicidad2' >
+                        <h1>¿Te gustaría perder medidas con un método practico y sin sacrificar tanto?</h1>
+                            <li activeClassName='active-submenulink' className='link-menubar'> 
+                                    <a  className='opciones-submenubar'
+                                        href="https://www.obcity.store/plan-protein-57">
+                                        Conoce el sistema Keto Diet
+                                    </a>
+                                </li>
+                        {/* <NavLink className='link-menubar' to='/protocoloabc' >
+                            <li > 
+                                Conoce el sistema Keto Diet
+                            </li>
+                        </NavLink> */}
                     </div>
 
             

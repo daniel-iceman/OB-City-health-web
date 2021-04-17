@@ -9,7 +9,7 @@ function SistemasCardsMenu() {
       });
 
     const [titCards] = useState ('Nuestros Sistemas')
-    const [txtCards] = useState ('Contamos con 2 sistemas para ayudarte a llegar a la meta y 1 sistema para evitar que recuperes el peso y grasa perdidos durante el tratamiento.')
+    const [txtCards] = useState ('Contamos con 3 sistemas para ayudarte a llegar a la meta y 1 sistema para evitar que recuperes el peso y grasa perdidos durante el tratamiento.')
     const [pieCards] = useState ('* El tiempo y la pérdida de peso puede variar en cada persona dependiendo de como siga indicaciónes, calidad de actividad física y situaciones hormonales preexistentes.')
     const [btnCards] = useState ('Descubre más')
 

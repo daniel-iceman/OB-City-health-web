@@ -8,8 +8,8 @@ function TelemedicinaBanner() {
             <div className='imagen-banner-telemedicina' />        
      
             <div className='texto-banner-telemedicina'>
-                <h1>Telemedicina</h1>
-                <p>La tecnología está de nuestro lado.  Consultas por medio de video conferencia y envío de tratamientos a la comodidad de su domicilio.</p>
+                <h1>Consultas online y presenciales</h1>
+                <p>Trabajamos con un sistema híbrido, es decir podemos atenderlo personalmente o por medio del sistema online, usted escoge el método que más le agrade.</p>
                 <button>
                     <Link className='btn-vermas-telemedicina'  to='/telemedicina' >
                         <li> 

@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 20px;
 }
 
 
@@ -20,10 +21,11 @@
     align-items: center;
     justify-content: center;    
     background: linear-gradient(331deg, rgba(49,6,102,1) 15%, rgba(129,25,40,1) 49%, rgba(2,54,157,1) 92%);
+    
 }
     .texto-banner-sistemas h1{
         width: 80%;
-        font-size: 50px;
+        font-size: 40px;
         color: white;
         letter-spacing: 1px;
         text-align: center;
@@ -67,6 +69,8 @@
     background-image: url('../Images/SistemasBlue.jpeg');
     background-size:cover;
 }
+
+
 
 /* ****************************** BANNER RECETARIOS ******************************** */
 
@@ -147,7 +151,7 @@
 }
     .texto-banner-telemedicina h1{
         width: 80%;
-        font-size: 50px;
+        font-size: 40px;
         color: white;
         letter-spacing: 3px;
         text-align: center;
@@ -332,13 +336,13 @@
         width: 60%;
     }
         .texto-banner-sistemas h1{
-            font-size: 35px;
+            font-size: 30px;
             line-height: 38px;
             margin-bottom: 15px;
         }
         .texto-banner-sistemas p{
             width: 90%;
-            font-size: 17px;
+            font-size: 16px;
             margin-bottom: 0px;
         }
     
@@ -365,7 +369,10 @@
         }
 
     .texto-banner-telemedicina h1 {
-        font-size: 35px;
+        font-size: 30px;
+    }
+    .texto-banner-telemedicina p {
+        font-size: 16px;
     }
 
     .imagen-banner-price {
@@ -412,14 +419,14 @@
         height: 400px;
     }
         .texto-banner-sistemas h1{
-            font-size: 35px;
+            font-size: 30px;
             line-height: 35px;
-            margin-bottom: 20px;
-            margin-top: 5px;
+            margin-bottom: 60px;
+            margin-top: -50px;
         }
         .texto-banner-sistemas p{
-            font-size: 19px;
-            margin-bottom: 10px;
+            font-size: 17px;
+            margin-bottom: 40px;
         }
 
     .imagen-banner-recetarios {
@@ -439,6 +446,16 @@
         width: 100%;
         height: 370px;
         background: linear-gradient(141deg, rgba(8,124,138,1) 10%, rgba(3,42,99,1) 41%, rgba(3,23,87,1) 53%, rgba(2,22,77,1) 55%, rgba(30,16,66,1) 74%);
+    }
+    .texto-banner-telemedicina h1{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 60px;
+        margin-top: -50px;
+    }
+    .texto-banner-telemedicina p{
+        font-size: 17px;
+        margin-bottom: 40px;
     }
 
     .imagen-banner-price {
@@ -473,11 +490,17 @@
         height: 480px;
     }
         .texto-banner-sistemas h1 {
-            font-size: 32px;
+            font-size: 26px;
         }
         .texto-banner-sistemas p {
-            font-size: 19px;
+            font-size: 17px;
             letter-spacing: 1px;
+        }
+        .texto-banner-telemedicina h1 {
+            font-size: 27px;
+        }
+        .texto-banner-telemedicina p {
+            font-size: 16px;
         }
         .texto-banner-price p {
             font-size: 19px;

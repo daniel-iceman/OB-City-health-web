@@ -23,6 +23,12 @@
         font-size: 20px;
         letter-spacing: 2px;
     }
+        .btn-primary a{
+            color: white;
+        }
+        .btn-primary a:hover{
+            text-decoration: none;
+        }
     .btn-secondary{
         font-family: 'Questrial', sans-serif;
         font-size: 20px;

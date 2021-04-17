@@ -4,6 +4,7 @@ import SistemasBanner from './SistemasBanner'
 import RecetariosBanner from './RecetariosBanner'
 import TelemedicinaBanner from './TelemedicinaBanner'
 import PriseBanner from './PriseBanner'
+import TiendaBanner from './TiendaBanner'
 
 function Servicios() {
     
@@ -13,9 +14,10 @@ function Servicios() {
 
     return (
         <div className='container-servicios' >
-            <SistemasBanner/>
-            <RecetariosBanner />
             <TelemedicinaBanner />
+            <SistemasBanner/>
+            <TiendaBanner/>
+            <RecetariosBanner />            
             <PriseBanner />
         </div>
     )

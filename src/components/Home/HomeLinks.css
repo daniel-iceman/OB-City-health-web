@@ -136,6 +136,7 @@ background-size:cover;
 .linkHome-5 a:hover,
 .linkHome-6 a:hover {
     text-decoration: none;
+    color: white;
 }
 
 /* Visibilidad del boton para moviles */

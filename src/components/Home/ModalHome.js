@@ -47,13 +47,23 @@ function ModalHome() {
                             Cerrar
                     </button>
 
-                    <Link to='/telemedicina' >
+                    <button 
+                        className='btn btn-primary' 
+                        type="button"
+                        class="btn btn-primary">
+                        <a  
+                            href="https://www.obcity.store/agendar-online">
+                            Consultas online
+                        </a>
+                    </button>
+
+                    {/* <Link to='/telemedicina' >
                         <button 
                             className='btn btn-primary' 
                             type="button">
                             Consultas online
                         </button>
-                    </Link>
+                    </Link> */}
                 </Modal.Footer>
         </Modal>
         </div>
