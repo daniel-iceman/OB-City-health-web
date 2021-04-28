@@ -168,6 +168,8 @@
                 background: rgb(196, 0, 0);
                 cursor: pointer;
                 margin-top: 10px;
+                text-decoration: none;
+                list-style: none;
             }
                 .factor-risk-button button:hover {
                     animation: zoomButton 1.3s forwards;
@@ -232,6 +234,7 @@
                     text-decoration: none;
                     list-style: none;
                 }
+                
 
 
 

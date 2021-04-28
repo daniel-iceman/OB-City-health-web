@@ -102,12 +102,12 @@ function CovidDesign() {
                 <div className='parrafo-2-covid'>
                     <div className='texto-covid'>
                         <p>
-                            COVID-19 es una enfermedad provocada por un coronavirus.  Se transmite principalemente cuando la saliva y/o fluido nasal de una persona infectada entran en contacto con ojos, nariz y boca de una persona sana.  Así mismo, también se puede contraer cuando existe contacto de la manos con superficies contaminadas y su posterior inoculación a ojos, nariz y boca. <br/> 
+                            COVID-19 es una enfermedad provocada por un coronavirus.  Se transmite principalemente cuando la saliva y/o fluido nasal de una persona infectada entran en contacto con ojos, nariz y boca de una persona sana, esto puede ser ya sea por el contacto con gotas de gran o mediano tamaño o bien por gotas de pequeño tamaño (aerosoles).  Estas últimas pueden permanecer suspendidas en el ambiente por periodos que van de los 30 minutos a las 3 horas.  Así mismo, también se puede contraer cuando existe contacto de la manos con superficies contaminadas y su posterior inoculación a ojos, nariz y boca. <br/> 
                         </p>                            
                         <p>
-                            Una vez contraída la enfermedad pueden pasar de 3 días como mínimo hasta 7 días como máximo para que inicien los síntomas.   <br/>
+                            Una vez contraída la enfermedad pueden pasar de 3 días como mínimo hasta 15 días como máximo para que inicien los síntomas.   <br/>
                             Los síntomas pueden variar en su intensidad pudiendo ser de baja intensidad, cuando los pacientes son considerados como asintomáticos o bien, presentan síntomas menores; de moderada intensidad cuando los síntomas requieren uso de medicamentos, pero el paciente puede permanecer en casa; y de intensidad alta o severa en la cual los pacientes requieren hospitalización, uso de oxígeno y frecuentemente ingresar a unidad de cuidados intensivos. <br/>
-                            Los síntomas son diversos desde sólo pérdida de olfato, pérdida del gusto y dolor de cabeza en casos leves.   Cuando la intensidad es moderada puede agregarse fiebre, tos, cansancio, dolor de garganta, diarrea y conjuntivitis.    En los casos mas graves, y que implican una emergencia, el paciente inicia con dificultad respiratoria o sensación de falta de aire, dolor o presión en el pecho e incapacidad para hablar o moverse. <br/>
+                            Los síntomas son diversos desde sólo pérdida de olfato, pérdida del gusto y dolor de cabeza en casos leves.   Cuando la intensidad es moderada puede agregarse fiebre, tos, cansancio, dolor de garganta, diarrea y conjuntivitis.    En los casos mas graves, y que implican una emergencia, el paciente inicia con dificultad respiratoria o sensación de falta de aire, dolor o presión en el pecho e incapacidad para hablar o moverse.   Así mismo pueden presentar estudios de laboratorio con alteraciones de coagulación que serán motivo de anticoagulación y vigilancia cercana. <br/>
                         </p>
                         <p>
                             Las personas que padecen hipertensión, diabetes, sobrepeso y obesidad pertenecen a los grupos en los cuales se han observado mayor numero de complicaciones debido a su estado metabólico y como éste afecta su estado inmunológico.  Por lo tanto, es de suma importancia que si usted padece alguno de estos antecedentes cuide que su presión y su azúcar se encuentren bajo control y si padece algún grado de sobrepeso acuda con un especialista para que lo apoyen en la perdida de grasa corporal y con esto reduzca los riesgos en caso de contraer la enfermedad. <br/>
@@ -119,18 +119,20 @@ function CovidDesign() {
                             La inmunidad que conlleva haber padecido COVID-19 es relativa, se ha observado que en personas que fueron asintomáticos o bien presentaron síntomas leves dura unos cuantos meses en comparación de aquellos que presentaron síntomas mas agresivos durante la enfermedad. 
                         </p>
                         <p>
-                            <span className='span-txt'>La obesidad puede provocar que la inmunidad adquirida sea de menor duración.</span>
+                            <span className='span-txt'>La obesidad puede provocar que la inmunidad adquirida ya sea por haber cursado con COVID-19 o bien por la vacunación, sea de menor duración.</span>
                         </p>                       
                     </div>   
 
                     <div className='factor-risk-button'>
                         <h3> Si padece sobrepeso u obesidad contactenos, nosotros podemos ayudarlo</h3>
-                        <button>
-                            <Link   to='/contacto' >
-                                <li> 
-                                    Contáctanos
-                                </li>
-                            </Link>
+                        <button>                           
+                            <li> 
+                                <a  
+                                    href="https://www.obcity.store/contacto-ob-city-web">
+                                        Contáctanos
+                                </a>
+                                
+                            </li>                            
                         </button>
                     </div>
                     <div className='article-covid19-button'>

@@ -131,18 +131,32 @@ function HomeLinks() {
                 <div className='linkHome-6'>
                     <div>
                         <button>
-                            <Link className='btn-vermas'  to='/emocionesyalimentacion' >
+                            <li
+                                className='opciones-sideMenu'>                                    
+                                    <a  className='opciones-submenubar'
+                                        href="https://www.obcity.store/aplicacion-movil-obcityhealth">
+                                            Ver más
+                                    </a>
+                            </li>
+                            {/* <Link className='btn-vermas'  to='/emocionesyalimentacion' >
                                 <li> 
                                     Ver más.
                                 </li>
-                            </Link>
+                            </Link> */}
                         </button>
-                    </div>                
-                    <Link to='/emocionesyalimentacion' >
+                    </div>  
+                        <li
+                            className='opciones-sideMenu'>                                    
+                                <a  className='opciones-submenubar'
+                                    href="https://www.obcity.store/aplicacion-movil-obcityhealth">
+                                        Aplicación Móvil
+                                </a>
+                        </li>              
+                    {/* <Link to='/emocionesyalimentacion' >
                         <li> 
-                            Comida y emociones
+                            Aplicación Movil
                         </li>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
             
